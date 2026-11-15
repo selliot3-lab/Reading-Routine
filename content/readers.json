@@ -1,0 +1,374 @@
+{
+  "_about": "Decodable reader library. Every word in a title or page must pass `npm run content:check` at the reader's level. Each page gets one Canva picture (null until made); `pictureBrief` is what the picture should show. Target: about 10 readers per level.",
+  "readers": [
+    {
+      "id": "L01-sam-sat",
+      "level": 1,
+      "title": "Sam Sat",
+      "pages": [
+        {
+          "text": "I am Sam.",
+          "pictureBrief": "A smiling child named Sam waving hello",
+          "picture": null
+        },
+        {
+          "text": "Sam sat.",
+          "pictureBrief": "Sam sitting cross-legged on the floor",
+          "picture": null
+        },
+        {
+          "text": "Tam sat.",
+          "pictureBrief": "A second child, Tam, sitting beside Sam",
+          "picture": null
+        },
+        {
+          "text": "Sam sat at the mat.",
+          "pictureBrief": "Sam sitting on a striped mat",
+          "picture": null
+        },
+        {
+          "text": "I sat at the mat!",
+          "pictureBrief": "Tam joining Sam on the mat, both happy",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L01-tam",
+      "level": 1,
+      "title": "Tam",
+      "pages": [
+        {
+          "text": "I am Tam.",
+          "pictureBrief": "A cheerful child named Tam in pyjamas",
+          "picture": null
+        },
+        {
+          "text": "Tam sat.",
+          "pictureBrief": "Tam sitting on a cushion",
+          "picture": null
+        },
+        {
+          "text": "Sam sat at a mat.",
+          "pictureBrief": "Sam sitting on a little round mat",
+          "picture": null
+        },
+        {
+          "text": "I am at the mat.",
+          "pictureBrief": "Tam and Sam sitting together on the mat",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L02-tim",
+      "level": 2,
+      "title": "Tim",
+      "pages": [
+        {
+          "text": "Tim is fit.",
+          "pictureBrief": "A boy named Tim stretching after a run",
+          "picture": null
+        },
+        {
+          "text": "Tim sat in a pit.",
+          "pictureBrief": "Tim sitting in a sandpit",
+          "picture": null
+        },
+        {
+          "text": "Sip, sip, sip!",
+          "pictureBrief": "Tim sipping from a cup",
+          "picture": null
+        },
+        {
+          "text": "Tim is at his map.",
+          "pictureBrief": "Tim tapping a treasure map",
+          "picture": null
+        },
+        {
+          "text": "Tim sat. Tim is fit!",
+          "pictureBrief": "Tim sitting on the map, flexing his arms and grinning",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L02-the-fin",
+      "level": 2,
+      "title": "The Fin",
+      "pages": [
+        {
+          "text": "Pam sat.",
+          "pictureBrief": "A girl named Pam sitting on a dock by a lake",
+          "picture": null
+        },
+        {
+          "text": "Pam sat at the tip.",
+          "pictureBrief": "Pam sitting at the very end of the dock",
+          "picture": null
+        },
+        {
+          "text": "It is a fin!",
+          "pictureBrief": "A friendly fish fin poking out of the water",
+          "picture": null
+        },
+        {
+          "text": "The fin is fat.",
+          "pictureBrief": "A round, chubby fish smiling up at Pam",
+          "picture": null
+        },
+        {
+          "text": "Pam, tap the fin! Tap, tap.",
+          "pictureBrief": "Pam gently tapping the fish's fin",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L03-dan-and-the-pot",
+      "level": 3,
+      "title": "Dan and the Pot",
+      "pages": [
+        {
+          "text": "Dan is sad.",
+          "pictureBrief": "A boy named Dan frowning in a kitchen",
+          "picture": null
+        },
+        {
+          "text": "His pot is not on the pan.",
+          "pictureBrief": "A small pot sitting next to a frying pan, not on it",
+          "picture": null
+        },
+        {
+          "text": "Dad and Dan mop. Mop, mop, mop!",
+          "pictureBrief": "Dan and his dad mopping a puddle together",
+          "picture": null
+        },
+        {
+          "text": "The pot is on top of the pan.",
+          "pictureBrief": "The pot stacked neatly on the pan",
+          "picture": null
+        },
+        {
+          "text": "Dan is not sad!",
+          "pictureBrief": "Dan grinning and giving a thumbs up",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L03-sid-and-tom",
+      "level": 3,
+      "title": "Sid and Tom",
+      "pages": [
+        {
+          "text": "Sid and Tom sit on a pad.",
+          "pictureBrief": "Two friends, Sid and Tom, sitting on a cushion",
+          "picture": null
+        },
+        {
+          "text": "Tom is sad.",
+          "pictureBrief": "Tom looking a little sad",
+          "picture": null
+        },
+        {
+          "text": "Sid did pat Tom. Pat, pat, pat.",
+          "pictureBrief": "Sid patting Tom's back kindly",
+          "picture": null
+        },
+        {
+          "text": "Tom is not sad. Tom is on the pad.",
+          "pictureBrief": "Tom smiling on the cushion, Sid beside him",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L04-the-mud-pup",
+      "level": 4,
+      "title": "The Mud Pup",
+      "pages": [
+        {
+          "text": "The pup dug in the mud.",
+          "pictureBrief": "A puppy digging happily in mud",
+          "picture": null
+        },
+        {
+          "text": "Dig, dig, dig!",
+          "pictureBrief": "Mud flying as the pup digs",
+          "picture": null
+        },
+        {
+          "text": "The pup is a mud pup.",
+          "pictureBrief": "The puppy covered head to tail in mud",
+          "picture": null
+        },
+        {
+          "text": "Mom got a cup.",
+          "pictureBrief": "A mom holding a cup of water, laughing",
+          "picture": null
+        },
+        {
+          "text": "The pup sat on a cot. Can you pat the pup?",
+          "pictureBrief": "The muddy pup sitting on a camp cot, wagging",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L04-fun-in-the-sun",
+      "level": 4,
+      "title": "Fun in the Sun",
+      "pages": [
+        {
+          "text": "The sun is up.",
+          "pictureBrief": "A bright sun over a sandy park",
+          "picture": null
+        },
+        {
+          "text": "Tom and Dad dig.",
+          "pictureBrief": "A boy and his dad digging with shovels",
+          "picture": null
+        },
+        {
+          "text": "Dad got a cup of pop.",
+          "pictureBrief": "Dad holding a fizzy drink in a cup",
+          "picture": null
+        },
+        {
+          "text": "Tom got a cup, not a mug.",
+          "pictureBrief": "Tom holding a cup proudly",
+          "picture": null
+        },
+        {
+          "text": "It is fun in the sun! Do you dig?",
+          "pictureBrief": "Tom and Dad cheering beside a sandcastle",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L05-the-big-bug",
+      "level": 5,
+      "title": "The Big Bug",
+      "pages": [
+        {
+          "text": "Ben got a bug.",
+          "pictureBrief": "A boy named Ben holding a jar with a ladybug",
+          "picture": null
+        },
+        {
+          "text": "It is a big bug!",
+          "pictureBrief": "A comically large, friendly beetle",
+          "picture": null
+        },
+        {
+          "text": "The bug sat on a bed.",
+          "pictureBrief": "The beetle sitting on a neatly made bed",
+          "picture": null
+        },
+        {
+          "text": "Ben fed the bug a bun.",
+          "pictureBrief": "Ben offering the beetle a small bun",
+          "picture": null
+        },
+        {
+          "text": "We can pet the bug. Ben and the bug nap.",
+          "pictureBrief": "Ben and the beetle asleep side by side",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L05-the-big-cab",
+      "level": 5,
+      "title": "The Big Cab",
+      "pages": [
+        {
+          "text": "Ted got a big pen.",
+          "pictureBrief": "A child named Ted holding a giant marker",
+          "picture": null
+        },
+        {
+          "text": "He can dab it on a bag.",
+          "pictureBrief": "Ted dabbing dots of colour on a paper bag",
+          "picture": null
+        },
+        {
+          "text": "Dab, dab, dab!",
+          "pictureBrief": "Colourful dots covering the bag",
+          "picture": null
+        },
+        {
+          "text": "Ted and Mom get in a cab.",
+          "pictureBrief": "Ted and his mom climbing into a yellow taxi",
+          "picture": null
+        },
+        {
+          "text": "The cab is big. It is fun!",
+          "pictureBrief": "The taxi driving off, Ted waving the dotted bag",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L06-the-hot-hut",
+      "level": 6,
+      "title": "The Hot Hut",
+      "pages": [
+        {
+          "text": "Kim has a hut.",
+          "pictureBrief": "A girl named Kim beside a little wooden hut",
+          "picture": null
+        },
+        {
+          "text": "It is hot in the hut.",
+          "pictureBrief": "Kim fanning herself inside the warm hut",
+          "picture": null
+        },
+        {
+          "text": "Kim has hats and cups.",
+          "pictureBrief": "A shelf of sun hats and cups in the hut",
+          "picture": null
+        },
+        {
+          "text": "She said, \"Hop in, pup!\"",
+          "pictureBrief": "Kim calling a puppy into the hut",
+          "picture": null
+        },
+        {
+          "text": "The pup hops in. The pup hugs Kim.",
+          "pictureBrief": "The puppy leaping into Kim's arms",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L06-six-hens",
+      "level": 6,
+      "title": "The Hens",
+      "pages": [
+        {
+          "text": "The hens sit in the hut.",
+          "pictureBrief": "Three hens sitting in a little henhouse",
+          "picture": null
+        },
+        {
+          "text": "Ken has a cup of nuts.",
+          "pictureBrief": "A boy named Ken carrying a cup of seeds and nuts for the hens",
+          "picture": null
+        },
+        {
+          "text": "The hens get up. Hop, hop, hop!",
+          "pictureBrief": "The hens hopping off their nests",
+          "picture": null
+        },
+        {
+          "text": "Ken hugs a hen. The hen is hot!",
+          "pictureBrief": "Ken gently hugging a fluffy hen",
+          "picture": null
+        }
+      ]
+    }
+  ]
+}

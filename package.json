@@ -1,0 +1,51 @@
+{
+  "name": "the-reading-routine",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "content:check": "tsx scripts/check-content.ts",
+    "content:readers": "tsx scripts/generate-readers.ts",
+    "preview": "tsx scripts/preview-routine.ts",
+    "stripe:setup": "tsx scripts/setup-stripe.ts",
+    "dispatch": "tsx scripts/dispatch.ts",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@anthropic-ai/bedrock-sdk": "^1.1.2",
+    "@anthropic-ai/sdk": "^1.8.0",
+    "@aws-sdk/client-sesv2": "^3.1169.0",
+    "@fontsource/andika": "^5.3.0",
+    "@fontsource/bodoni-moda": "^5.3.0",
+    "@fontsource/dm-sans": "^5.3.0",
+    "@fontsource/grand-hotel": "^5.3.0",
+    "@react-pdf/renderer": "^4.9.0",
+    "drizzle-orm": "^0.45.4",
+    "jose": "^6.2.17",
+    "next": "15.5.4",
+    "postgres": "^4.1.1",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "stripe": "^23.1.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@types/node": "^22.20.5",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "dotenv": "^18.0.10",
+    "drizzle-kit": "^0.31.11",
+    "eslint": "^9",
+    "eslint-config-next": "15.5.4",
+    "tsx": "^4.23.15",
+    "typescript": "^5",
+    "vitest": "^5.1.0"
+  },
+  "type": "module"
+}
