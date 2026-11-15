@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { isClosedSyllableDecodable, placeFromResults, undecodableWords } from "../src/lib/curriculum";
-import { auditReaders } from "../src/lib/content";
+import { auditReaders, READERS } from "../src/lib/content";
 import { decide, nextLevel } from "../src/lib/progression";
 import { countWord, pickReviewWords, pickSparkWords } from "../src/lib/story/sparkWords";
 
@@ -18,6 +18,9 @@ describe("decodability", () => {
   });
   it("every library reader passes", () => {
     expect(auditReaders()).toEqual([]);
+  });
+  it("every book has exactly 6 pages for the fold-up little book", () => {
+    expect(READERS.filter((r) => r.pages.length !== 6).map((r) => r.id)).toEqual([]);
   });
 });
 

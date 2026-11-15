@@ -42,7 +42,7 @@ Write a story that:
 - Uses each of tonight's three Spark Words at least three times, spread through the story, in exactly the spelling given (simple endings like -s, -ed, -ing are fine). The child claps each time they hear one, so make the meaning clear from what happens around the word. Do not define the words outright or mark them in any way.
 - Uses any review words once each, naturally.
 - Uses a handful of words with the child's current phonics pattern where they fit, without forcing it.
-- Is about 650 to 850 words: roughly 6 to 8 minutes read aloud.
+- Is about 950 to 1,050 words, so it fills one printed page front and back: roughly 7 to 8 minutes read aloud. Stay inside that range. Give it a real shape: a cosy start, an adventure in the middle, and a calm, sleepy ending.
 - Is warm, funny and a little adventurous in the middle, then slows down: the last few paragraphs get calmer and cosier, ending with the child settling down to sleep, safe and happy. Nothing frightening, sad or violent; no peril that is not resolved warmly.
 - Is right for the child's age, in plain read-aloud language, with short paragraphs (2 to 5 sentences each). Use Canadian spelling.
 - Ends with one open, gentle talk question the parent can ask after reading (about the story, not a quiz on the words).
@@ -189,6 +189,12 @@ function mockStory(input: StoryInput): Story {
       `The path was ${b}, and the trees whispered as they passed. Everything felt ${b} and new.`,
       `At the top of the hill they found something ${d}. ${c.firstName} had never seen anything so ${d}.`,
       `"That was ${a}," said ${friend} on the way home, "and ${b}, and very ${d}."`,
+      // Filler so previews show a full-length story (the real writer aims for 950–1,050 words).
+      ...Array.from(
+        { length: 11 },
+        (_, i) =>
+          `${i % 2 ? friend : c.firstName} pointed at the next bend in the path, and ${pet} trotted ahead. The air smelled of pine and warm bread from somewhere far away, and every step felt a little more ${[a, b, d][i % 3]} than the last. They stopped to listen to the wind, counted three tiny clouds, and laughed at a squirrel who seemed to be waving.`,
+      ),
       `Back in bed, ${c.firstName} snuggled down. The night was ${b} and quiet, the stars were ${d}, and the whole day had been ${a}. Soon ${they} ${they === "they" ? "were" : "was"} fast asleep.`,
     ],
     talkQuestion: `If you could follow a map anywhere tomorrow, where would you want it to take you?`,

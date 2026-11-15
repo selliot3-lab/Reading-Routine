@@ -2,7 +2,7 @@
 import path from "node:path";
 import { existsSync } from "node:fs";
 import React from "react";
-import { Document, Font, Image, Link, Page, StyleSheet, Text, View } from "@react-pdf/renderer";
+import { Document, Font, Image, Page, StyleSheet, Text, View } from "@react-pdf/renderer";
 import type { Reader } from "../content";
 import type { RoutineSparkWord, RoutineStory } from "../db/schema";
 
@@ -142,13 +142,13 @@ export function RoutinePdf(p: RoutinePdfProps) {
             ? [
                 ["Spark Words", "2 min. Read the three words and their meanings together. Agree on the clap."],
                 [`${p.childName} reads to you`, "10–12 min. Tonight's chapter. Help with tricky words, then ask the talk question."],
-                ["Tell us how it went", "One tap at the end: too hard, just right or too easy."],
+                ["Tell us how it went", "Tap too hard, just right or too easy in tonight\u2019s email."],
               ]
             : [
                 [`${p.childName} reads to you`, "5 min. The little book on the next pages. Let them sound words out; wait before helping."],
                 ["Spark Words", "2 min. Meet three new words, then agree on the clap signal."],
                 ["You read the bedtime story", "8 min. Read aloud while they listen and clap for each Spark Word."],
-                ["Tell us how it went", "One tap at the end: too hard, just right or too easy."],
+                ["Tell us how it went", "Tap too hard, just right or too easy in tonight\u2019s email."],
               ]
           ).map(([title, body], i) => (
             <View key={title} style={s.step}>
@@ -222,11 +222,9 @@ export function RoutinePdf(p: RoutinePdfProps) {
             </View>
             <Text style={[s.readerText, { fontSize: 15, marginTop: 6 }]}>{p.check.passage}</Text>
             <Text style={[s.small, { marginTop: "auto", textAlign: "center" }]}>
-              Count the words read correctly, and notice how smoothly they read the passage. Then record it (takes 20 seconds):
+              Count the words read correctly, and notice how smoothly they read the passage. Then record it from the link in
+              tonight&apos;s email (takes 20 seconds).
             </Text>
-            <Link src={p.check.url} style={[s.feedbackBtn, { marginTop: 8, flexGrow: 0, flexBasis: "auto" }]}>
-              <Text style={s.feedbackLabel}>Record tonight&apos;s check</Text>
-            </Link>
           </View>
           <Footer childName={p.childName} />
         </Page>
@@ -244,13 +242,12 @@ export function RoutinePdf(p: RoutinePdfProps) {
           {p.sparkWords.map((w) => {
             const pic = publicPath(w.picture);
             return (
-              <View key={w.word} style={s.card} wrap={false}>
-                {pic && <Image src={pic} style={{ width: 70, height: 70, objectFit: "contain", marginRight: 10 }} />}
-                <View style={{ flex: 1 }}>
-                  <Text style={s.sparkWord}>{w.word}</Text>
-                  <Text style={{ fontWeight: 700, fontSize: 10.5 }}>{w.definition}</Text>
-                  <Text style={s.small}>{w.introTip}</Text>
-                </View>
+              <View key={w.word} style={[s.card, { flexDirection: "column", alignItems: "center" }]} wrap={false}>
+                {pic && <Image src={pic} style={{ width: "100%", height: 70, objectFit: "contain", marginBottom: 4 }} />}
+                {/* In clear print, so the child can see and read the word. */}
+                <Text style={{ fontFamily: "Andika", fontWeight: 700, fontSize: 22, lineHeight: 1.35, marginBottom: 3 }}>{w.word}</Text>
+                <Text style={{ fontWeight: 700, fontSize: 10.5, textAlign: "center" }}>{w.definition}</Text>
+                <Text style={[s.small, { textAlign: "center" }]}>{w.introTip}</Text>
               </View>
             );
           })}
@@ -281,23 +278,7 @@ export function RoutinePdf(p: RoutinePdfProps) {
           <Text style={{ fontWeight: 700 }}>Talk about it</Text>
           <Text>{p.story.talkQuestion}</Text>
         </View>
-        <View style={{ marginTop: 18 }} wrap={false}>
-          <Text style={{ fontWeight: 700, marginBottom: 6, textAlign: "center" }}>How was tonight&apos;s reading for {p.childName}?</Text>
-          <View style={{ flexDirection: "row" }}>
-            {(
-              [
-                ["too_hard", "Too hard"],
-                ["just_right", "Just right"],
-                ["too_easy", "Too easy"],
-              ] as const
-            ).map(([v, label]) => (
-              <Link key={v} src={p.feedbackUrl(v)} style={s.feedbackBtn}>
-                <Text style={s.feedbackLabel}>{label}</Text>
-              </Link>
-            ))}
-          </View>
-          <Text style={[s.small, { textAlign: "center", marginTop: 8 }]}>Sweet dreams. See you tomorrow.</Text>
-        </View>
+        <Text style={[s.small, { textAlign: "center", marginTop: 14 }]}>Sweet dreams. See you tomorrow.</Text>
         <Footer childName={p.childName} />
       </Page>
     </Document>

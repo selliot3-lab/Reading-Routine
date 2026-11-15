@@ -80,7 +80,7 @@ npm test                       # unit tests
 
 ## Content still to do
 
-- **Decodable readers:** the starter library covers Levels 1–6, with 2 readers each. Levels without readers fall back to the nearest lower level. Draft more with `npm run content:readers -- --level 7 --count 8`. It keeps only drafts that pass the decodability check. Then review them as a teacher.
-- **Pictures:** every reader page and Spark Word has a `picture` field (null for now) and a `pictureBrief`. Make the pictures in Canva, save them under `public/content/`, and set the path. The PDF shows a placeholder frame until then.
+- **Decodable readers:** Levels 1–6 have 3 or 4 books each. Every book is a title plus exactly 6 pages, the inside of the fold-up little book; the back cover holds "The End, I read it!" and the sign-off line. The words are in a review doc for the founder to check. Levels without books fall back to the nearest lower level. Draft more with `npm run content:readers -- --level 7 --count 8`, which keeps only 6-page drafts that pass the decodability check.
+- **Pictures:** each book page gets a black-and-white outline picture the child can colour (`picture` is null until it's made; `pictureBrief` says what it shows). These are made after the words are approved. On long pages the picture shrinks, and on very long pages the words take the whole page.
 - **Spark Words:** 104 words across 17 interests. Review the definitions and tips. When the bank runs out for a child, the story writer suggests new words; they're saved in the `proposed_words` table for review.
 - **Heart-word order:** check it against the UFLI manual (an open item in the scope & sequence doc). Also check UFLI's terms before naming UFLI in marketing. The site currently says "a proven, structured phonics sequence".

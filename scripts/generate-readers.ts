@@ -45,7 +45,7 @@ async function main() {
       system: [
         {
           type: "text",
-          text: `You write decodable readers for children learning to read with a structured phonics program. A decodable reader may use ONLY words from the allowed word list you are given (plus simple sound-it-out words made only of letters already taught). It should still be a real little story with a beginning, middle and end, a bit of humour, and short sentences. Each page has one or two sentences and a brief describing the picture for an illustrator (cute, warm, children's-book style; diverse characters). Never use a word that is not on the list.`,
+          text: `You write decodable readers for children learning to read with a structured phonics program. A decodable reader may use ONLY words from the allowed word list you are given (plus simple sound-it-out words made only of letters already taught). It should still be a real little story with a beginning, middle and end, a bit of humour, and short sentences. Every book has a title and EXACTLY 6 pages (they fill the inside of a fold-up little book). Each page has its words and a brief describing a simple picture that will be drawn as a black-and-white outline for the child to colour (one clear scene, diverse characters). For longer texts at higher levels, pages may be mostly words. Never use a word that is not on the list.`,
           cache_control: { type: "ephemeral" },
         },
       ],
@@ -53,7 +53,7 @@ async function main() {
         {
           role: "user",
           content: `Level ${level}. New pattern: ${lv.patterns}. Use the new pattern often (words like ${lv.sampleWords.join(", ")}).
-Length: ${len.min}–${len.max} words in total, over 4–8 pages. Do not reuse these titles: ${[...titles].join("; ")}.
+Length: ${len.min}–${len.max} words in total, over exactly 6 pages. Do not reuse these titles: ${[...titles].join("; ")}.
 Allowed words: ${words.join(", ")}`,
         },
       ],
@@ -61,6 +61,10 @@ Allowed words: ${words.join(", ")}`,
     });
     const draft = res.parsed_output;
     if (!draft) continue;
+    if (draft.pages.length !== 6) {
+      console.log(`  ✗ "${draft.title}" has ${draft.pages.length} pages, not 6`);
+      continue;
+    }
     const text = [draft.title, ...draft.pages.map((p) => p.text)].join(" ");
     const bad = undecodableWords(text, level);
     if (bad.length) {

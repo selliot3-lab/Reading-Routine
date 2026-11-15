@@ -43,6 +43,7 @@ export function routineEmail(opts: {
     `<p>Tonight's routine for ${name} is ready (${esc(formatLongDate(routine.forDate))}). It's attached as a PDF you can print or flip through on your phone or tablet.</p>
 <p style="text-align:center;margin:22px 0 8px">${button(links.pdf, "Print tonight's routine")}</p>
 <p style="text-align:center;margin:0 0 22px;font-size:14px"><a href="${links.screen}">Reading from a phone or tablet tonight? Open this version</a></p>
+${chapter ? "" : `<p style="font-size:14px;background:#fffdf8;border:1px solid #161616;padding:10px 12px"><strong>Making the little book:</strong> print page 1 single-sided. Fold it in half the long way and open it. Fold it in half the short way, then in half again, and open it. Fold it in half the short way and cut along the dashed line, from the fold to where the creases cross. Open it, fold it the long way, push the ends together so the middle opens, and fold the pages into a book with the cover on the front.</p>`}
 <p><strong>Tonight's Spark Words:</strong> ${words.map((w) => `<em>${esc(w)}</em>`).join(", ")}</p>
 ${chapter ? `<p>${name} reads tonight's chapter to you: <em>${esc(routine.story?.title ?? "")}</em>.</p>` : `<p><strong>Bedtime story:</strong> <em>${esc(routine.story?.title ?? "")}</em></p>`}
 ${routine.includesCheck ? `<p><strong>It's check night!</strong> There's a short word check in the PDF. <a href="${links.check}">Record the result here</a> when you're done.</p>` : ""}
