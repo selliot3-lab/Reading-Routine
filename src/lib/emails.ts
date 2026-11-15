@@ -30,7 +30,7 @@ export function routineEmail(opts: {
   parent: Parent;
   child: Child;
   routine: Routine;
-  links: { pdf: string; feedback: (v: "too_hard" | "just_right" | "too_easy") => string; check: string };
+  links: { pdf: string; screen: string; feedback: (v: "too_hard" | "just_right" | "too_easy") => string; check: string };
 }) {
   const { child, routine, links } = opts;
   const name = esc(child.firstName);
@@ -41,7 +41,8 @@ export function routineEmail(opts: {
     : `Tonight's Reading Routine for ${child.firstName}`;
   const html = layout(
     `<p>Tonight's routine for ${name} is ready (${esc(formatLongDate(routine.forDate))}). It's attached as a PDF you can print or flip through on your phone or tablet.</p>
-<p style="text-align:center;margin:22px 0">${button(links.pdf, "Open tonight's routine")}</p>
+<p style="text-align:center;margin:22px 0 8px">${button(links.pdf, "Print tonight's routine")}</p>
+<p style="text-align:center;margin:0 0 22px;font-size:14px"><a href="${links.screen}">Reading from a phone or tablet tonight? Open this version</a></p>
 <p><strong>Tonight's Spark Words:</strong> ${words.map((w) => `<em>${esc(w)}</em>`).join(", ")}</p>
 ${chapter ? `<p>${name} reads tonight's chapter to you: <em>${esc(routine.story?.title ?? "")}</em>.</p>` : `<p><strong>Bedtime story:</strong> <em>${esc(routine.story?.title ?? "")}</em></p>`}
 ${routine.includesCheck ? `<p><strong>It's check night!</strong> There's a short word check in the PDF. <a href="${links.check}">Record the result here</a> when you're done.</p>` : ""}
@@ -50,7 +51,7 @@ ${routine.includesCheck ? `<p><strong>It's check night!</strong> There's a short
 <p style="text-align:center;margin:0">${smallButton(links.feedback("too_hard"), "Too hard")}${smallButton(links.feedback("just_right"), "Just right")}${smallButton(links.feedback("too_easy"), "Too easy")}</p>`,
     `Spark Words: ${words.join(", ")}`,
   );
-  const text = `Tonight's routine for ${child.firstName} is attached, or open it here: ${links.pdf}
+  const text = `Tonight's routine for ${child.firstName} is attached. Print it: ${links.pdf}\nOr read it on a phone or tablet: ${links.screen}
 Spark Words: ${words.join(", ")}
 ${routine.includesCheck ? `Check night! Record the result: ${links.check}\n` : ""}
 How was it? Too hard: ${links.feedback("too_hard")}

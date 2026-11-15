@@ -10,7 +10,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "The Reading Routine — 15 minutes of reading together, every day",
   description:
-    "A nightly reading routine made for your child, created by a mom and classroom teacher with 20 years of experience and a Master of Education in literacy. They read a book at their level to you, then you read them a bedtime story starring them. No apps or screens for your child. $10/month, 14-day free trial.",
+    "A nightly reading routine made for your child, created by a mom and classroom teacher with 20 years of experience and a Master of Education in literacy. They read a book at their level to you, then you read them a bedtime story starring them. Real reading together, not an app. $10/month, 14-day free trial.",
   metadataBase: new URL(process.env.APP_URL ?? "http://localhost:3000"),
 };
 
@@ -27,7 +27,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </Link>
             <nav className="nav" aria-label="Main">
               <Link href="/#teacher">Made by a teacher</Link>
-              <Link href="/#screen-free">Screen-free</Link>
+              <Link href="/#together">Reading together</Link>
               <Link href="/#how">How it works</Link>
               <Link href="/#why">Why it works</Link>
               <Link href="/#pricing">Pricing</Link>

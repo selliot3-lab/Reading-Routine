@@ -42,8 +42,8 @@ const research = [
 
 const faqs = [
   {
-    q: "Is this another app or screen for my child?",
-    a: "No. There's nothing for your child to download or tap. Each day's routine is a PDF you print, so your child reads a real little book. If you can't print, you can open it on your phone or tablet and read it together, but there are no games, ads or autoplay.",
+    q: "Is this an app?",
+    a: "No. There's nothing for your child to download or play with on their own. Each day's routine comes by email, ready to print or to open on your phone or tablet, and you read it together, the old-fashioned way.",
   },
   {
     q: "Who made The Reading Routine?",
@@ -54,8 +54,8 @@ const faqs = [
     a: "Children who are learning to read, usually around ages 4 to 8. Levels are set by what your child can do, not by age or grade: a short placement check at sign-up finds where to start.",
   },
   {
-    q: "Do I have to print it?",
-    a: "No. Each day's routine is a PDF you can print or flip through on a phone or tablet, whichever is easier that night.",
+    q: "How does the little book work? Do I have to print it?",
+    a: "Print one page, fold it, make one snip, and it becomes an 8-page little book with a cover, pictures and a page to sign: no stapler or tape. Your part (Spark Words and the bedtime story) is one more sheet. Not near a printer? Every email also has a phone and tablet version with the same little book, one page at a time.",
   },
   {
     q: "How long does it take?",
@@ -91,7 +91,7 @@ export default function Home() {
             <h1>The Reading Routine</h1>
             <p className={s.lede}>
               A bedtime reading routine made for your child. They read a little book to you. You read them a story starring them.
-              Fifteen cozy minutes, every day. No apps, no screens: just you, your child and a book.
+              Fifteen cozy minutes of real reading together, every day. Not an app: just you, your child and a story.
             </p>
             <div className={s.cta}>
               <Link href="/start" className="btn">
@@ -183,7 +183,7 @@ export default function Home() {
             </li>
             <li>
               <h3>Pick your time</h3>
-              <p>Choose when the email arrives, like just before dinner. Each day&apos;s routine comes as a PDF to print or read on your phone.</p>
+              <p>Choose when the email arrives, like just before dinner. Print one page and fold it into your child&apos;s little book, or open it on a phone or tablet.</p>
             </li>
             <li>
               <h3>Read, clap, and tell us how it went</h3>
@@ -201,7 +201,7 @@ export default function Home() {
             <div>
               <div className={s.mins}>5 MIN</div>
               <h3>They read to you</h3>
-              <p>A short picture book written only with the sounds your child has learned so far, so they can really read it.</p>
+              <p>A little picture book (one page, folded) written only with the sounds your child has learned so far, so they can really read it.</p>
               <div className={s.readerSample}>The pup dug in the mud.</div>
             </div>
             <div>
@@ -222,44 +222,40 @@ export default function Home() {
         </div>
       </section>
 
-      <section className={s.section} id="screen-free">
+      <section className={s.section} id="together">
         <div className="container">
-          <h2>Real books, not another app</h2>
+          <h2>Old-fashioned reading, not another app</h2>
           <p className={s.sectionLede}>
-            Kids already have plenty of screens. The Reading Routine isn&apos;t one more. There&apos;s nothing for your child to
-            download, tap or log in to.
+            There are no games, points or ads here, and nothing for your child to tap through alone. Just the kind of reading
+            you remember: a grown-up and a child, snuggled up with a story. Print it or open it on your phone or tablet: either
+            way, you read it together.
           </p>
           <div className="grid-3">
             <div className={s.point}>
-              <h3>A book in their hands</h3>
-              <p>Print tonight&apos;s routine and your child reads a real little book, turning real pages, on your lap.</p>
-            </div>
-            <div className={s.point}>
-              <h3>Nothing to keep them hooked</h3>
-              <p>No ads, games, points or autoplay. Just a story, read together, that ends with lights out.</p>
-            </div>
-            <div className={s.point}>
-              <h3>A screen-free wind-down</h3>
+              <h3>Time together</h3>
               <p>
-                Reading on paper fits the Canadian Paediatric Society&apos;s advice to avoid screens for at least an hour before
-                bed.{" "}
-                <a href="https://cps.ca/uploads/tools/CPS_ScreenTime-EN.pdf" target="_blank" rel="noreferrer">
-                  CPS
+                Fifteen minutes where nothing else matters. Your child reads to you, you read to them, and you both look forward
+                to it. That&apos;s the part they&apos;ll remember.
+              </p>
+            </div>
+            <div className={s.point}>
+              <h3>Reading for fun</h3>
+              <p>
+                The bedtime story is just for enjoyment: no quizzes, no pressure. Children who love stories read more, and
+                reading for pleasure is linked to bigger gains in vocabulary as they grow.{" "}
+                <a href="https://cls.ucl.ac.uk/reading-for-pleasure-puts-children-ahead-in-the-classroom-study-finds/" target="_blank" rel="noreferrer">
+                  UCL, 2013
                 </a>
               </p>
             </div>
+            <div className={s.point}>
+              <h3>Real practice</h3>
+              <p>
+                Their own little book, at exactly their level, gives them a chance to practise the sounds they&apos;re learning
+                and feel the pride of reading it to you, start to finish.
+              </p>
+            </div>
           </div>
-          <div className={s.callout}>
-            <strong>Why print matters:</strong> in a Pediatrics study, parents and toddlers talked and worked together more when
-            reading a print book than the same story as an e-book. With e-books, more of the talk was about the device
-            itself.{" "}
-            <a href="https://www.sciencedaily.com/releases/2019/03/190325080459.htm" target="_blank" rel="noreferrer">
-              Munzer et al., Pediatrics, 2019
-            </a>
-          </div>
-          <p className="small muted" style={{ textAlign: "center", marginTop: 16 }}>
-            Can&apos;t print tonight? The PDF also opens on your phone or tablet, with you holding it and reading together.
-          </p>
         </div>
       </section>
 

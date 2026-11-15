@@ -5,7 +5,7 @@ import { getLevel, MAX_LEVEL } from "./curriculum";
 import { pickReader, readerById, SPARK_WORDS } from "./content";
 import { pickReviewWords, pickSparkWords } from "./story/sparkWords";
 import { proposeSparkWords, writeBedtimeStory, writeChapter } from "./story/generate";
-import { renderRoutinePdf } from "./pdf/render";
+import { renderRoutinePdf, type PdfFormat } from "./pdf/render";
 import type { RoutinePdfProps } from "./pdf/RoutinePdf";
 import { formatLongDate, localDate, localMinutes, parseHHMM } from "./time";
 import { randomToken } from "./tokens";
@@ -129,6 +129,7 @@ export function routineLinks(token: string) {
   const base = env.APP_URL.replace(/\/$/, "");
   return {
     pdf: `${base}/r/${token}`,
+    screen: `${base}/r/${token}?format=screen`,
     check: `${base}/check/${token}`,
     feedback: (v: "too_hard" | "just_right" | "too_easy") => `${base}/f/${token}?v=${v}`,
     account: `${base}/account`,
@@ -164,8 +165,8 @@ function lvHeartWordsSoFar(level: number): string[] {
   return words;
 }
 
-export async function routinePdf(routine: Routine, child: Child): Promise<Buffer> {
-  return renderRoutinePdf(pdfProps(routine, child));
+export async function routinePdf(routine: Routine, child: Child, format: PdfFormat = "print"): Promise<Buffer> {
+  return renderRoutinePdf(pdfProps(routine, child), format);
 }
 
 export async function deliverRoutine(routine: Routine, child: Child, parent: Parent): Promise<void> {

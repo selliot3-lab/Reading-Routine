@@ -36,11 +36,14 @@ async function main() {
     .returning();
   const date = arg("date", new Date().toISOString().slice(0, 10));
   const routine = await buildRoutine(child, date);
-  const pdf = await routinePdf(routine, child);
   await mkdir(".outbox", { recursive: true });
-  const out = `.outbox/preview-level-${level}.pdf`;
-  await writeFile(out, pdf);
-  console.log(`Wrote ${out} (${Math.round(pdf.length / 1024)} KB). Spark Words: ${routine.sparkWords.map((w) => w.word).join(", ")}`);
+  for (const format of ["print", "screen"] as const) {
+    const pdf = await routinePdf(routine, child, format);
+    const out = `.outbox/preview-level-${level}-${format}.pdf`;
+    await writeFile(out, pdf);
+    console.log(`Wrote ${out} (${Math.round(pdf.length / 1024)} KB)`);
+  }
+  console.log(`Spark Words: ${routine.sparkWords.map((w) => w.word).join(", ")}`);
   process.exit(0);
 }
 main().catch((e) => {

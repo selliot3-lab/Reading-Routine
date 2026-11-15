@@ -303,3 +303,5 @@ export function RoutinePdf(p: RoutinePdfProps) {
     </Document>
   );
 }
+
+export { registerFonts, s as styles, publicPath, withSparkWords, INK, LINEN, CABANA, SOFT };
