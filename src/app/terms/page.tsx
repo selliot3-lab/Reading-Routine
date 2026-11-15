@@ -12,8 +12,9 @@ export default function Terms() {
         <li>You can cancel anytime from your account. You won&apos;t be charged if you cancel before your trial ends.</li>
         <li>Routines are for your family&apos;s personal use. Please don&apos;t resell or redistribute them.</li>
         <li>
-          Bedtime stories are written by AI and checked automatically, but please read with your child as you normally would. If
-          anything in a story seems wrong, tell us at hello@thereadingroutine.ca.
+          Bedtime stories come from our own library: each one is drafted with the help of AI, then read and approved by our
+          founder, a literacy teacher, before any child hears it. If anything in a story seems wrong, tell us at
+          hello@thereadingroutine.ca.
         </li>
       </ul>
     </div>

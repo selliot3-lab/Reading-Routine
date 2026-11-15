@@ -123,7 +123,7 @@ export function checkStory(t: StoryTemplate): string[] {
     const words = personalize(t, { firstName: "Maya", pronouns: "they", specialPeople: [{ name: "Nana", relation: "grandma" }], pets })
       .paragraphs.join(" ")
       .split(/\s+/).length;
-    if (words < 900 || words > 1100) issues.push(`${words} words ${pets.length ? "with" : "without"} a pet (aim for 900-1,050)`);
+    if (words < 900 || words > 1040) issues.push(`${words} words ${pets.length ? "with" : "without"} a pet (aim for 900-1,040 so it fits one sheet)`);
   }
   return [...new Set(issues)];
 }

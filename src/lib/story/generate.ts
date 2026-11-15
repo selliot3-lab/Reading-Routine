@@ -45,7 +45,7 @@ Placeholders (use them exactly; do not invent others):
 - {pet} and {pet_kind}: the child's pet. Only use these in paragraphs that start with "[pet] ". Those paragraphs are removed for children without a pet, so the story must make complete sense without them, and other paragraphs must not mention the pet.
 
 The story:
-- Is about 950 to 1,050 words without the pet paragraphs (2 or 3 short pet paragraphs on top are fine). Short paragraphs of 2 to 5 sentences, in plain read-aloud language.
+- Is about 920 to 950 words without the pet paragraphs, and no more than 1,040 words with them (2 or 3 short pet paragraphs), so it fits one printed sheet, front and back. Short paragraphs of 2 to 5 sentences, in plain read-aloud language.
 - Uses each of the three Spark Words at least three times, spread through the story, spelled exactly as given (simple endings like -s, -ed, -ing are fine). Make each meaning clear from what happens around it; do not define the words outright or mark them.
 - Fits the interest it is written for, with a cosy start, a gentle adventure in the middle, and a calm, sleepy ending with the child settling down to sleep, safe and happy. Nothing frightening, sad or violent; any worry is resolved warmly. Warm, funny and kind. Canadian spelling.
 - Comes with a "before" question the parent asks after reading the title, inviting a prediction, and a "talk" question in the Text Talk style (Beck & McKeown) that asks why or how, so the child thinks about events and feelings rather than recalling a detail.

@@ -58,7 +58,7 @@ const p = StyleSheet.create({
   kicker: { fontSize: 7, letterSpacing: 2, textTransform: "uppercase" },
   box: { borderWidth: 1, borderColor: INK, padding: 10 },
   small: { fontSize: 8.5, color: SOFT, lineHeight: 1.4 },
-  storyP: { fontSize: 9.8, lineHeight: 1.42, marginBottom: 5 },
+  storyP: { fontSize: 9.8, lineHeight: 1.38, marginBottom: 3.5 },
   footer: { position: "absolute", bottom: 18, left: 36, right: 36, fontSize: 7, color: SOFT, textAlign: "center" },
 });
 
@@ -208,18 +208,20 @@ function SparkWords(props: RoutinePdfProps) {
         {props.sparkWords.map((w, i) => {
           const pic = publicPath(w.picture);
           return (
-            <View key={w.word} style={[p.box, { flexGrow: 1, flexBasis: 0, marginLeft: i ? 8 : 0, alignItems: "center" }]}>
+            <View key={w.word} style={[p.box, { flexGrow: 1, flexBasis: 0, marginLeft: i ? 8 : 0, flexDirection: "row", padding: 7 }]}>
               {pic ? (
-                <Image src={pic} style={{ height: 60, width: "100%", objectFit: "contain", marginBottom: 4 }} />
+                <Image src={pic} style={{ height: 52, width: 52, objectFit: "contain", marginRight: 6 }} />
               ) : (
-                <View style={[p.pictureBox, { width: "100%", height: 60, marginBottom: 4 }]}>
-                  <Text style={[p.small, { fontSize: 6.5, textAlign: "center" }]}>Picture: {w.word}</Text>
+                <View style={[p.pictureBox, { width: 52, height: 52, marginBottom: 0, marginRight: 6, padding: 2 }]}>
+                  <Text style={[p.small, { fontSize: 5.5, textAlign: "center" }]}>Picture: {w.word}</Text>
                 </View>
               )}
-              {/* In clear print, so the child can see and read the word. */}
-              <Text style={{ fontFamily: "Andika", fontWeight: 700, fontSize: 24, lineHeight: 1.35, marginBottom: 3 }}>{w.word}</Text>
-              <Text style={{ fontWeight: 700, fontSize: 9.5, textAlign: "center", marginTop: 2 }}>{w.definition}</Text>
-              <Text style={[p.small, { textAlign: "center", marginTop: 3 }]}>{w.introTip}</Text>
+              <View style={{ flex: 1 }}>
+                {/* In clear print, so the child can see and read the word. */}
+                <Text style={{ fontFamily: "Andika", fontWeight: 700, fontSize: 19, lineHeight: 1.3 }}>{w.word}</Text>
+                <Text style={{ fontWeight: 700, fontSize: 8.5, lineHeight: 1.3 }}>{w.definition}</Text>
+                <Text style={[p.small, { fontSize: 7.5, marginTop: 2 }]}>{w.introTip}</Text>
+              </View>
             </View>
           );
         })}

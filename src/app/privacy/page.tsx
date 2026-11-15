@@ -26,8 +26,10 @@ export default function Privacy() {
       <h2>Where it&apos;s kept</h2>
       <p>
         Your family&apos;s information is stored and processed in Canada: our database and website run in Canadian data centres,
-        stories are written by an AI model running in Canada (Claude, through Amazon Bedrock&apos;s Canada region), and emails are
-        sent from Canada. Payments are handled by Stripe, which receives only your email address and payment details, never your
+        and emails are sent from Canada. Bedtime stories come from our own approved library, and your child&apos;s name,
+        special people and pets are filled in on our own servers: your child&apos;s details are never sent to an AI. (Children
+        who finish all 40 levels move on to chapter books, which are written by an AI model running in Canada: Claude, through
+        Amazon Bedrock&apos;s Canada region.) Payments are handled by Stripe, which receives only your email address and payment details, never your
         child&apos;s information.
       </p>
       <h2>Your choices</h2>
