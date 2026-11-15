@@ -3345,9 +3345,9 @@
           "prompt": "Read each word out loud. Clap when you hear st · fl · cr!",
           "words": [
             "stop",
-            "sop",
+            "top",
             "flag",
-            "fag",
+            "fan",
             "crab",
             "cab"
           ],
@@ -7143,15 +7143,15 @@
           "grid": [
             "pie",
             "lie",
-            "cried",
+            "tried",
             "prince",
             "singing",
             "land",
-            "die",
+            "cried",
             "dodge",
             "tie",
             "sad",
-            "tried",
+            "fried",
             "after"
           ],
           "pictureBrief": "",
@@ -9297,7 +9297,7 @@
         {
           "kind": "heart",
           "display": "said",
-          "text": "said Ken.",
+          "text": "Mom said, \"Is it in the bag?\"",
           "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
           "pictureBrief": "",
           "picture": null
@@ -10303,7 +10303,7 @@
         {
           "kind": "heart",
           "display": "again",
-          "text": "\"Sing it again!\"",
+          "text": "Sing it again!",
           "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
           "pictureBrief": "",
           "picture": null
@@ -10487,7 +10487,7 @@
         {
           "kind": "heart",
           "display": "now",
-          "text": "\"Now what?\"",
+          "text": "Now it is time for bed.",
           "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
           "pictureBrief": "",
           "picture": null
@@ -10503,7 +10503,7 @@
         {
           "kind": "heart",
           "display": "how",
-          "text": "\"How is the flute?\"",
+          "text": "How is the flute?",
           "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
           "pictureBrief": "",
           "picture": null
@@ -11235,7 +11235,7 @@
         {
           "kind": "heart",
           "display": "great",
-          "text": "\"Great race!\"",
+          "text": "What a great day!",
           "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
           "pictureBrief": "",
           "picture": null
@@ -11243,7 +11243,7 @@
         {
           "kind": "heart",
           "display": "break",
-          "text": "\"Let us take a break and play in the rain.\"",
+          "text": "Let us take a break.",
           "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
           "pictureBrief": "",
           "picture": null
@@ -11331,7 +11331,7 @@
         {
           "kind": "heart",
           "display": "mother",
-          "text": "Then Mother calls, \"Jean!",
+          "text": "Mother has a key.",
           "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
           "pictureBrief": "",
           "picture": null
@@ -11339,7 +11339,7 @@
         {
           "kind": "heart",
           "display": "father",
-          "text": "says Father.",
+          "text": "Father reads to me.",
           "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
           "pictureBrief": "",
           "picture": null
@@ -11631,7 +11631,7 @@
         {
           "kind": "heart",
           "display": "shoe",
-          "text": "Whose shoe is this?",
+          "text": "I have one shoe!",
           "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
           "pictureBrief": "",
           "picture": null
@@ -11639,7 +11639,7 @@
         {
           "kind": "heart",
           "display": "whose",
-          "text": "Whose shoe is this?",
+          "text": "Whose hat is this?",
           "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
           "pictureBrief": "",
           "picture": null
@@ -11721,7 +11721,7 @@
         {
           "kind": "heart",
           "display": "beautiful",
-          "text": "\"What a beautiful day!\"",
+          "text": "What a beautiful day!",
           "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
           "pictureBrief": "",
           "picture": null
@@ -11817,7 +11817,7 @@
         {
           "kind": "heart",
           "display": "thought",
-          "text": "\"I thought I would sleep in, but this is better!\"",
+          "text": "I thought it was a great book.",
           "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
           "pictureBrief": "",
           "picture": null
@@ -12027,7 +12027,7 @@
         {
           "kind": "heart",
           "display": "often",
-          "text": "\"But it often visits me, and I could not say no.\"",
+          "text": "Kim often visits me.",
           "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
           "pictureBrief": "",
           "picture": null
