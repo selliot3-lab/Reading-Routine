@@ -66,6 +66,8 @@ export type RoutineStory = {
   talkQuestion: string;
   /** A prediction question to ask before reading, from the title. */
   beforeQuestion?: string;
+  /** Which library story this was, so a child never hears the same one twice. */
+  storyId?: string;
 };
 
 export type RoutineSparkWord = {

@@ -34,7 +34,7 @@ async function main() {
       pets: [{ name: "Biscuit", kind: "dog" }],
     })
     .returning();
-  // --night 1 is the level's pre-reading book; --night 2 and on are story books.
+  // A level opens with its sound books, then its heart-word book; story books follow.
   const night = Number(arg("night", "1"));
   const start = Date.parse(arg("date", new Date().toISOString().slice(0, 10)));
   let routine = await buildRoutine(child, new Date(start).toISOString().slice(0, 10));

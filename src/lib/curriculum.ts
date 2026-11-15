@@ -1,4 +1,5 @@
 import levelsData from "../../content/levels.json";
+import { isDecodable } from "./decoder";
 
 export type Level = {
   level: number;
@@ -67,6 +68,8 @@ function inflections(word: string, level: number): string[] {
   if (level >= PLURAL_FROM) out.push(w + "s");
   if (level >= ENDINGS_FROM) {
     out.push(w + "es", w + "ed", w + "ing");
+  }
+  if (level >= 38) {
     if (w.endsWith("e")) out.push(w + "d", w.slice(0, -1) + "ing");
     if (/[^aeiou][aeiou][bdgmnpt]$/.test(w)) {
       const d = w + w.at(-1);
@@ -199,17 +202,8 @@ export function tokenize(text: string): string[] {
 export function undecodableWords(text: string, level: number, extraAllowed: string[] = []): string[] {
   const allowed = allowedWords(level);
   const extra = new Set(extraAllowed.map((w) => w.toLowerCase()));
-  return [
-    ...new Set(
-      tokenize(text).filter((w) => {
-        if (allowed.has(w) || extra.has(w)) return false;
-        if (isClosedSyllableDecodable(w, level)) return false;
-        // plural -s on a sound-it-out word, from Level 6
-        if (level >= PLURAL_FROM && w.endsWith("s") && isClosedSyllableDecodable(w.slice(0, -1), level)) return false;
-        return true;
-      }),
-    ),
-  ];
+  const known = (w: string) => allowed.has(w) || extra.has(w);
+  return [...new Set(tokenize(text).filter((w) => !known(w) && !isDecodable(w, level, known)))];
 }
 
 /** Passage length targets (words) for the child's own reader. */

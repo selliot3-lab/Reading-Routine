@@ -14,7 +14,9 @@
     "preview": "tsx scripts/preview-routine.ts",
     "stripe:setup": "tsx scripts/setup-stripe.ts",
     "dispatch": "tsx scripts/dispatch.ts",
-    "test": "vitest run"
+    "test": "vitest run",
+    "stories:check": "tsx scripts/check-stories.ts",
+    "stories:draft": "tsx scripts/draft-stories.ts"
   },
   "dependencies": {
     "@anthropic-ai/bedrock-sdk": "^1.1.2",

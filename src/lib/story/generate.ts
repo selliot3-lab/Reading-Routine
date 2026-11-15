@@ -34,22 +34,49 @@ const StorySchema = z.object({
   talkQuestion: z.string(),
 });
 
-// Stable instructions first so the prompt prefix can be cached between children.
-const BEDTIME_SYSTEM = `You write the nightly bedtime story for The Reading Routine, a 15-minute reading routine families do together. A parent reads your story aloud to their child at bedtime, after the child has read a short decodable book to the parent. This story is for enjoyment and for learning new words: it does not need to be decodable.
+// Stable instructions first so the prompt prefix can be cached between drafts.
+const LIBRARY_SYSTEM = `You write bedtime stories for The Reading Routine's story library. A parent reads the story aloud to their child at bedtime. Each story is written once, read and approved by the founder (a literacy teacher), and then personalized for many children by filling in placeholders. It does not need to be decodable.
 
-Write a story that:
-- Stars the child by name as the hero, and includes some of the special people and pets you are given, using their names. Use the child's pronouns.
-- Draws on the child's interests so it feels made for them.
-- Uses each of tonight's three Spark Words at least three times, spread through the story, in exactly the spelling given (simple endings like -s, -ed, -ing are fine). The child claps each time they hear one, so make the meaning clear from what happens around the word. Do not define the words outright or mark them in any way.
-- Uses any review words once each, naturally.
-- Uses a handful of words with the child's current phonics pattern where they fit, without forcing it.
-- Is about 950 to 1,050 words, so it fills one printed page front and back: roughly 7 to 8 minutes read aloud. Stay inside that range. Give it a real shape: a cosy start, an adventure in the middle, and a calm, sleepy ending.
-- Is warm, funny and a little adventurous in the middle, then slows down: the last few paragraphs get calmer and cosier, ending with the child settling down to sleep, safe and happy. Nothing frightening, sad or violent; no peril that is not resolved warmly.
-- Is right for the child's age, in plain read-aloud language, with short paragraphs (2 to 5 sentences each). Use Canadian spelling.
-- Comes with a short "before" question the parent asks after reading the title, inviting the child to predict (for example, "What do you think might happen when Maya finds the map?").
-- Ends with one open "talk" question in the Text Talk style (Beck & McKeown): it asks why or how, so the child has to think about the events and the characters' feelings, not just recall a detail. Ask "Why was Nana so excited?" rather than "What did Nana find?"
+Placeholders (use them exactly; do not invent others):
+- {name}: the child, who is the hero.
+- Pronouns for the child: {they} {them} {their} {theirs} {themself}. Capitalize the first letter at the start of a sentence: {They}, {Their}.
+- When a verb follows the child's pronoun, write both forms as [was|were], [is|are], [has|have], [does|do]: the he/she form first, the they form second. Example: "{They} [was|were] sleepy." Not needed after {name}, which is always singular.
+- {person}: a special grown-up in the child's life (could be a parent, grandparent, aunt or friend). Do not say who they are to the child, and do not give them a gender: use {person} again, not he or she.
+- {pet} and {pet_kind}: the child's pet. Only use these in paragraphs that start with "[pet] ". Those paragraphs are removed for children without a pet, so the story must make complete sense without them, and other paragraphs must not mention the pet.
 
-Return a title, the story as an array of paragraphs, the before question, and the talk question.`;
+The story:
+- Is about 950 to 1,050 words without the pet paragraphs (2 or 3 short pet paragraphs on top are fine). Short paragraphs of 2 to 5 sentences, in plain read-aloud language.
+- Uses each of the three Spark Words at least three times, spread through the story, spelled exactly as given (simple endings like -s, -ed, -ing are fine). Make each meaning clear from what happens around it; do not define the words outright or mark them.
+- Fits the interest it is written for, with a cosy start, a gentle adventure in the middle, and a calm, sleepy ending with the child settling down to sleep, safe and happy. Nothing frightening, sad or violent; any worry is resolved warmly. Warm, funny and kind. Canadian spelling.
+- Comes with a "before" question the parent asks after reading the title, inviting a prediction, and a "talk" question in the Text Talk style (Beck & McKeown) that asks why or how, so the child thinks about events and feelings rather than recalling a detail.
+
+Return the title, the paragraphs, the before question and the talk question.`;
+
+const TemplateSchema = z.object({
+  title: z.string(),
+  paragraphs: z.array(z.string()),
+  beforeQuestion: z.string(),
+  talkQuestion: z.string(),
+});
+
+/**
+ * Drafts one library story for an interest around three Spark Words. Used
+ * offline to grow the library (scripts/draft-stories.ts); no child data is
+ * involved. Drafts are saved unapproved for the founder to read.
+ */
+export async function draftStoryTemplate(input: { interest: string; sparkWords: { word: string; definition: string }[]; avoidTitles: string[] }) {
+  let user = `Interest: ${input.interest}\nSpark Words: ${input.sparkWords.map((w) => `${w.word} (${w.definition})`).join("; ")}\nAlready in the library for this interest (write something different): ${
+    input.avoidTitles.join("; ") || "none"
+  }`;
+  const words = input.sparkWords.map((w) => w.word);
+  for (let attempt = 0; attempt < 2; attempt++) {
+    const draft = await askClaude(LIBRARY_SYSTEM, user, TemplateSchema);
+    const missing = missingSparkWords({ ...draft, talkQuestion: "", beforeQuestion: "" }, words, 3);
+    if (!missing.length) return draft;
+    user += `\n\nYour last draft used these Spark Words fewer than three times: ${missing.join(", ")}. Rewrite it so every Spark Word appears at least three times.`;
+  }
+  throw new Error("Draft did not use every Spark Word three times after two tries.");
+}
 
 const CHAPTER_SYSTEM = `You write one chapter a night of an ongoing chapter book for The Reading Routine. The child has finished all 40 phonics levels and now reads the chapter aloud to their parent, so the chapter builds fluency and vocabulary.
 
@@ -96,25 +123,6 @@ async function askClaude<T extends z.ZodType>(system: string, user: string, sche
   if (response.stop_reason === "max_tokens") throw new Error("The story was cut off (max_tokens).");
   if (!response.parsed_output) throw new Error("The story writer returned an unreadable story.");
   return response.parsed_output as z.infer<T>;
-}
-
-export async function writeBedtimeStory(input: StoryInput): Promise<Story> {
-  if (env.STORY_ENGINE === "mock") return mockStory(input);
-  const words = input.sparkWords.map((w) => w.word);
-  let user = `Child:\n${childBrief(input.child)}\n\nTonight's Spark Words: ${input.sparkWords
-    .map((w) => `${w.word} (${w.definition})`)
-    .join("; ")}\nReview words: ${input.reviewWords.join(", ") || "none"}\nPhonics pattern: ${
-    input.pattern
-  } (e.g. ${input.patternWords.join(", ")})`;
-  for (let attempt = 0; attempt < 2; attempt++) {
-    const story = await askClaude(BEDTIME_SYSTEM, user, StorySchema);
-    const missing = missingSparkWords(story, words, 3);
-    if (!missing.length) return story;
-    user += `\n\nYour last draft used these Spark Words fewer than three times: ${missing.join(
-      ", ",
-    )}. Rewrite it so every Spark Word appears at least three times.`;
-  }
-  throw new Error("Story did not use every Spark Word three times after two tries.");
 }
 
 const ChapterSchema = StorySchema.extend({ bookTitle: z.string(), summary: z.string() });

@@ -6,6 +6,7 @@ import { Document, Font, Image, Page, StyleSheet, Text, View } from "@react-pdf/
 import type { ColourSheet, Reader } from "../content";
 import { ColourSheetPage } from "./ColourSheet";
 import type { RoutineSparkWord, RoutineStory } from "../db/schema";
+import { ActivityPage } from "./ActivityPage";
 
 const fontDir = path.join(process.cwd(), "assets", "fonts");
 let fontsReady = false;
@@ -155,7 +156,11 @@ export function RoutinePdf(p: RoutinePdfProps) {
                 ["Sound warm-up", p.warmUp?.mode === "robot"
                   ? `1 min. Robot talk: ${p.warmUp.words.map((x) => x.join("-")).join(", ")}. They blend the sounds into a word.`
                   : `1 min. Quick read: ${p.warmUp?.words.map((x) => x[0]).join(", ") ?? ""}.`],
-                [`${p.childName} reads to you`, "5 min. The little book, three ways: they sound it out, you read it together, they read it alone."],
+                p.reader?.type === "sound"
+                  ? ["Sound book, together", "5 min. A quick game on every page. The small grey words tell you what to do."]
+                  : p.reader?.type === "heart"
+                    ? ["Heart words, together", "5 min. The heart word book, then the colour-by-heart-word sheet."]
+                    : [`${p.childName} reads to you`, "5 min. The little book, three ways: they sound it out, you read it together, they read it alone."],
                 ["Spark Words", "2 min. Meet three new words, then agree on the clap signal."],
                 ["You read the bedtime story", "8 min. Read aloud while they listen and clap for each Spark Word."],
                 ["Tell us how it went", "Tap too hard, just right or too easy in tonight\u2019s email."],
@@ -187,7 +192,9 @@ export function RoutinePdf(p: RoutinePdfProps) {
         <>
           <Page size={[396, 612]} style={s.page}>
             <View style={[s.frame, { justifyContent: "center", alignItems: "center" }]}>
-              <Text style={s.kicker}>{p.childName} reads to you</Text>
+              <Text style={s.kicker}>
+                {p.reader.type === "sound" ? "Tonight's sound book: do it together" : p.reader.type === "heart" ? "Tonight's heart words: do it together" : `${p.childName} reads to you`}
+              </Text>
               <Text style={[s.readerText, { fontSize: 34, fontWeight: 700, marginTop: 20 }]}>{p.reader.title}</Text>
               {p.bookHeartWords.length > 0 && (
                 <View style={{ marginTop: 20, alignItems: "center" }}>
@@ -202,6 +209,16 @@ export function RoutinePdf(p: RoutinePdfProps) {
             <Footer childName={p.childName} />
           </Page>
           {p.reader.pages.map((pg, i) => {
+            if (pg.kind) {
+              return (
+                <Page key={i} size={[396, 612]} style={s.page}>
+                  <View style={[s.frame, { alignItems: "center" }]}>
+                    <ActivityPage page={pg} width={300} s={1.75} />
+                  </View>
+                  <Footer childName={p.childName} />
+                </Page>
+              );
+            }
             const pic = publicPath(pg.picture);
             return (
               <Page key={i} size={[396, 612]} style={s.page}>
@@ -214,10 +231,7 @@ export function RoutinePdf(p: RoutinePdfProps) {
                       <Text style={[s.small, { textAlign: "center" }]}>Picture: {pg.pictureBrief}</Text>
                     </View>
                   )}
-                  {pg.kind === "sound" && (
-                    <Text style={[s.readerText, { fontSize: 60, fontWeight: 700, lineHeight: 1.1 }]}>{pg.display}</Text>
-                  )}
-                  <Text style={[s.readerText, { fontSize: pg.kind ? 30 : readerFontSize(p.level, pg.text) }]}>{pg.text}</Text>
+                  <Text style={[s.readerText, { fontSize: readerFontSize(p.level, pg.text) }]}>{pg.text}</Text>
                 </View>
                 <Footer childName={p.childName} />
               </Page>

@@ -4,6 +4,7 @@ import { Document, Image, Page, Polygon, StyleSheet, Svg, Text, View } from "@re
 import type { ReaderPage } from "../content";
 import { INK, LINEN, SOFT, publicPath, registerFonts, withSparkWords, type RoutinePdfProps } from "./RoutinePdf";
 import { ColourSheetPage } from "./ColourSheet";
+import { ActivityPage, HeartIcon } from "./ActivityPage";
 
 /*
  * The print version: one sheet that folds into an 8-page little book for the
@@ -52,12 +53,12 @@ const p = StyleSheet.create({
     padding: 8,
     marginBottom: 10,
   },
-  parent: { backgroundColor: "#FFFFFF", color: INK, fontFamily: "DM Sans", fontSize: 10.5, lineHeight: 1.5, padding: 36, paddingBottom: 42 },
+  parent: { backgroundColor: "#FFFFFF", color: INK, fontFamily: "DM Sans", fontSize: 10.5, lineHeight: 1.5, padding: 32, paddingBottom: 38 },
   script: { fontFamily: "Grand Hotel", lineHeight: 1.2 },
   kicker: { fontSize: 7, letterSpacing: 2, textTransform: "uppercase" },
   box: { borderWidth: 1, borderColor: INK, padding: 10 },
   small: { fontSize: 8.5, color: SOFT, lineHeight: 1.4 },
-  storyP: { fontSize: 10.5, lineHeight: 1.55, marginBottom: 7 },
+  storyP: { fontSize: 9.8, lineHeight: 1.42, marginBottom: 5 },
   footer: { position: "absolute", bottom: 18, left: 36, right: 36, fontSize: 7, color: SOFT, textAlign: "center" },
 });
 
@@ -97,14 +98,25 @@ function LittleBook(props: RoutinePdfProps & { logo: string | null }) {
   const inside = insidePages(r.pages);
   const panels = new Map<number, React.ReactNode>();
 
+  const teaching = r.type === "sound" || r.type === "heart";
   panels.set(
     1,
     <View style={{ flexGrow: 1, alignItems: "center", justifyContent: "center", borderWidth: 1, borderColor: INK, width: "100%", padding: 8 }}>
-      <Text style={p.kicker}>a little book</Text>
+      <Text style={p.kicker}>{r.type === "sound" ? "a sound book" : r.type === "heart" ? "a heart word book" : "a little book"}</Text>
       {props.logo && <Image src={props.logo} style={{ width: 46, marginVertical: 10 }} />}
-      <Text style={[p.readerText, { fontSize: 22, fontWeight: 700 }]}>{r.title}</Text>
-      <Text style={[p.small, { marginTop: 10, textAlign: "center" }]}>Read by {props.childName} · Level {props.level}</Text>
-      {props.bookHeartWords.length > 0 && <HeartWords words={props.bookHeartWords} />}
+      {r.type === "sound" ? (
+        <>
+          <Text style={[p.readerText, { fontSize: (r.pages[0]?.display?.length ?? 0) > 6 ? 20 : 40, fontWeight: 700, lineHeight: 1.35 }]}>{r.pages[0]?.display}</Text>
+          <Text style={[p.small, { marginTop: 6, textAlign: "center" }]}>Say: {r.say}</Text>
+        </>
+      ) : (
+        <Text style={[p.readerText, { fontSize: 22, fontWeight: 700 }]}>{r.title}</Text>
+      )}
+      <Text style={[p.small, { marginTop: 10, textAlign: "center" }]}>
+        {teaching ? `${props.childName} + a grown-up` : `Read by ${props.childName}`} · Level {props.level}
+      </Text>
+      {r.type === "heart" && <HeartWords words={r.pages.filter((pg) => pg.kind === "heart").map((pg) => pg.display!)} />}
+      {!teaching && props.bookHeartWords.length > 0 && <HeartWords words={props.bookHeartWords} />}
     </View>,
   );
 
@@ -114,16 +126,12 @@ function LittleBook(props: RoutinePdfProps & { logo: string | null }) {
     const pg = inside[i];
     panels.set(
       i + 2,
-      pg?.kind === "sound" ? (
-        <>
-          <Text style={[p.readerText, { fontSize: 42, fontWeight: 700, lineHeight: 1.35, marginBottom: 8 }]}>{pg.display}</Text>
-          <PagePicture page={{ ...pg, text: "" }} height={120} />
-          <Text style={[p.readerText, { fontSize: 18 }]}>{pg.text}</Text>
-        </>
+      pg?.kind ? (
+        <ActivityPage page={pg} width={PANEL_W - 28} />
       ) : pg ? (
         <>
           <PagePicture page={pg} />
-          <Text style={[p.readerText, { fontSize: pg.kind === "word" ? 30 : bookFontSize(props.level, pg.text) }]}>{pg.text}</Text>
+          <Text style={[p.readerText, { fontSize: bookFontSize(props.level, pg.text) }]}>{pg.text}</Text>
         </>
       ) : (
         <View style={{ flexGrow: 1, width: "100%" }}>
@@ -138,8 +146,19 @@ function LittleBook(props: RoutinePdfProps & { logo: string | null }) {
   panels.set(
     8,
     <View style={{ flexGrow: 1, alignItems: "center", justifyContent: "center", width: "100%" }}>
-      <Text style={[p.script, { fontSize: 30 }]}>The End</Text>
-      <Text style={[p.readerText, { fontSize: 12, marginTop: 2 }]}>I read it!</Text>
+      {teaching ? (
+        <>
+          {r.type === "heart" && <HeartIcon size={22} />}
+          <Text style={[p.readerText, { fontSize: 15, fontWeight: 700, marginTop: 4 }]}>
+            {r.type === "sound" ? `I can hear ${r.say}!` : "I know my heart words!"}
+          </Text>
+        </>
+      ) : (
+        <>
+          <Text style={[p.script, { fontSize: 30 }]}>The End</Text>
+          <Text style={[p.readerText, { fontSize: 12, marginTop: 2 }]}>I read it!</Text>
+        </>
+      )}
       <View style={{ flexDirection: "row", marginTop: 6, marginBottom: 14 }}>
         {[0, 1, 2].map((i) => (
           <Svg key={i} width={20} height={20} viewBox="0 0 24 24" style={{ marginHorizontal: 4 }}>
@@ -147,7 +166,7 @@ function LittleBook(props: RoutinePdfProps & { logo: string | null }) {
           </Svg>
         ))}
       </View>
-      <Text style={[p.readerText, { fontSize: 10 }]}>I read this book to</Text>
+      <Text style={[p.readerText, { fontSize: 10 }]}>{teaching ? "I did this book with" : "I read this book to"}</Text>
       <View style={{ borderBottomWidth: 0.75, borderColor: INK, width: "80%", height: 18 }} />
       <Text style={[p.readerText, { fontSize: 10, marginTop: 10 }]}>on</Text>
       <View style={{ borderBottomWidth: 0.75, borderColor: INK, width: "80%", height: 18 }} />
@@ -191,9 +210,9 @@ function SparkWords(props: RoutinePdfProps) {
           return (
             <View key={w.word} style={[p.box, { flexGrow: 1, flexBasis: 0, marginLeft: i ? 8 : 0, alignItems: "center" }]}>
               {pic ? (
-                <Image src={pic} style={{ height: 78, width: "100%", objectFit: "contain", marginBottom: 6 }} />
+                <Image src={pic} style={{ height: 60, width: "100%", objectFit: "contain", marginBottom: 4 }} />
               ) : (
-                <View style={[p.pictureBox, { width: "100%", height: 78, marginBottom: 6 }]}>
+                <View style={[p.pictureBox, { width: "100%", height: 60, marginBottom: 4 }]}>
                   <Text style={[p.small, { fontSize: 6.5, textAlign: "center" }]}>Picture: {w.word}</Text>
                 </View>
               )}
@@ -247,12 +266,29 @@ function BeforeTheBook(props: RoutinePdfProps) {
           </>
         )}
       </View>
-      <View style={[p.box, { flexGrow: 1, flexBasis: 0 }]}>
-        <Text style={{ fontWeight: 700 }}>Read the little book three ways</Text>
-        <Text style={p.small}>1. {props.childName} sounds it out to you. Wait before you help.</Text>
-        <Text style={p.small}>2. Read it together, side by side, pointing to each word.</Text>
-        <Text style={p.small}>3. {props.childName} reads it alone, smooth like talking. Celebrate!</Text>
-      </View>
+      {props.reader.type === "sound" ? (
+        <View style={[p.box, { flexGrow: 1, flexBasis: 0 }]}>
+          <Text style={{ fontWeight: 700 }}>Tonight: a sound book, together</Text>
+          <Text style={p.small}>
+            Each page is a quick game: meet the sound, hunt for pictures, listen and clap, circle the letters, robot talk and a silly sentence.
+            The small grey words on each page tell you what to do. About 5 minutes.
+          </Text>
+        </View>
+      ) : props.reader.type === "heart" ? (
+        <View style={[p.box, { flexGrow: 1, flexBasis: 0 }]}>
+          <Text style={{ fontWeight: 700 }}>Tonight: heart words, together</Text>
+          <Text style={p.small}>
+            Heart words are words we learn by heart, because part of them is tricky. Do the little book together, then the colour-by-heart-word sheet.
+          </Text>
+        </View>
+      ) : (
+        <View style={[p.box, { flexGrow: 1, flexBasis: 0 }]}>
+          <Text style={{ fontWeight: 700 }}>Read the little book three ways</Text>
+          <Text style={p.small}>1. {props.childName} sounds it out to you. Wait before you help.</Text>
+          <Text style={p.small}>2. Read it together, side by side, pointing to each word.</Text>
+          <Text style={p.small}>3. {props.childName} reads it alone, smooth like talking. Celebrate!</Text>
+        </View>
+      )}
     </View>
   );
 }

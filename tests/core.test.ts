@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { isClosedSyllableDecodable, placeFromResults, undecodableWords } from "../src/lib/curriculum";
-import { auditReaders, colourSheetFor, heartWordsIn, PREREADING, READERS } from "../src/lib/content";
+import { auditReaders, colourSheetFor, heartWordsIn, READERS, TEACHING, teachingBooksFor } from "../src/lib/content";
+import { isDecodable } from "../src/lib/decoder";
 import { decide, nextLevel } from "../src/lib/progression";
 import { countWord, pickReviewWords, pickSparkWords } from "../src/lib/story/sparkWords";
 
@@ -71,12 +72,18 @@ describe("Spark Words", () => {
   });
 });
 
-describe("pre-reading books and heart words", () => {
-  it("has a 6-page pre-reading book for each level with story books", () => {
-    for (const level of new Set(READERS.map((r) => r.level))) {
-      const pre = PREREADING.find((p) => p.level === level);
-      expect(pre?.pages.length, `Level ${level}`).toBe(6);
+describe("teaching books and heart words", () => {
+  it("opens every level with its sound books, then a heart-word book", () => {
+    for (let level = 1; level <= 40; level++) {
+      const books = teachingBooksFor(level);
+      expect(books.at(-1)?.type, `Level ${level}`).toBe("heart");
+      for (const b of books) expect(b.pages.length, b.id).toBe(6);
     }
+    expect(teachingBooksFor(1).map((b) => b.title)).toEqual(["My Aa Book", "My Mm Book", "My Ss Book", "My Tt Book", "My Level 1 Heart Words"]);
+    expect(TEACHING.filter((b) => b.type === "sound").length).toBeGreaterThan(60);
+  });
+  it("has story readers for every level", () => {
+    for (let level = 1; level <= 40; level++) expect(READERS.some((r) => r.level === level), `Level ${level}`).toBe(true);
   });
   it("lists a book's heart words for its cover", () => {
     const pot = READERS.find((r) => r.id === "L03-the-pot")!;
@@ -102,5 +109,47 @@ describe("sound warm-up", () => {
     expect(warmUpFor(1, "2026-11-16").mode).toBe("robot");
     expect(warmUpFor(1, "2026-11-16").words).toHaveLength(3);
     expect(warmUpFor(30, "2026-11-16").mode).toBe("quick");
+  });
+});
+
+describe("decoder", () => {
+  it("follows the scope and sequence", () => {
+    expect(isDecodable("mat", 1)).toBe(true);
+    expect(isDecodable("back", 13)).toBe(false); // ck at 14
+    expect(isDecodable("back", 14)).toBe(true);
+    expect(isDecodable("cake", 17)).toBe(false); // silent e at 18
+    expect(isDecodable("cake", 18)).toBe(true);
+    expect(isDecodable("car", 24)).toBe(false); // ar at 25
+    expect(isDecodable("rain", 27)).toBe(true);
+    expect(isDecodable("sunset", 21)).toBe(false); // two syllables at 22
+    expect(isDecodable("sunset", 22)).toBe(true);
+    expect(isDecodable("jumped", 21)).toBe(true);
+    expect(isDecodable("hopping", 21)).toBe(false);
+    expect(isDecodable("kiss", 12)).toBe(false); // ss at 13
+    expect(isDecodable("helpful", 36)).toBe(true);
+  });
+});
+
+describe("prewritten story library", async () => {
+  const { STORIES, personalize, pickStory, checkStory, fill } = await import("../src/lib/story/library");
+  const kid = { firstName: "Maya", pronouns: "they", specialPeople: [{ name: "Nana", relation: "grandma" }], pets: [] };
+  it("fills names, pronouns and verbs", () => {
+    expect(fill("{They} [was|were] with {person}. {name} hugged {them}.", kid)).toBe("They were with Nana. Maya hugged them.");
+    expect(fill("{They} [was|were] sleepy.", { ...kid, pronouns: "she" })).toBe("She was sleepy.");
+    expect(fill("{person} waved.", { ...kid, specialPeople: [] })).toBe("Mrs. Maple waved.");
+  });
+  it("leaves out pet paragraphs for children without a pet", () => {
+    const withPet = personalize(STORIES[0], { ...kid, pets: [{ name: "Biscuit", kind: "dog" }] });
+    const without = personalize(STORIES[0], kid);
+    expect(withPet.paragraphs.length).toBeGreaterThan(without.paragraphs.length);
+    expect(without.paragraphs.join(" ")).not.toMatch(/\{|\}|\[|\]/);
+  });
+  it("passes its checks and never repeats a story", () => {
+    for (const s of STORIES) expect(checkStory(s), s.id).toEqual([]);
+    const first = pickStory({ interests: ["space"], heard: new Set(), metWords: new Set(), allowDrafts: true })!;
+    expect(first.interest).toBe("space");
+    const second = pickStory({ interests: ["space"], heard: new Set([first.id]), metWords: new Set(), allowDrafts: true })!;
+    expect(second.id).not.toBe(first.id);
+    expect(pickStory({ interests: ["space"], heard: new Set(), metWords: new Set() })).toBeNull(); // drafts aren't served
   });
 });

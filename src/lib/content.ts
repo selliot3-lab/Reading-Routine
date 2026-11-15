@@ -1,16 +1,36 @@
 import readersData from "../../content/readers.json";
 import sparkData from "../../content/spark-words.json";
-import prereadingData from "../../content/prereading.json";
+import teachingData from "../../content/teaching-books.json";
 import { LEVELS, tokenize, undecodableWords } from "./curriculum";
 
+/** A picture in a sound book's picture hunt: colour it if its name has the sound. */
+export type HuntItem = { word: string; has: boolean; pictureBrief: string; picture: string | null };
+
+/**
+ * One page of a little book. Story pages are just text and a picture. Teaching
+ * books (sound books and heart-word books) use activity pages, set by `kind`:
+ *  - meet:   meet the sound (big letters, keyword picture, how to say it)
+ *  - hunt:   colour the pictures with the sound
+ *  - listen: the grown-up reads words; clap for the sound
+ *  - find:   circle every target in a grid
+ *  - robot:  sound boxes to tap and blend
+ *  - silly:  a silly sentence to read together
+ *  - heart:  a heart word, with a sentence that uses it
+ *  - talk:   words to say sentences with, or to read fast
+ */
 export type ReaderPage = {
   text: string;
   pictureBrief: string;
   picture: string | null;
-  /** Pre-reading books: a "sound" page (big letter + keyword) or a "word" page. Story pages leave this out. */
-  kind?: "sound" | "word";
-  /** For sound pages, the letters shown large, e.g. "Aa" or "-s". */
+  kind?: "meet" | "hunt" | "listen" | "find" | "robot" | "silly" | "heart" | "talk";
+  /** Shown large: the letters on a meet page, the word on a heart page, the target on a find page. */
   display?: string;
+  /** A short instruction for the grown-up. */
+  prompt?: string;
+  items?: HuntItem[];
+  words?: string[];
+  grid?: string[];
+  segments?: string[][];
 };
 export type Reader = {
   id: string;
@@ -19,6 +39,10 @@ export type Reader = {
   pages: ReaderPage[];
   /** Words the founder approved for this book even though they're taught later (e.g. "and" in a Level 1 book). */
   approvedWords?: string[];
+  /** story (default) · sound (a sound book) · heart (a heart-word book) */
+  type?: "story" | "sound" | "heart";
+  /** For sound books, how to say the sound, e.g. "/m/". */
+  say?: string;
 };
 export type SparkWord = {
   word: string;
@@ -54,22 +78,25 @@ export function pickReader(level: number, routineNumberAtLevel: number): Reader 
   return null;
 }
 
-/** The pre-reading book for a level: its new sounds with keywords and pictures to colour. */
-export const PREREADING: Reader[] = (prereadingData.levels as { level: number; pages: ReaderPage[] }[]).map((l) => ({
-  id: `PRE-L${String(l.level).padStart(2, "0")}`,
-  level: l.level,
-  title: `My Level ${l.level} Sounds`,
-  pages: l.pages,
-}));
+/** Sound books (one per new sound) and heart-word books (one per level). */
+export const TEACHING: Reader[] = teachingData.books as Reader[];
 
-export function prereadingFor(level: number): Reader | null {
-  return PREREADING.find((r) => r.level === level) ?? null;
+/**
+ * The teaching books that open a level, in order: a sound book for each new
+ * sound, then the level's heart-word book. Story readers come after.
+ */
+export function teachingBooksFor(level: number): Reader[] {
+  return [
+    ...TEACHING.filter((b) => b.type === "sound" && b.level === level),
+    ...TEACHING.filter((b) => b.type === "heart" && b.level === level),
+  ];
 }
 
-export const isPrereading = (r: Reader | null) => Boolean(r?.id.startsWith("PRE-"));
+/** Heart-word nights also get the colour-by-heart-word sheet. */
+export const isHeartBook = (r: Reader | null) => r?.type === "heart";
 
 export function readerById(id: string | null | undefined): Reader | null {
-  return READERS.find((r) => r.id === id) ?? PREREADING.find((r) => r.id === id) ?? null;
+  return READERS.find((r) => r.id === id) ?? TEACHING.find((r) => r.id === id) ?? null;
 }
 
 /** Crayon colours for the colour-by-heart-word sheet, one per word. */

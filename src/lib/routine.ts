@@ -2,9 +2,10 @@ import { and, desc, eq, inArray, sql } from "drizzle-orm";
 import { db, schema } from "./db";
 import type { Child, Parent, Routine, RoutineSparkWord } from "./db/schema";
 import { getLevel, MAX_LEVEL, warmUpFor } from "./curriculum";
-import { colourSheetFor, heartWordsIn, isPrereading, pickReader, prereadingFor, readerById, SPARK_WORDS } from "./content";
-import { pickReviewWords, pickSparkWords } from "./story/sparkWords";
-import { proposeSparkWords, writeBedtimeStory, writeChapter } from "./story/generate";
+import { colourSheetFor, heartWordsIn, isHeartBook, pickReader, readerById, SPARK_WORDS, teachingBooksFor } from "./content";
+import { countWord, pickReviewWords, pickSparkWords } from "./story/sparkWords";
+import { writeChapter } from "./story/generate";
+import { personalize, pickStory } from "./story/library";
 import { renderRoutinePdf, type PdfFormat } from "./pdf/render";
 import type { RoutinePdfProps } from "./pdf/RoutinePdf";
 import { formatLongDate, localDate, localMinutes, parseHHMM } from "./time";
@@ -38,67 +39,64 @@ export async function buildRoutine(child: Child, forDate: string): Promise<Routi
   const askedForCheck = recent.length === 3 && recent.every((r) => r.feedback === "too_easy");
   const includesCheck = !chapterMode && ((count + 1) % CHECK_EVERY === 0 || askedForCheck);
 
-  // The first night at a level is its pre-reading book (sounds + colour-by-word);
-  // after that, the level's story books in turn.
-  const pre = chapterMode ? null : prereadingFor(level);
-  const reader = chapterMode ? null : count === 0 && pre ? pre : pickReader(level, pre ? count - 1 : count);
+  // A level opens with its teaching books: a sound book for each new sound,
+  // then the heart-word book (with the colour-by-heart-word sheet). After
+  // that, the level's story books in turn.
+  const teaching = chapterMode ? [] : teachingBooksFor(level);
+  const reader = chapterMode ? null : count < teaching.length ? teaching[count] : pickReader(level, count - teaching.length);
 
-  // Spark Words: bank words for the child's interests, never repeated.
   const history = await db.query.sparkWordHistory.findMany({ where: eq(schema.sparkWordHistory.childId, child.id) });
   const alreadyMet = new Set(history.map((h) => h.word.toLowerCase()));
-  const picked = pickSparkWords({ interests: child.interests, alreadyMet, seed: `${child.id}:${forDate}` });
-  const sparkWords: RoutineSparkWord[] = picked.map((w) => ({
-    word: w.word,
-    definition: w.definition,
-    introTip: w.introTip,
-    picture: w.picture,
-    isNew: false,
-  }));
-  if (sparkWords.length < 3) {
-    const extra = await proposeSparkWords({
-      count: 3 - sparkWords.length,
-      interests: child.interests,
-      favouriteThings: child.favouriteThings,
-      age: child.age,
-      avoid: [...alreadyMet, ...sparkWords.map((w) => w.word), ...SPARK_WORDS.map((w) => w.word)],
-    });
-    for (const w of extra) {
-      sparkWords.push({ word: w.word, definition: w.definition, introTip: w.introTip, picture: null, isNew: true });
-      await db.insert(schema.proposedWords).values({ word: w.word, definition: w.definition, interest: w.interest });
-    }
-  }
-  const reviewWords = pickReviewWords(
-    history.map((h) => ({ word: h.word, firstSeen: h.firstSeen })),
-    forDate,
-  );
-
-  const storyChild = {
-    firstName: child.firstName,
-    age: child.age,
-    pronouns: child.pronouns,
-    interests: child.interests,
-    favouriteThings: child.favouriteThings,
-    specialPeople: child.specialPeople,
-    pets: child.pets,
+  const bankWord = (word: string): RoutineSparkWord => {
+    const w = SPARK_WORDS.find((x) => x.word === word);
+    return { word, definition: w?.definition ?? "", introTip: w?.introTip ?? "", picture: w?.picture ?? null, isNew: false };
   };
 
   let story;
-  if (chapterMode) {
+  let sparkWords: RoutineSparkWord[];
+  let reviewWords: string[];
+  if (!chapterMode) {
+    // Tonight's bedtime story comes from the prewritten library, personalized
+    // here with the child's name, pronouns, special person and pet. The
+    // story's Spark Words come with it.
+    const past = await db.query.routines.findMany({ where: eq(schema.routines.childId, child.id) });
+    const heard = new Set(past.flatMap((r) => (r.story?.storyId ? [r.story.storyId] : [])));
+    const template = pickStory({ interests: child.interests, heard, metWords: alreadyMet, allowDrafts: env.ALLOW_DRAFT_STORIES });
+    if (!template) throw new Error("No approved bedtime stories in the library yet.");
+    const filled = personalize(template, child);
+    story = {
+      storyId: filled.storyId,
+      title: filled.title,
+      paragraphs: filled.paragraphs,
+      beforeQuestion: filled.beforeQuestion,
+      talkQuestion: filled.talkQuestion,
+    };
+    sparkWords = template.sparkWords.map(bankWord);
+    // Bonus words: Spark Words met 2 or 4 weeks ago that also turn up in tonight's story.
+    const text = filled.paragraphs.join(" ");
+    const due = pickReviewWords(history.map((h) => ({ word: h.word, firstSeen: h.firstSeen })), forDate);
+    const metInStory = history.map((h) => h.word).filter((w) => !template.sparkWords.includes(w) && countWord(text, w) > 0);
+    reviewWords = [...new Set([...due.filter((w) => countWord(text, w) > 0), ...metInStory])].slice(0, 2);
+  } else {
+    // Graduates read a chapter book: Spark Words from the bank, a chapter written to continue the book.
+    const picked = pickSparkWords({ interests: child.interests, alreadyMet, seed: `${child.id}:${forDate}` });
+    sparkWords = picked.map((w) => bankWord(w.word));
+    reviewWords = pickReviewWords(history.map((h) => ({ word: h.word, firstSeen: h.firstSeen })), forDate);
+    const storyChild = {
+      firstName: child.firstName,
+      age: child.age,
+      pronouns: child.pronouns,
+      interests: child.interests,
+      favouriteThings: child.favouriteThings,
+      specialPeople: child.specialPeople,
+      pets: child.pets,
+    };
     const chapter = await writeChapter({ child: storyChild, sparkWords, reviewWords, book: child.chapterBook ?? null });
     story = { title: chapter.title, paragraphs: chapter.paragraphs, talkQuestion: chapter.talkQuestion, beforeQuestion: chapter.beforeQuestion };
     await db
       .update(schema.children)
       .set({ chapterBook: { title: chapter.bookTitle, summary: chapter.summary, chapter: (child.chapterBook?.chapter ?? 0) + 1 } })
       .where(eq(schema.children.id, child.id));
-  } else {
-    const lv = getLevel(level);
-    story = await writeBedtimeStory({
-      child: storyChild,
-      sparkWords,
-      reviewWords,
-      pattern: lv.patterns,
-      patternWords: lv.sampleWords,
-    });
   }
 
   const values = {
@@ -154,8 +152,8 @@ export function pdfProps(routine: Routine, child: Child): RoutinePdfProps {
     heartWords,
     reader,
     warmUp: chapter ? null : warmUpFor(routine.level, routine.forDate),
-    bookHeartWords: reader ? heartWordsIn(reader) : [],
-    colourSheet: isPrereading(reader) ? colourSheetFor(Math.min(routine.level, MAX_LEVEL)) : null,
+    bookHeartWords: reader && reader.type !== "sound" ? heartWordsIn(reader) : [],
+    colourSheet: isHeartBook(reader) ? colourSheetFor(Math.min(routine.level, MAX_LEVEL)) : null,
     sparkWords: routine.sparkWords,
     reviewWords: routine.reviewWords,
     story: routine.story ?? { title: "", paragraphs: [], talkQuestion: "" },

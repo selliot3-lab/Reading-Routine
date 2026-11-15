@@ -23,6 +23,8 @@ export const env = {
   BEDROCK_FALLBACK_MODEL_ID: opt("BEDROCK_FALLBACK_MODEL_ID", "anthropic.claude-opus-4-8"),
   /** "bedrock" in production; "mock" writes a canned story so the app runs without AWS. */
   STORY_ENGINE: opt("STORY_ENGINE", "mock") as "bedrock" | "mock",
+  /** Serve bedtime stories the founder hasn't approved yet ("1" in development and previews). */
+  ALLOW_DRAFT_STORIES: opt("ALLOW_DRAFT_STORIES", process.env.NODE_ENV === "production" ? "" : "1") === "1",
 
   // Email: Amazon SES in ca-central-1. "outbox" saves emails to ./.outbox instead.
   EMAIL_TRANSPORT: opt("EMAIL_TRANSPORT", "outbox") as "ses" | "outbox",

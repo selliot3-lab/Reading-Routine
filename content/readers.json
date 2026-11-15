@@ -817,6 +817,3780 @@
           "picture": null
         }
       ]
+    },
+    {
+      "id": "L07-rags",
+      "level": 7,
+      "title": "Rags",
+      "pages": [
+        {
+          "text": "Rags is a red pup.",
+          "pictureBrief": "A scruffy reddish puppy sitting and smiling",
+          "picture": null
+        },
+        {
+          "text": "Rags can run.",
+          "pictureBrief": "The puppy running, ears flapping",
+          "picture": null
+        },
+        {
+          "text": "Rags can rip a rag.",
+          "pictureBrief": "The puppy tugging and tearing an old rag",
+          "picture": null
+        },
+        {
+          "text": "Rags can rub on a rug.",
+          "pictureBrief": "The puppy rolling on its back on a rug",
+          "picture": null
+        },
+        {
+          "text": "Rags can lap and lap.",
+          "pictureBrief": "The puppy lapping water from a bowl",
+          "picture": null
+        },
+        {
+          "text": "Rags can nap on a lap.",
+          "pictureBrief": "The puppy asleep on a child's lap",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L07-ron-and-lin-run",
+      "level": 7,
+      "title": "Ron and Lin Run",
+      "pages": [
+        {
+          "text": "Ron and Lin run.",
+          "pictureBrief": "Two children starting a race on a path",
+          "picture": null
+        },
+        {
+          "text": "Run, Ron, run!",
+          "pictureBrief": "The boy running hard",
+          "picture": null
+        },
+        {
+          "text": "Lin gets to the log.",
+          "pictureBrief": "The girl reaching a fallen log first",
+          "picture": null
+        },
+        {
+          "text": "Ron gets to the log.",
+          "pictureBrief": "The boy arriving at the log, puffing",
+          "picture": null
+        },
+        {
+          "text": "Ron and Lin sit on the log.",
+          "pictureBrief": "Both children sitting on the log, resting",
+          "picture": null
+        },
+        {
+          "text": "Ron and Lin are hot. Lin has a red cup for Ron.",
+          "pictureBrief": "The girl sharing a red cup of water with the boy",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L07-the-red-rug",
+      "level": 7,
+      "title": "The Red Rug",
+      "pages": [
+        {
+          "text": "Al has a red rug.",
+          "pictureBrief": "A boy proudly showing a red rug on the floor",
+          "picture": null
+        },
+        {
+          "text": "Al and his pup sit on the rug.",
+          "pictureBrief": "The boy and his puppy sitting on the rug",
+          "picture": null
+        },
+        {
+          "text": "A rat ran on the rug!",
+          "pictureBrief": "A small cartoon rat scampering across the rug",
+          "picture": null
+        },
+        {
+          "text": "The pup ran at the rat.",
+          "pictureBrief": "The puppy chasing the rat",
+          "picture": null
+        },
+        {
+          "text": "The rat ran to a log.",
+          "pictureBrief": "The rat diving into a hollow log",
+          "picture": null
+        },
+        {
+          "text": "The rat is in the log. Al and his pup are on the rug.",
+          "pictureBrief": "The rat peeking out of the log; boy and puppy back on the rug",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L08-the-wet-pup",
+      "level": 8,
+      "title": "The Wet Pup",
+      "pages": [
+        {
+          "text": "It is wet.",
+          "pictureBrief": "Rain falling outside a door",
+          "picture": null
+        },
+        {
+          "text": "Yip! Yip! The pup is wet.",
+          "pictureBrief": "A soaked puppy at the door, yipping",
+          "picture": null
+        },
+        {
+          "text": "Jen gets a rag.",
+          "pictureBrief": "A girl grabbing an old towel",
+          "picture": null
+        },
+        {
+          "text": "Jen rubs the wet pup.",
+          "pictureBrief": "The girl drying the puppy with the towel",
+          "picture": null
+        },
+        {
+          "text": "The pup wags and wags.",
+          "pictureBrief": "The puppy shaking and wagging, water flying",
+          "picture": null
+        },
+        {
+          "text": "Yes! The pup is not wet. Jen is wet!",
+          "pictureBrief": "Dry puppy, soaked girl laughing",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L08-jim-and-the-jam",
+      "level": 8,
+      "title": "Jim and the Jam",
+      "pages": [
+        {
+          "text": "Jim has a bun.",
+          "pictureBrief": "A boy at the table holding a bun",
+          "picture": null
+        },
+        {
+          "text": "Jim gets jam for his bun.",
+          "pictureBrief": "The boy spreading jam from a jar",
+          "picture": null
+        },
+        {
+          "text": "Yum, yum, yum!",
+          "pictureBrief": "The boy taking a big bite",
+          "picture": null
+        },
+        {
+          "text": "The jam is on his lip.",
+          "pictureBrief": "Jam on the boy's lip",
+          "picture": null
+        },
+        {
+          "text": "The jam is on his leg and on the rug!",
+          "pictureBrief": "Jam blobs on his leg and on the rug",
+          "picture": null
+        },
+        {
+          "text": "Jim gets in the tub. No jam!",
+          "pictureBrief": "The boy in the bath, clean and grinning",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L08-the-big-job",
+      "level": 8,
+      "title": "The Big Job",
+      "pages": [
+        {
+          "text": "Mom has a big job.",
+          "pictureBrief": "A mom looking at a messy room",
+          "picture": null
+        },
+        {
+          "text": "Jen and Jim can do it.",
+          "pictureBrief": "Two kids raising their hands to help",
+          "picture": null
+        },
+        {
+          "text": "Jen gets a rag.",
+          "pictureBrief": "The girl holding a rag",
+          "picture": null
+        },
+        {
+          "text": "Jim gets a mop.",
+          "pictureBrief": "The boy holding a mop",
+          "picture": null
+        },
+        {
+          "text": "They rub and mop.",
+          "pictureBrief": "Both kids cleaning hard",
+          "picture": null
+        },
+        {
+          "text": "Mom hugs Jen and Jim.",
+          "pictureBrief": "Mom hugging both kids in the clean room",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L09-max-the-fox",
+      "level": 9,
+      "title": "Max the Fox",
+      "pages": [
+        {
+          "text": "Max is a fox.",
+          "pictureBrief": "A friendly fox standing in the grass",
+          "picture": null
+        },
+        {
+          "text": "Max has a red box.",
+          "pictureBrief": "The fox beside a red box",
+          "picture": null
+        },
+        {
+          "text": "Six bugs are in the box.",
+          "pictureBrief": "Six little bugs inside the open box",
+          "picture": null
+        },
+        {
+          "text": "Zip! Zap! The bugs run and hop.",
+          "pictureBrief": "Bugs scattering in all directions",
+          "picture": null
+        },
+        {
+          "text": "Max can not get the bugs.",
+          "pictureBrief": "The fox looking puzzled, paws empty",
+          "picture": null
+        },
+        {
+          "text": "Max sits in the box. He has a nap.",
+          "pictureBrief": "The fox curled up asleep in the box",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L09-the-quiz",
+      "level": 9,
+      "title": "The Quiz",
+      "pages": [
+        {
+          "text": "Six kids have a quiz.",
+          "pictureBrief": "Six children at desks with papers",
+          "picture": null
+        },
+        {
+          "text": "Val can do it.",
+          "pictureBrief": "A boy writing happily",
+          "picture": null
+        },
+        {
+          "text": "Liz can do it.",
+          "pictureBrief": "A girl writing happily",
+          "picture": null
+        },
+        {
+          "text": "Rex is sad. Rex can not do it.",
+          "pictureBrief": "A boy frowning at his paper",
+          "picture": null
+        },
+        {
+          "text": "Val and Liz give Rex a tip.",
+          "pictureBrief": "Two kids whispering a hint to the boy",
+          "picture": null
+        },
+        {
+          "text": "Rex can do it! Yes, yes, yes!",
+          "pictureBrief": "The boy cheering with his paper",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L09-the-vet",
+      "level": 9,
+      "title": "The Vet",
+      "pages": [
+        {
+          "text": "Liz has a pup.",
+          "pictureBrief": "A girl with her puppy",
+          "picture": null
+        },
+        {
+          "text": "The pup has a cut on his leg.",
+          "pictureBrief": "The puppy holding up a sore paw",
+          "picture": null
+        },
+        {
+          "text": "Liz and Mom go to the vet.",
+          "pictureBrief": "Girl, mom and puppy walking into a vet clinic",
+          "picture": null
+        },
+        {
+          "text": "The vet can fix it.",
+          "pictureBrief": "A smiling vet looking at the paw",
+          "picture": null
+        },
+        {
+          "text": "The vet gives the pup a hug.",
+          "pictureBrief": "The vet hugging the puppy, bandage on its leg",
+          "picture": null
+        },
+        {
+          "text": "Yes! The pup can run!",
+          "pictureBrief": "The puppy running happily with the girl",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L10-the-frog-and-the-crab",
+      "level": 10,
+      "title": "The Frog and the Crab",
+      "pages": [
+        {
+          "text": "A frog sat on a flat log.",
+          "pictureBrief": "A frog sitting on a flat log in a pond",
+          "picture": null
+        },
+        {
+          "text": "Plop! The frog swam in the pond.",
+          "pictureBrief": "The frog diving into the water",
+          "picture": null
+        },
+        {
+          "text": "What is in the pond? A big crab!",
+          "pictureBrief": "A big crab on the pond bottom",
+          "picture": null
+        },
+        {
+          "text": "The frog swam fast to the log.",
+          "pictureBrief": "The frog swimming quickly away",
+          "picture": null
+        },
+        {
+          "text": "The crab did not grab the frog.",
+          "pictureBrief": "The crab's claws snapping at nothing",
+          "picture": null
+        },
+        {
+          "text": "The frog sat on the log in the sun.",
+          "pictureBrief": "The frog relaxing on the log in the sun",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L10-camp",
+      "level": 10,
+      "title": "Camp",
+      "pages": [
+        {
+          "text": "We went to camp.",
+          "pictureBrief": "A family arriving at a campsite",
+          "picture": null
+        },
+        {
+          "text": "Dad got the tent up.",
+          "pictureBrief": "Dad putting up a tent",
+          "picture": null
+        },
+        {
+          "text": "Mom got the lamp.",
+          "pictureBrief": "Mom holding a lantern",
+          "picture": null
+        },
+        {
+          "text": "We sat on the sand and had hot dogs.",
+          "pictureBrief": "Family eating hot dogs by a fire on the sand",
+          "picture": null
+        },
+        {
+          "text": "What is it? It is a frog on the tent!",
+          "pictureBrief": "A frog sitting on top of the tent",
+          "picture": null
+        },
+        {
+          "text": "The frog hops in. Come in, frog!",
+          "pictureBrief": "The frog hopping into the tent, kids laughing",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L10-the-gift",
+      "level": 10,
+      "title": "The Gift",
+      "pages": [
+        {
+          "text": "Kim has a gift for Dad.",
+          "pictureBrief": "A girl holding a wrapped gift",
+          "picture": null
+        },
+        {
+          "text": "It is in a big box.",
+          "pictureBrief": "The big gift box",
+          "picture": null
+        },
+        {
+          "text": "Dad rips the top.",
+          "pictureBrief": "Dad tearing the paper",
+          "picture": null
+        },
+        {
+          "text": "What is in the box? It is a mug!",
+          "pictureBrief": "Dad holding up a mug",
+          "picture": null
+        },
+        {
+          "text": "Dad and Kim sip from the mug.",
+          "pictureBrief": "Dad and the girl taking turns sipping",
+          "picture": null
+        },
+        {
+          "text": "Dad is glad. Kim is glad.",
+          "pictureBrief": "Dad and the girl hugging",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L11-ted-and-the-slug",
+      "level": 11,
+      "title": "Ted and the Slug",
+      "pages": [
+        {
+          "text": "Ted has a pet slug.",
+          "pictureBrief": "A boy showing a slug on a leaf",
+          "picture": null
+        },
+        {
+          "text": "The slug is not in the tent.",
+          "pictureBrief": "The boy looking in a toy tent",
+          "picture": null
+        },
+        {
+          "text": "Is the slug on the desk? No.",
+          "pictureBrief": "The boy checking his desk",
+          "picture": null
+        },
+        {
+          "text": "Ted felt glum.",
+          "pictureBrief": "The boy sitting sadly",
+          "picture": null
+        },
+        {
+          "text": "Mom and Ted hunt for the slug.",
+          "pictureBrief": "Mom and the boy searching the room",
+          "picture": null
+        },
+        {
+          "text": "The slug was snug in a mug next to his bed!",
+          "pictureBrief": "The slug curled up in a mug on the bedside table",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L11-the-sled",
+      "level": 11,
+      "title": "The Sled",
+      "pages": [
+        {
+          "text": "Jen has a red sled.",
+          "pictureBrief": "A girl pulling a red sled in the snow",
+          "picture": null
+        },
+        {
+          "text": "Jen and Gus must get to the top.",
+          "pictureBrief": "Two kids looking up a snowy slope",
+          "picture": null
+        },
+        {
+          "text": "Step, step, step!",
+          "pictureBrief": "The kids trudging up the slope",
+          "picture": null
+        },
+        {
+          "text": "Jen and Gus sit on the sled.",
+          "pictureBrief": "The kids sitting on the sled at the top",
+          "picture": null
+        },
+        {
+          "text": "Zip! The sled runs fast. Bump!",
+          "pictureBrief": "The sled zooming down and hitting a bump",
+          "picture": null
+        },
+        {
+          "text": "Jen and Gus land in a soft lump. What fun!",
+          "pictureBrief": "Kids laughing in a soft snow pile",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L11-the-drum",
+      "level": 11,
+      "title": "The Drum",
+      "pages": [
+        {
+          "text": "Gus has a drum.",
+          "pictureBrief": "A boy with a toy drum",
+          "picture": null
+        },
+        {
+          "text": "Bum, bum, bum! Gus can drum.",
+          "pictureBrief": "The boy drumming happily",
+          "picture": null
+        },
+        {
+          "text": "Gus can jump and drum.",
+          "pictureBrief": "The boy jumping while drumming",
+          "picture": null
+        },
+        {
+          "text": "Mom felt the bump, bump, bump.",
+          "pictureBrief": "Mom in the next room, her teacup shaking",
+          "picture": null
+        },
+        {
+          "text": "Mom said, \"Gus, can you rest your drum?\"",
+          "pictureBrief": "Mom speaking kindly to the boy",
+          "picture": null
+        },
+        {
+          "text": "Gus and his drum rest in bed.",
+          "pictureBrief": "The boy asleep in bed hugging his drum",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L12-the-big-stump",
+      "level": 12,
+      "title": "The Big Stump",
+      "pages": [
+        {
+          "text": "Fran and Stan went to camp.",
+          "pictureBrief": "Two kids arriving at a forest campsite",
+          "picture": null
+        },
+        {
+          "text": "There was a stump next to the tent.",
+          "pictureBrief": "A big tree stump next to their tent",
+          "picture": null
+        },
+        {
+          "text": "Fran sat on the stump to rest.",
+          "pictureBrief": "The girl sitting on the stump",
+          "picture": null
+        },
+        {
+          "text": "Stomp, stomp! An elk went past.",
+          "pictureBrief": "A big elk walking by the tent",
+          "picture": null
+        },
+        {
+          "text": "Fran and Stan sat flat on the stump.",
+          "pictureBrief": "Both kids crouched still on the stump, wide-eyed",
+          "picture": null
+        },
+        {
+          "text": "The elk did not stop. Fran and Stan were glad.",
+          "pictureBrief": "The elk walking away; kids smiling",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L12-the-plant",
+      "level": 12,
+      "title": "The Plant",
+      "pages": [
+        {
+          "text": "Brent has a plant in a pot.",
+          "pictureBrief": "A boy with a potted plant",
+          "picture": null
+        },
+        {
+          "text": "The plant is limp.",
+          "pictureBrief": "The droopy plant",
+          "picture": null
+        },
+        {
+          "text": "Brent must get it to the sun.",
+          "pictureBrief": "The boy carrying the pot",
+          "picture": null
+        },
+        {
+          "text": "Brent sets the pot in the sun.",
+          "pictureBrief": "The pot on a sunny windowsill",
+          "picture": null
+        },
+        {
+          "text": "Drip, drip! The plant gets a sip.",
+          "pictureBrief": "The boy watering the plant",
+          "picture": null
+        },
+        {
+          "text": "The plant is not limp. It stands up! Brent is glad.",
+          "pictureBrief": "The plant standing tall; the boy smiling",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L12-the-grand-band",
+      "level": 12,
+      "title": "The Grand Band",
+      "pages": [
+        {
+          "text": "Gramps can strum.",
+          "pictureBrief": "A grandpa strumming a guitar",
+          "picture": null
+        },
+        {
+          "text": "Glen can drum.",
+          "pictureBrief": "A boy on a drum",
+          "picture": null
+        },
+        {
+          "text": "Mom can clap.",
+          "pictureBrief": "Mom clapping",
+          "picture": null
+        },
+        {
+          "text": "The pup can yip.",
+          "pictureBrief": "A puppy yipping along",
+          "picture": null
+        },
+        {
+          "text": "Strum, drum, clap, yip!",
+          "pictureBrief": "The whole family playing together",
+          "picture": null
+        },
+        {
+          "text": "We were a grand band!",
+          "pictureBrief": "The family taking a bow",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L13-will-and-jill",
+      "level": 13,
+      "title": "Will and Jill",
+      "pages": [
+        {
+          "text": "Will and Jill went up a tall hill. Huff, puff!",
+          "pictureBrief": "Two kids climbing a tall grassy hill",
+          "picture": null
+        },
+        {
+          "text": "At the top, Jill fell on the grass.",
+          "pictureBrief": "The girl tumbling on the grass",
+          "picture": null
+        },
+        {
+          "text": "Who will help Jill? Will will!",
+          "pictureBrief": "The boy reaching out a hand",
+          "picture": null
+        },
+        {
+          "text": "The two pals sat still on the hill.",
+          "pictureBrief": "The kids sitting together, looking at the view",
+          "picture": null
+        },
+        {
+          "text": "Will had a small ball. He let Jill toss it.",
+          "pictureBrief": "The boy handing the girl a small ball",
+          "picture": null
+        },
+        {
+          "text": "Jill did not miss. Will and Jill had a ball on the hill!",
+          "pictureBrief": "Kids playing catch, laughing",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L13-bess-and-the-doll",
+      "level": 13,
+      "title": "Bess and the Doll",
+      "pages": [
+        {
+          "text": "Bess has a doll. The doll has a red dress.",
+          "pictureBrief": "A girl holding a doll in a red dress",
+          "picture": null
+        },
+        {
+          "text": "Bess will not let the doll fall.",
+          "pictureBrief": "The girl holding the doll carefully",
+          "picture": null
+        },
+        {
+          "text": "Puff, puff! The wind is fast.",
+          "pictureBrief": "Wind blowing the girl's hair",
+          "picture": null
+        },
+        {
+          "text": "The doll fell off the wall!",
+          "pictureBrief": "The doll tumbling off a low wall",
+          "picture": null
+        },
+        {
+          "text": "Bess ran to get it. Who will help?",
+          "pictureBrief": "The girl running; a puppy nearby",
+          "picture": null
+        },
+        {
+          "text": "The pup got the doll. The dress is a mess, but Bess is glad.",
+          "pictureBrief": "The puppy bringing the doll back, dress muddy; girl smiling",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L13-buzz-off-bug",
+      "level": 13,
+      "title": "Buzz Off, Bug!",
+      "pages": [
+        {
+          "text": "A bug is in the class. Buzz, buzz!",
+          "pictureBrief": "A bee buzzing around a classroom",
+          "picture": null
+        },
+        {
+          "text": "Who will get it? Not Jess. Jess will not!",
+          "pictureBrief": "A girl hiding behind a book",
+          "picture": null
+        },
+        {
+          "text": "The bug sits on a doll.",
+          "pictureBrief": "The bee sitting on a doll on a shelf",
+          "picture": null
+        },
+        {
+          "text": "Tess gets a glass.",
+          "pictureBrief": "Another girl holding a clear cup",
+          "picture": null
+        },
+        {
+          "text": "Tess sets the glass on the bug.",
+          "pictureBrief": "The girl gently covering the bee",
+          "picture": null
+        },
+        {
+          "text": "Tess lets the bug go on the grass. Buzz off, bug!",
+          "pictureBrief": "The girl releasing the bee outside",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L14-josh-and-the-duck",
+      "level": 14,
+      "title": "Josh and the Duck",
+      "pages": [
+        {
+          "text": "Josh has a black duck.",
+          "pictureBrief": "A boy with a black duck",
+          "picture": null
+        },
+        {
+          "text": "The duck is stuck in the mud at the dock.",
+          "pictureBrief": "The duck stuck in mud beside a dock",
+          "picture": null
+        },
+        {
+          "text": "Quick, Josh! Josh ran to the shed and got a stick.",
+          "pictureBrief": "The boy running with a stick",
+          "picture": null
+        },
+        {
+          "text": "Where is the duck? It is not in the mud.",
+          "pictureBrief": "The boy looking at the empty mud",
+          "picture": null
+        },
+        {
+          "text": "It is back on a rock. It has a fish snack!",
+          "pictureBrief": "The duck on a rock holding a fish",
+          "picture": null
+        },
+        {
+          "text": "What luck! Josh and the duck sit on the rock in the sun.",
+          "pictureBrief": "Boy and duck sitting together on the rock",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L14-the-shell-shop",
+      "level": 14,
+      "title": "The Shell Shop",
+      "pages": [
+        {
+          "text": "Mom and Trish went to the shop.",
+          "pictureBrief": "A mom and girl entering a little seaside shop",
+          "picture": null
+        },
+        {
+          "text": "Trish has cash in her sock.",
+          "pictureBrief": "The girl showing coins tucked in her sock",
+          "picture": null
+        },
+        {
+          "text": "She will get a shell.",
+          "pictureBrief": "Shelves of shells",
+          "picture": null
+        },
+        {
+          "text": "Trish picks a big shell.",
+          "pictureBrief": "The girl holding up a big shell",
+          "picture": null
+        },
+        {
+          "text": "Where is the cash? It is not in her sock! Trish is sad.",
+          "pictureBrief": "The girl looking worried at her empty sock",
+          "picture": null
+        },
+        {
+          "text": "Mom hunts on the rug. There it is! Trish gets the shell.",
+          "pictureBrief": "Mom finding the coins on the rug; girl happy with her shell",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L14-the-snack-shack",
+      "level": 14,
+      "title": "The Snack Shack",
+      "pages": [
+        {
+          "text": "Dad has a snack shack.",
+          "pictureBrief": "A small beach snack shack with Dad inside",
+          "picture": null
+        },
+        {
+          "text": "He sells fish and shrimp.",
+          "pictureBrief": "Plates of fish and shrimp on the counter",
+          "picture": null
+        },
+        {
+          "text": "Jack is quick at the cash box.",
+          "pictureBrief": "A boy at the cash box",
+          "picture": null
+        },
+        {
+          "text": "Lots of kids get a snack.",
+          "pictureBrief": "A line of kids getting snacks",
+          "picture": null
+        },
+        {
+          "text": "At six, Dad shuts the shack.",
+          "pictureBrief": "Dad closing the shutters",
+          "picture": null
+        },
+        {
+          "text": "Dad and Jack sit on the deck and have a snack.",
+          "pictureBrief": "Dad and the boy eating on the deck at sunset",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L15-beth-and-seth",
+      "level": 15,
+      "title": "Beth and Seth",
+      "pages": [
+        {
+          "text": "Beth had a bath. Then Seth had a bath.",
+          "pictureBrief": "Two kids in a bathtub",
+          "picture": null
+        },
+        {
+          "text": "The tub was thick with froth.",
+          "pictureBrief": "Bubbles piling high",
+          "picture": null
+        },
+        {
+          "text": "\"This is fun!\" said Seth. Splash! Splash!",
+          "pictureBrief": "The kids splashing",
+          "picture": null
+        },
+        {
+          "text": "Then Mom ran up.",
+          "pictureBrief": "Mom at the bathroom door",
+          "picture": null
+        },
+        {
+          "text": "\"That is not a bath. That is a pond!\" said Mom.",
+          "pictureBrief": "Mom pointing at water all over the floor",
+          "picture": null
+        },
+        {
+          "text": "Beth and Seth got a cloth to mop it up.",
+          "pictureBrief": "The kids mopping up with a cloth",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L15-the-moth",
+      "level": 15,
+      "title": "The Moth",
+      "pages": [
+        {
+          "text": "A moth is on the path.",
+          "pictureBrief": "A moth resting on a garden path",
+          "picture": null
+        },
+        {
+          "text": "It is thin and soft.",
+          "pictureBrief": "Close-up of the moth's soft wings",
+          "picture": null
+        },
+        {
+          "text": "Seth and his dad stop.",
+          "pictureBrief": "A boy and his dad crouching to look",
+          "picture": null
+        },
+        {
+          "text": "The moth flaps to Seth. It lands on his hand!",
+          "pictureBrief": "The moth on the boy's hand",
+          "picture": null
+        },
+        {
+          "text": "Dad said, \"Do not grab it.\"",
+          "pictureBrief": "Dad whispering",
+          "picture": null
+        },
+        {
+          "text": "Then the moth flaps up to the sun.",
+          "pictureBrief": "The moth flying away toward the sun",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L15-the-mud-path",
+      "level": 15,
+      "title": "The Mud Path",
+      "pages": [
+        {
+          "text": "Beth and her dad went on a path in the hills.",
+          "pictureBrief": "A girl and her dad hiking",
+          "picture": null
+        },
+        {
+          "text": "The path was thick with mud.",
+          "pictureBrief": "A very muddy path",
+          "picture": null
+        },
+        {
+          "text": "Thud! Beth fell in the mud.",
+          "pictureBrief": "The girl sitting in the mud",
+          "picture": null
+        },
+        {
+          "text": "Then Dad fell in it with her!",
+          "pictureBrief": "Dad slipping into the mud too, both laughing",
+          "picture": null
+        },
+        {
+          "text": "Their pants and socks were a mess.",
+          "pictureBrief": "Muddy pants and socks",
+          "picture": null
+        },
+        {
+          "text": "They had a bath and a hot broth. Then a nap!",
+          "pictureBrief": "Both wrapped in towels with mugs of soup",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L16-a-lunch-for-a-chick",
+      "level": 16,
+      "title": "A Lunch for a Chick",
+      "pages": [
+        {
+          "text": "Chad and his chum Chip sat on a bench for lunch.",
+          "pictureBrief": "Two boys on a park bench with lunches",
+          "picture": null
+        },
+        {
+          "text": "Chad had chips and a bun. Chip had a bunch of plums.",
+          "pictureBrief": "Their lunches laid out",
+          "picture": null
+        },
+        {
+          "text": "Crunch, munch!",
+          "pictureBrief": "The boys eating",
+          "picture": null
+        },
+        {
+          "text": "A chick ran up to check the lunch.",
+          "pictureBrief": "A fluffy chick looking up at them",
+          "picture": null
+        },
+        {
+          "text": "Could it have a chip? Chad said yes.",
+          "pictureBrief": "The boy offering a chip",
+          "picture": null
+        },
+        {
+          "text": "Such a rich lunch for a chick!",
+          "pictureBrief": "The chick happily eating",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L16-the-chimp",
+      "level": 16,
+      "title": "The Chimp",
+      "pages": [
+        {
+          "text": "A chimp sat on a branch.",
+          "pictureBrief": "A chimp on a tree branch",
+          "picture": null
+        },
+        {
+          "text": "It had a bunch of nuts.",
+          "pictureBrief": "The chimp holding nuts",
+          "picture": null
+        },
+        {
+          "text": "Chomp, chomp! Crunch!",
+          "pictureBrief": "The chimp eating",
+          "picture": null
+        },
+        {
+          "text": "Then a chick sat on the branch.",
+          "pictureBrief": "A small chick landing beside it",
+          "picture": null
+        },
+        {
+          "text": "Would the chimp let it have one?",
+          "pictureBrief": "The chick looking hopefully at the nuts",
+          "picture": null
+        },
+        {
+          "text": "Yes! The chimp and the chick had a nut lunch.",
+          "pictureBrief": "The chimp sharing nuts with the chick",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L16-champ",
+      "level": 16,
+      "title": "Champ",
+      "pages": [
+        {
+          "text": "Champ is a pup.",
+          "pictureBrief": "A happy puppy",
+          "picture": null
+        },
+        {
+          "text": "Champ can chomp on a stick.",
+          "pictureBrief": "The puppy chewing a stick",
+          "picture": null
+        },
+        {
+          "text": "Champ can dig and dig in the mud.",
+          "pictureBrief": "The puppy digging, mud flying",
+          "picture": null
+        },
+        {
+          "text": "Champ should not dig in the mud!",
+          "pictureBrief": "A muddy puppy looking guilty",
+          "picture": null
+        },
+        {
+          "text": "Mom has to scrub Champ in the tub.",
+          "pictureBrief": "Mom washing the puppy",
+          "picture": null
+        },
+        {
+          "text": "Champ is such a mess, but Mom hugs him.",
+          "pictureBrief": "Mom hugging the wet puppy",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L17-the-king-and-the-skunk",
+      "level": 17,
+      "title": "The King and the Skunk",
+      "pages": [
+        {
+          "text": "The king had a long nap.",
+          "pictureBrief": "A king asleep on his throne",
+          "picture": null
+        },
+        {
+          "text": "Bang! Clang! What was that thing?",
+          "pictureBrief": "The king waking with a start",
+          "picture": null
+        },
+        {
+          "text": "It was a skunk with a pink drum.",
+          "pictureBrief": "A skunk banging a pink drum",
+          "picture": null
+        },
+        {
+          "text": "The king did not thank him.",
+          "pictureBrief": "The king frowning",
+          "picture": null
+        },
+        {
+          "text": "Then the skunk sang a soft song.",
+          "pictureBrief": "The skunk singing gently",
+          "picture": null
+        },
+        {
+          "text": "\"Sing it again!\" said the king.",
+          "pictureBrief": "The king smiling, clapping",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L17-the-swings",
+      "level": 17,
+      "title": "The Swings",
+      "pages": [
+        {
+          "text": "When I swing, I go up and up.",
+          "pictureBrief": "A child swinging high",
+          "picture": null
+        },
+        {
+          "text": "I swing as long as I can.",
+          "pictureBrief": "The child swinging, hair flying",
+          "picture": null
+        },
+        {
+          "text": "Phil is on the next swing.",
+          "pictureBrief": "A friend on the next swing",
+          "picture": null
+        },
+        {
+          "text": "We swing and sing a song.",
+          "pictureBrief": "Both kids swinging and singing",
+          "picture": null
+        },
+        {
+          "text": "Then the bell rings. Ring! Ring!",
+          "pictureBrief": "A school bell ringing",
+          "picture": null
+        },
+        {
+          "text": "We have been on the swings so long! We will swing again.",
+          "pictureBrief": "The kids walking in, looking back at the swings",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L17-the-pink-trunk",
+      "level": 17,
+      "title": "The Pink Trunk",
+      "pages": [
+        {
+          "text": "Gran has a pink trunk.",
+          "pictureBrief": "A grandma beside an old pink trunk",
+          "picture": null
+        },
+        {
+          "text": "What is in it? I think it is junk.",
+          "pictureBrief": "A child shrugging",
+          "picture": null
+        },
+        {
+          "text": "Bang! I lift the lid.",
+          "pictureBrief": "The child opening the trunk",
+          "picture": null
+        },
+        {
+          "text": "It has a ring and a long pink string.",
+          "pictureBrief": "A ring and a pink ribbon",
+          "picture": null
+        },
+        {
+          "text": "It has a hat with wings!",
+          "pictureBrief": "A funny hat with feather wings",
+          "picture": null
+        },
+        {
+          "text": "Gran and I sing and swing the pink string. It is not junk!",
+          "pictureBrief": "Grandma and child dancing with the ribbon",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L18-the-hike",
+      "level": 18,
+      "title": "The Hike",
+      "pages": [
+        {
+          "text": "Jake and Kate like to hike.",
+          "pictureBrief": "Two kids with backpacks on a trail",
+          "picture": null
+        },
+        {
+          "text": "They take a cake and a kite to the lake.",
+          "pictureBrief": "The kids carrying a cake box and a kite",
+          "picture": null
+        },
+        {
+          "text": "The kite dives and glides in the wind.",
+          "pictureBrief": "A kite swooping over the lake",
+          "picture": null
+        },
+        {
+          "text": "Then a snake slides past the cake!",
+          "pictureBrief": "A small green snake sliding by the cake box",
+          "picture": null
+        },
+        {
+          "text": "Jake and Kate run to the gate.",
+          "pictureBrief": "The kids running to a wooden gate",
+          "picture": null
+        },
+        {
+          "text": "They walk back. It is late, but they still have the cake!",
+          "pictureBrief": "The kids walking home at sunset holding the cake",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L18-the-bike-ride",
+      "level": 18,
+      "title": "The Bike Ride",
+      "pages": [
+        {
+          "text": "Mike has a white bike.",
+          "pictureBrief": "A boy with a shiny white bike",
+          "picture": null
+        },
+        {
+          "text": "Mike and Jane ride to the lake.",
+          "pictureBrief": "The boy and a girl riding bikes",
+          "picture": null
+        },
+        {
+          "text": "Mike rides fast, and Jane rides fast as well.",
+          "pictureBrief": "The two riding side by side",
+          "picture": null
+        },
+        {
+          "text": "Jane is at the lake! She wins!",
+          "pictureBrief": "The girl reaching the lake first, arms up",
+          "picture": null
+        },
+        {
+          "text": "Mike smiles and shakes her hand.",
+          "pictureBrief": "The two shaking hands",
+          "picture": null
+        },
+        {
+          "text": "\"Same time, same lake?\" asks Mike. What a fine ride!",
+          "pictureBrief": "The two riding home together",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L18-the-grape-snake",
+      "level": 18,
+      "title": "The Grape Snake",
+      "pages": [
+        {
+          "text": "Wade made a snake from grapes.",
+          "pictureBrief": "A boy at a table with a bowl of grapes",
+          "picture": null
+        },
+        {
+          "text": "It had nine grapes in a line.",
+          "pictureBrief": "Nine grapes in a wiggly line like a snake",
+          "picture": null
+        },
+        {
+          "text": "Then Wade ate one grape.",
+          "pictureBrief": "The boy eating one grape",
+          "picture": null
+        },
+        {
+          "text": "And then five!",
+          "pictureBrief": "The snake getting shorter",
+          "picture": null
+        },
+        {
+          "text": "Then the snake was not a snake at all.",
+          "pictureBrief": "Only a few grapes left",
+          "picture": null
+        },
+        {
+          "text": "Wade grins. \"I will make a whale next time!\"",
+          "pictureBrief": "The boy grinning with a full bowl",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L19-pete-and-the-mule",
+      "level": 19,
+      "title": "Pete and the Mule",
+      "pages": [
+        {
+          "text": "Pete rode his mule to the stone hut.",
+          "pictureBrief": "A boy riding a mule toward a stone hut",
+          "picture": null
+        },
+        {
+          "text": "The mule froze. \"Now what?\" said Pete.",
+          "pictureBrief": "The mule stopped stiff",
+          "picture": null
+        },
+        {
+          "text": "A mole had dug a hole in the lane.",
+          "pictureBrief": "A mole peeking out of a hole in the path",
+          "picture": null
+        },
+        {
+          "text": "Pete spoke to the mole. \"Use those holes, not this one!\"",
+          "pictureBrief": "The boy talking kindly to the mole, pointing to the field",
+          "picture": null
+        },
+        {
+          "text": "The mole woke up and dove down.",
+          "pictureBrief": "The mole diving into the field",
+          "picture": null
+        },
+        {
+          "text": "Pete and his cute mule rode home.",
+          "pictureBrief": "The boy and mule riding home",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L19-june-and-the-flute",
+      "level": 19,
+      "title": "June and the Flute",
+      "pages": [
+        {
+          "text": "June has a flute.",
+          "pictureBrief": "A girl holding a flute",
+          "picture": null
+        },
+        {
+          "text": "June made up a cute tune.",
+          "pictureBrief": "The girl playing, little music notes floating",
+          "picture": null
+        },
+        {
+          "text": "The dog woke up and sat on his rug. He likes the tune.",
+          "pictureBrief": "A dog sitting up on his rug, ears perked",
+          "picture": null
+        },
+        {
+          "text": "Steve came home. \"How is the flute?\" he said.",
+          "pictureBrief": "Her brother coming in the door",
+          "picture": null
+        },
+        {
+          "text": "June did the tune for Steve.",
+          "pictureBrief": "The girl playing for her brother",
+          "picture": null
+        },
+        {
+          "text": "Then the dog sang! June and Steve grin and clap.",
+          "pictureBrief": "The dog howling along; the kids laughing on the rug",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L19-the-drips",
+      "level": 19,
+      "title": "The Drips",
+      "pages": [
+        {
+          "text": "Rose got a cone. It was so hot!",
+          "pictureBrief": "A girl with an ice cream cone on a sunny day",
+          "picture": null
+        },
+        {
+          "text": "Drip, drip! The cone is a mess.",
+          "pictureBrief": "The ice cream melting",
+          "picture": null
+        },
+        {
+          "text": "It drips on her nose and down her hand.",
+          "pictureBrief": "Ice cream on her nose and hand",
+          "picture": null
+        },
+        {
+          "text": "How can she stop the drips?",
+          "pictureBrief": "The girl looking worried",
+          "picture": null
+        },
+        {
+          "text": "Mom gave Rose a cup.",
+          "pictureBrief": "Mom handing her a cup",
+          "picture": null
+        },
+        {
+          "text": "Rose sets the cone in the cup and smiles. Yum!",
+          "pictureBrief": "The cone upside down in the cup; girl smiling",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L20-grace-and-the-mice",
+      "level": 20,
+      "title": "Grace and the Mice",
+      "pages": [
+        {
+          "text": "Grace has six mice in a cage.",
+          "pictureBrief": "A girl with pet mice in a cage",
+          "picture": null
+        },
+        {
+          "text": "The mice like rice and a slice of lime.",
+          "pictureBrief": "Mice nibbling rice and a lime slice",
+          "picture": null
+        },
+        {
+          "text": "Once, Grace did not shut the cage. The mice were gone!",
+          "pictureBrief": "An empty open cage",
+          "picture": null
+        },
+        {
+          "text": "Grace set a nice plate of spice cake on the rug.",
+          "pictureBrief": "A plate of cake on the rug",
+          "picture": null
+        },
+        {
+          "text": "The mice came back twice as fast.",
+          "pictureBrief": "Six mice running toward the cake",
+          "picture": null
+        },
+        {
+          "text": "Grace does love those mice.",
+          "pictureBrief": "The girl holding the mice gently",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L20-the-race-to-the-fence",
+      "level": 20,
+      "title": "The Race to the Fence",
+      "pages": [
+        {
+          "text": "Lance and Vince race to the fence.",
+          "pictureBrief": "Two boys racing toward a fence",
+          "picture": null
+        },
+        {
+          "text": "Lance has a fast pace.",
+          "pictureBrief": "One boy running ahead",
+          "picture": null
+        },
+        {
+          "text": "Vince trips! His face is in the grass.",
+          "pictureBrief": "The other boy tripping",
+          "picture": null
+        },
+        {
+          "text": "Lance stops the race. \"Are you fine?\" he asks.",
+          "pictureBrief": "The first boy running back to help",
+          "picture": null
+        },
+        {
+          "text": "Vince smiles. \"I am fine.\"",
+          "pictureBrief": "The boy getting up, smiling",
+          "picture": null
+        },
+        {
+          "text": "They race again. This time it is a fun race, not a fast one.",
+          "pictureBrief": "Both boys jogging and laughing together",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L20-the-big-stage",
+      "level": 20,
+      "title": "The Big Stage",
+      "pages": [
+        {
+          "text": "Peg is a prince in a class skit.",
+          "pictureBrief": "A girl in a prince costume backstage",
+          "picture": null
+        },
+        {
+          "text": "Peg has a huge page of lines.",
+          "pictureBrief": "The girl holding a long script",
+          "picture": null
+        },
+        {
+          "text": "Peg felt sick at the side of the stage.",
+          "pictureBrief": "The girl looking nervous behind the curtain",
+          "picture": null
+        },
+        {
+          "text": "Then Dad gave her a wave from his place.",
+          "pictureBrief": "Dad waving from the audience",
+          "picture": null
+        },
+        {
+          "text": "Peg felt fine. She did a dance.",
+          "pictureBrief": "The girl dancing on stage",
+          "picture": null
+        },
+        {
+          "text": "Peg did it! She was a nice prince, and the class did love it.",
+          "pictureBrief": "The class cheering",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L21-crash",
+      "level": 21,
+      "title": "Crash!",
+      "pages": [
+        {
+          "text": "Dad was fixing lunch. Mom was brushing the dog.",
+          "pictureBrief": "Dad cooking, Mom brushing a big dog",
+          "picture": null
+        },
+        {
+          "text": "Beth and Jack were filling boxes with dishes and glasses.",
+          "pictureBrief": "Kids packing dishes into boxes",
+          "picture": null
+        },
+        {
+          "text": "Crash! The dog had jumped up and bumped the boxes.",
+          "pictureBrief": "The dog bumping the boxes over",
+          "picture": null
+        },
+        {
+          "text": "Lunch landed on the rug. People yelled.",
+          "pictureBrief": "Food on the rug, everyone gasping",
+          "picture": null
+        },
+        {
+          "text": "The dog rested on the bed, licking his chops.",
+          "pictureBrief": "The dog on a bed, looking pleased",
+          "picture": null
+        },
+        {
+          "text": "He was not sad, because he had lunch!",
+          "pictureBrief": "The dog smiling with a full belly",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L21-fishing-with-gran",
+      "level": 21,
+      "title": "Fishing with Gran",
+      "pages": [
+        {
+          "text": "Gran and I went fishing at the lake.",
+          "pictureBrief": "A grandma and child at a lake",
+          "picture": null
+        },
+        {
+          "text": "We packed lunches and a big fishing net.",
+          "pictureBrief": "A picnic bag and net",
+          "picture": null
+        },
+        {
+          "text": "I kicked off my socks and rested on the dock.",
+          "pictureBrief": "The child relaxing on the dock, feet bare",
+          "picture": null
+        },
+        {
+          "text": "Gran was singing and thinking.",
+          "pictureBrief": "Grandma humming with her fishing rod",
+          "picture": null
+        },
+        {
+          "text": "Then the rod jumped! I yelled, \"Gran!\"",
+          "pictureBrief": "The rod bending; the child shouting",
+          "picture": null
+        },
+        {
+          "text": "We landed a big fish. Then we wished it well and let it swim off.",
+          "pictureBrief": "The two letting a fish go back into the lake",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L21-camping",
+      "level": 21,
+      "title": "Camping",
+      "pages": [
+        {
+          "text": "We went camping. Dad was packing the van.",
+          "pictureBrief": "Dad loading a van",
+          "picture": null
+        },
+        {
+          "text": "Mom was lifting the tent and the bags.",
+          "pictureBrief": "Mom carrying the tent",
+          "picture": null
+        },
+        {
+          "text": "At the camp, we planted the tent poles in the sand.",
+          "pictureBrief": "The family setting up the tent",
+          "picture": null
+        },
+        {
+          "text": "Then the wind picked up.",
+          "pictureBrief": "Trees bending in the wind",
+          "picture": null
+        },
+        {
+          "text": "The tent puffed and pulled at the pegs. We held on and yelled.",
+          "pictureBrief": "The family holding the flapping tent, laughing",
+          "picture": null
+        },
+        {
+          "text": "People asked if we were fine. We were, because camping is fun!",
+          "pictureBrief": "Neighbours waving; the family giving a thumbs up",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L22-the-kitten-at-bedtime",
+      "level": 22,
+      "title": "The Kitten at Bedtime",
+      "pages": [
+        {
+          "text": "It was bedtime, but the kitten did not nap.",
+          "pictureBrief": "A wide-awake kitten at night",
+          "picture": null
+        },
+        {
+          "text": "She hid in a backpack. She sat in the sandbox.",
+          "pictureBrief": "The kitten peeking out of a backpack",
+          "picture": null
+        },
+        {
+          "text": "She ran up the hilltop at sunset.",
+          "pictureBrief": "The kitten on a hilltop at sunset",
+          "picture": null
+        },
+        {
+          "text": "Then she smelled a pumpkin muffin on a napkin.",
+          "pictureBrief": "A muffin on a napkin",
+          "picture": null
+        },
+        {
+          "text": "Yum! A robot could not have gone as fast.",
+          "pictureBrief": "The kitten racing to the muffin",
+          "picture": null
+        },
+        {
+          "text": "When the muffin was gone, the kitten had a long nap in a basket.",
+          "pictureBrief": "The kitten asleep in a basket",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L22-the-picnic",
+      "level": 22,
+      "title": "The Picnic",
+      "pages": [
+        {
+          "text": "We had a picnic at the pond in the sunshine.",
+          "pictureBrief": "A family picnic by a pond",
+          "picture": null
+        },
+        {
+          "text": "Mom had a basket of muffins and sandwiches.",
+          "pictureBrief": "A picnic basket full of food",
+          "picture": null
+        },
+        {
+          "text": "Jen had a cupcake. I had a pancake.",
+          "pictureBrief": "Two kids with treats",
+          "picture": null
+        },
+        {
+          "text": "Then a chipmunk ran up. It went for the cupcake!",
+          "pictureBrief": "A chipmunk grabbing at the cupcake",
+          "picture": null
+        },
+        {
+          "text": "\"Stop!\" said Jen. The chipmunk did not stop.",
+          "pictureBrief": "The chipmunk running off with a crumb",
+          "picture": null
+        },
+        {
+          "text": "It hid inside the basket. It had the best picnic of them all!",
+          "pictureBrief": "The chipmunk inside the basket, cheeks full",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L22-robot-bob",
+      "level": 22,
+      "title": "Robot Bob",
+      "pages": [
+        {
+          "text": "Bob is a robot.",
+          "pictureBrief": "A friendly robot",
+          "picture": null
+        },
+        {
+          "text": "Bob can open a box. Bob can fix a laptop.",
+          "pictureBrief": "The robot fixing a laptop",
+          "picture": null
+        },
+        {
+          "text": "Bob can get water for the plants.",
+          "pictureBrief": "The robot watering plants",
+          "picture": null
+        },
+        {
+          "text": "When the music is on, Bob can dance.",
+          "pictureBrief": "The robot dancing to music",
+          "picture": null
+        },
+        {
+          "text": "Bob spins and hops and hums.",
+          "pictureBrief": "The robot spinning",
+          "picture": null
+        },
+        {
+          "text": "\"Bob is the best robot,\" said the other kids.",
+          "pictureBrief": "Kids dancing with the robot",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L23-the-fish-at-the-bridge",
+      "level": 23,
+      "title": "The Fish at the Bridge",
+      "pages": [
+        {
+          "text": "Madge and her friend went to the bridge to catch fish.",
+          "pictureBrief": "Two kids on a little bridge with a fishing rod",
+          "picture": null
+        },
+        {
+          "text": "Madge sat on the edge and held the rod.",
+          "pictureBrief": "The girl sitting on the edge of the bridge",
+          "picture": null
+        },
+        {
+          "text": "A fish gave a big tug! \"Fetch the net!\" yelled Madge.",
+          "pictureBrief": "The rod bending; the girl shouting",
+          "picture": null
+        },
+        {
+          "text": "Her friend had to stretch, but the fish did not budge.",
+          "pictureBrief": "The friend stretching with a net",
+          "picture": null
+        },
+        {
+          "text": "Then, splash! It was gone.",
+          "pictureBrief": "A splash where the fish was",
+          "picture": null
+        },
+        {
+          "text": "The two friends had fudge on the bridge.",
+          "pictureBrief": "The friends laughing and eating fudge",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L23-the-badge",
+      "level": 23,
+      "title": "The Badge",
+      "pages": [
+        {
+          "text": "At school, Mitch got a badge for helping.",
+          "pictureBrief": "A boy getting a badge from his teacher",
+          "picture": null
+        },
+        {
+          "text": "He had helped fix a hutch for the class rabbit.",
+          "pictureBrief": "The boy fixing a rabbit hutch",
+          "picture": null
+        },
+        {
+          "text": "He had patched a rip in a bag.",
+          "pictureBrief": "The boy sewing a patch on a bag",
+          "picture": null
+        },
+        {
+          "text": "He had scrubbed a smudge on the wall.",
+          "pictureBrief": "The boy scrubbing a wall",
+          "picture": null
+        },
+        {
+          "text": "Mitch pinned the badge on his jacket.",
+          "pictureBrief": "The badge on his jacket",
+          "picture": null
+        },
+        {
+          "text": "His friend gave him a big hug.",
+          "pictureBrief": "His friend hugging him",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L23-the-hedgehog",
+      "level": 23,
+      "title": "The Hedgehog",
+      "pages": [
+        {
+          "text": "A hedgehog lives in the hedge.",
+          "pictureBrief": "A hedgehog in a garden hedge",
+          "picture": null
+        },
+        {
+          "text": "At dusk it wakes up and sniffs the grass.",
+          "pictureBrief": "The hedgehog sniffing at dusk",
+          "picture": null
+        },
+        {
+          "text": "It snatches a bug.",
+          "pictureBrief": "The hedgehog catching a bug",
+          "picture": null
+        },
+        {
+          "text": "It munches a big slug.",
+          "pictureBrief": "The hedgehog eating a slug",
+          "picture": null
+        },
+        {
+          "text": "Then it trots up to the ridge.",
+          "pictureBrief": "The hedgehog trotting up a little hill",
+          "picture": null
+        },
+        {
+          "text": "When the sun is up, it naps in the hedge again.",
+          "pictureBrief": "The hedgehog curled up asleep in the hedge",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L24-my-puppy",
+      "level": 24,
+      "title": "My Puppy",
+      "pages": [
+        {
+          "text": "My puppy is a wild child.",
+          "pictureBrief": "A puppy zooming around",
+          "picture": null
+        },
+        {
+          "text": "He is little, but he is bold.",
+          "pictureBrief": "The small puppy barking at a big box",
+          "picture": null
+        },
+        {
+          "text": "He will find a puddle and jump in it.",
+          "pictureBrief": "The puppy splashing in a puddle",
+          "picture": null
+        },
+        {
+          "text": "He will try to grab my candy.",
+          "pictureBrief": "The puppy jumping for candy",
+          "picture": null
+        },
+        {
+          "text": "Most of the time I do not mind. I just hold him and tell him he is silly.",
+          "pictureBrief": "A child hugging the muddy puppy",
+          "picture": null
+        },
+        {
+          "text": "A happy puppy is the best kind.",
+          "pictureBrief": "The puppy asleep in the child's lap",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L24-the-old-pony",
+      "level": 24,
+      "title": "The Old Pony",
+      "pages": [
+        {
+          "text": "Grandpa has an old pony.",
+          "pictureBrief": "A grandpa beside an old pony",
+          "picture": null
+        },
+        {
+          "text": "The pony is kind and mild.",
+          "pictureBrief": "The pony nuzzling the grandpa",
+          "picture": null
+        },
+        {
+          "text": "When it is cold, Grandpa gives the pony a blanket.",
+          "pictureBrief": "Grandpa putting a blanket on the pony",
+          "picture": null
+        },
+        {
+          "text": "I help him find an apple for the pony.",
+          "pictureBrief": "A child holding up an apple",
+          "picture": null
+        },
+        {
+          "text": "The pony nibbles the apple. It tickles my hand!",
+          "pictureBrief": "The pony eating from the child's hand",
+          "picture": null
+        },
+        {
+          "text": "I giggle and hold the pony. I am so lucky.",
+          "pictureBrief": "The child hugging the pony's neck",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L24-polly-and-the-fly",
+      "level": 24,
+      "title": "Polly and the Fly",
+      "pages": [
+        {
+          "text": "Polly has a jelly sandwich.",
+          "pictureBrief": "A girl with a jelly sandwich",
+          "picture": null
+        },
+        {
+          "text": "A fly lands on the jelly.",
+          "pictureBrief": "A fly on the sandwich",
+          "picture": null
+        },
+        {
+          "text": "\"Buzz off!\" Polly yells. \"This is my jelly!\"",
+          "pictureBrief": "The girl waving at the fly",
+          "picture": null
+        },
+        {
+          "text": "The fly will not budge.",
+          "pictureBrief": "The fly sitting firmly on the jelly",
+          "picture": null
+        },
+        {
+          "text": "So Polly cuts a tiny bit and sets it on a little plate.",
+          "pictureBrief": "A tiny piece of sandwich on a small plate",
+          "picture": null
+        },
+        {
+          "text": "The fly is happy, and so is Polly.",
+          "pictureBrief": "The fly on the little plate; the girl eating happily",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L25-mark-on-the-farm",
+      "level": 25,
+      "title": "Mark on the Farm",
+      "pages": [
+        {
+          "text": "Mark went to the farm in the morning. It was still dark.",
+          "pictureBrief": "A boy walking to a barn before sunrise",
+          "picture": null
+        },
+        {
+          "text": "He fed corn to the horse in the barn.",
+          "pictureBrief": "The boy feeding corn to a horse",
+          "picture": null
+        },
+        {
+          "text": "Then a storm came. The barn was far from the porch, so Mark ran hard.",
+          "pictureBrief": "Rain pouring; the boy running",
+          "picture": null
+        },
+        {
+          "text": "He got wet, but he was smart.",
+          "pictureBrief": "The soaked boy on the porch",
+          "picture": null
+        },
+        {
+          "text": "He had a jar of popcorn in his cart for a snack.",
+          "pictureBrief": "A jar of popcorn in a little cart",
+          "picture": null
+        },
+        {
+          "text": "Mark sat on the porch and had more and more as the storm went past.",
+          "pictureBrief": "The boy eating popcorn, watching the storm",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L25-stars",
+      "level": 25,
+      "title": "Stars",
+      "pages": [
+        {
+          "text": "Every evening, Norm and Carl sit on the porch.",
+          "pictureBrief": "Two boys on a porch at dusk",
+          "picture": null
+        },
+        {
+          "text": "They hunt for a star in the dark.",
+          "pictureBrief": "The boys looking up",
+          "picture": null
+        },
+        {
+          "text": "Carl spots one. It is very far off, but it is sharp.",
+          "pictureBrief": "One star shining in the sky",
+          "picture": null
+        },
+        {
+          "text": "Norm spots more and more stars. \"It is a star party!\"",
+          "pictureBrief": "The sky filling with stars",
+          "picture": null
+        },
+        {
+          "text": "Then a storm comes in, and the stars are gone.",
+          "pictureBrief": "Clouds covering the stars",
+          "picture": null
+        },
+        {
+          "text": "\"The stars will be back,\" Norm tells Carl. \"They are just behind the storm.\"",
+          "pictureBrief": "The boys going inside, looking back at the clouds",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L25-corn-for-the-horse",
+      "level": 25,
+      "title": "Corn for the Horse",
+      "pages": [
+        {
+          "text": "Morgan has a horse on the farm. Its name is Star, for the white star on her nose.",
+          "pictureBrief": "A child with a horse with a star on its forehead",
+          "picture": null
+        },
+        {
+          "text": "Every morning, Morgan brings Star a bucket of corn.",
+          "pictureBrief": "The child carrying a bucket",
+          "picture": null
+        },
+        {
+          "text": "Star snorts and stomps. She asks for more!",
+          "pictureBrief": "The horse stomping a hoof",
+          "picture": null
+        },
+        {
+          "text": "Morgan gives her a carrot from the garden.",
+          "pictureBrief": "The child holding out a carrot",
+          "picture": null
+        },
+        {
+          "text": "Then Morgan brushes Star, and Star rests her chin on his arm.",
+          "pictureBrief": "The horse resting its chin on the child's arm",
+          "picture": null
+        },
+        {
+          "text": "\"You are the best horse,\" Morgan tells her. Star is very happy.",
+          "pictureBrief": "The child hugging the horse",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L26-the-purple-bird",
+      "level": 26,
+      "title": "The Purple Bird",
+      "pages": [
+        {
+          "text": "My sister has a pet bird. The bird is purple.",
+          "pictureBrief": "A girl with a purple bird",
+          "picture": null
+        },
+        {
+          "text": "First, it sat on its perch and chirped.",
+          "pictureBrief": "The bird on its perch",
+          "picture": null
+        },
+        {
+          "text": "Then it went under the bed and did not come back.",
+          "pictureBrief": "The bird disappearing under the bed",
+          "picture": null
+        },
+        {
+          "text": "My sister felt hurt. \"It will return after dinner,\" said Dad.",
+          "pictureBrief": "The girl looking sad; Dad comforting her",
+          "picture": null
+        },
+        {
+          "text": "And it did! The bird only came back for a worm.",
+          "pictureBrief": "The bird peeking out at a worm on a plate",
+          "picture": null
+        },
+        {
+          "text": "Then my sister and the purple bird did a twirl in the kitchen.",
+          "pictureBrief": "The girl twirling with the bird on her finger",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L26-herb-the-turtle",
+      "level": 26,
+      "title": "Herb the Turtle",
+      "pages": [
+        {
+          "text": "Herb the turtle lives under a fern.",
+          "pictureBrief": "A turtle under a fern",
+          "picture": null
+        },
+        {
+          "text": "In summer, Herb sits in the sun on a hill of dirt.",
+          "pictureBrief": "The turtle sunbathing on a dirt mound",
+          "picture": null
+        },
+        {
+          "text": "In winter, Herb digs under the dirt and rests.",
+          "pictureBrief": "The turtle sleeping underground",
+          "picture": null
+        },
+        {
+          "text": "His friend Bert the bird says, \"Herb, it is spring!\"",
+          "pictureBrief": "A bird calling down into the ground",
+          "picture": null
+        },
+        {
+          "text": "Herb turns and stirs. \"Is it summer?\"",
+          "pictureBrief": "The turtle waking, blinking",
+          "picture": null
+        },
+        {
+          "text": "\"Not yet,\" says Bert. \"But it is better than winter!\" Herb gets up and has a worm for lunch.",
+          "pictureBrief": "The turtle and bird having lunch together",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L26-garden-work",
+      "level": 26,
+      "title": "Garden Work",
+      "pages": [
+        {
+          "text": "This summer, Mom and Kurt had a lot of work in the garden.",
+          "pictureBrief": "A mom and boy in a garden with tools",
+          "picture": null
+        },
+        {
+          "text": "First, they dug up the dirt.",
+          "pictureBrief": "The boy digging",
+          "picture": null
+        },
+        {
+          "text": "Then they planted herbs and ferns in a long line.",
+          "pictureBrief": "Little plants in rows",
+          "picture": null
+        },
+        {
+          "text": "Kurt got a worm on his shirt. He set it back in the dirt.",
+          "pictureBrief": "A worm on the boy's shirt",
+          "picture": null
+        },
+        {
+          "text": "It was hard work, and they were thirsty.",
+          "pictureBrief": "Mom and the boy wiping their foreheads",
+          "picture": null
+        },
+        {
+          "text": "After all the work, they sat under the birch and had dinner. Kurt was the first to burp!",
+          "pictureBrief": "A picnic dinner under a birch",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L27-a-rainy-sunday",
+      "level": 27,
+      "title": "A Rainy Sunday",
+      "pages": [
+        {
+          "text": "It was a gray Sunday. Rain fell on the trail all day and did not stop.",
+          "pictureBrief": "Rain on a window",
+          "picture": null
+        },
+        {
+          "text": "Gail and Jay had to stay in and play inside.",
+          "pictureBrief": "Two kids looking out the window",
+          "picture": null
+        },
+        {
+          "text": "They made a clay snail and gave it a trail of red paint.",
+          "pictureBrief": "A clay snail with a painted trail",
+          "picture": null
+        },
+        {
+          "text": "Then the mail came. It was a birthday card for Jay!",
+          "pictureBrief": "The boy opening a card",
+          "picture": null
+        },
+        {
+          "text": "\"What a great day,\" Jay said.",
+          "pictureBrief": "The boy smiling",
+          "picture": null
+        },
+        {
+          "text": "\"Rain can not stop us. Let us play again!\"",
+          "pictureBrief": "The two kids playing a game",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L27-the-train",
+      "level": 27,
+      "title": "The Train",
+      "pages": [
+        {
+          "text": "Ray and his dad wait for the train.",
+          "pictureBrief": "A boy and his dad on a platform",
+          "picture": null
+        },
+        {
+          "text": "It is late. They wait and wait on the bench.",
+          "pictureBrief": "The boy sitting, swinging his legs",
+          "picture": null
+        },
+        {
+          "text": "At last, the gray train is here.",
+          "pictureBrief": "A gray train pulling in",
+          "picture": null
+        },
+        {
+          "text": "Ray sits and waves as the train sails past the bay.",
+          "pictureBrief": "The boy waving from a train window by the water",
+          "picture": null
+        },
+        {
+          "text": "He spots a sail on the bay and a big gray whale!",
+          "pictureBrief": "A sailboat and a whale's tail",
+          "picture": null
+        },
+        {
+          "text": "\"What a great trip,\" says Ray. \"May we take the train again on Sunday?\"",
+          "pictureBrief": "The boy and dad smiling on the train",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L27-the-snail-race",
+      "level": 27,
+      "title": "The Snail Race",
+      "pages": [
+        {
+          "text": "Two snails had a race on a trail.",
+          "pictureBrief": "Two snails at a start line",
+          "picture": null
+        },
+        {
+          "text": "Gail the snail was fast, but she stayed to play in the rain.",
+          "pictureBrief": "A snail playing in a puddle",
+          "picture": null
+        },
+        {
+          "text": "Jay the snail was not fast, but he did not stop.",
+          "pictureBrief": "The other snail inching along",
+          "picture": null
+        },
+        {
+          "text": "He went on and on, all day.",
+          "pictureBrief": "The snail on a long trail as the sun moves",
+          "picture": null
+        },
+        {
+          "text": "When Gail got to the end, Jay was there, waiting.",
+          "pictureBrief": "One snail waiting at the finish line",
+          "picture": null
+        },
+        {
+          "text": "\"Great race!\" said Gail. \"Let us take a break and play in the rain.\"",
+          "pictureBrief": "The two snails playing together",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L28-three-sheep-at-the-beach",
+      "level": 28,
+      "title": "Three Sheep at the Beach",
+      "pages": [
+        {
+          "text": "Three sheep went to the beach to see the sea.",
+          "pictureBrief": "Three sheep at the seashore",
+          "picture": null
+        },
+        {
+          "text": "The sand felt sweet on their feet.",
+          "pictureBrief": "Sheep hooves in the sand",
+          "picture": null
+        },
+        {
+          "text": "One sheep had a nap in the heat. One sheep had tea and a peach.",
+          "pictureBrief": "One sheep napping, one sipping tea",
+          "picture": null
+        },
+        {
+          "text": "The last sheep lost her key in the deep weeds.",
+          "pictureBrief": "A sheep searching in tall weeds",
+          "picture": null
+        },
+        {
+          "text": "A monkey in a tree gave it back.",
+          "pictureBrief": "A monkey handing a key down from a tree",
+          "picture": null
+        },
+        {
+          "text": "\"We need to meet here each week,\" said the sheep.",
+          "pictureBrief": "The three sheep and monkey waving",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L28-hockey",
+      "level": 28,
+      "title": "Hockey",
+      "pages": [
+        {
+          "text": "My brother Lee plays hockey on a team.",
+          "pictureBrief": "A boy in hockey gear",
+          "picture": null
+        },
+        {
+          "text": "Every week, Mother, Father and I sit in the seats and cheer.",
+          "pictureBrief": "A family cheering in the stands",
+          "picture": null
+        },
+        {
+          "text": "Lee skates fast and keeps the puck at the end of his stick.",
+          "pictureBrief": "The boy skating with the puck",
+          "picture": null
+        },
+        {
+          "text": "He sees a gap between two players, and he takes a shot.",
+          "pictureBrief": "The boy shooting",
+          "picture": null
+        },
+        {
+          "text": "It is in! We leap up and scream.",
+          "pictureBrief": "The puck in the net; the family jumping up",
+          "picture": null
+        },
+        {
+          "text": "\"Great team play!\" says Father. Lee beams.",
+          "pictureBrief": "The boy grinning with his team",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L28-the-dream-tree",
+      "level": 28,
+      "title": "The Dream Tree",
+      "pages": [
+        {
+          "text": "Jean has a tree in her yard.",
+          "pictureBrief": "A girl beside a big tree",
+          "picture": null
+        },
+        {
+          "text": "In the tree is a deck with a red seat and a stack of comics.",
+          "pictureBrief": "A little tree deck with a red seat",
+          "picture": null
+        },
+        {
+          "text": "Jean gets up the tree and reads.",
+          "pictureBrief": "The girl reading in the tree",
+          "picture": null
+        },
+        {
+          "text": "She can see the street, the sea and the hills.",
+          "pictureBrief": "The view from the tree",
+          "picture": null
+        },
+        {
+          "text": "She feels free, and she dreams of being a queen.",
+          "pictureBrief": "The girl imagining a crown",
+          "picture": null
+        },
+        {
+          "text": "Then Mother calls, \"Jean! It is time to eat!\" Jean leaves her dream and eats.",
+          "pictureBrief": "The girl climbing down for dinner",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L29-joe-and-the-boat",
+      "level": 29,
+      "title": "Joe and the Boat",
+      "pages": [
+        {
+          "text": "Joe has a yellow boat. He likes to row it on the slow river.",
+          "pictureBrief": "A boy rowing a yellow boat",
+          "picture": null
+        },
+        {
+          "text": "One day, the wind began to blow.",
+          "pictureBrief": "Wind blowing the trees",
+          "picture": null
+        },
+        {
+          "text": "Snow fell on his coat, and his toes got cold.",
+          "pictureBrief": "Snow falling on the boy",
+          "picture": null
+        },
+        {
+          "text": "The boat hit a rock and began to float away!",
+          "pictureBrief": "The boat drifting from a rock",
+          "picture": null
+        },
+        {
+          "text": "Joe held the rope and did not let go. A goat on the road gave him a tow home.",
+          "pictureBrief": "A goat pulling the boat by a rope",
+          "picture": null
+        },
+        {
+          "text": "Joe shut the door, had toast by the window and felt the glow of the fire.",
+          "pictureBrief": "The boy warm by the fire with toast",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L29-the-snowman",
+      "level": 29,
+      "title": "The Snowman",
+      "pages": [
+        {
+          "text": "It snowed and snowed. In the morning, the road was white.",
+          "pictureBrief": "A snowy road",
+          "picture": null
+        },
+        {
+          "text": "Rose and her brother made a snowman.",
+          "pictureBrief": "Two kids building a snowman",
+          "picture": null
+        },
+        {
+          "text": "He had a coat, a bow and a carrot for a nose.",
+          "pictureBrief": "The snowman with a coat, bow and carrot nose",
+          "picture": null
+        },
+        {
+          "text": "Four crows sat on his hat and did not leave.",
+          "pictureBrief": "Crows on the snowman's hat",
+          "picture": null
+        },
+        {
+          "text": "When the sun got low, the snowman began to glow pink.",
+          "pictureBrief": "The snowman glowing pink at sunset",
+          "picture": null
+        },
+        {
+          "text": "Rose waved from the window as it got dark. \"See you tomorrow, Snow Joe!\"",
+          "pictureBrief": "The girl waving from the window",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L29-the-toad-show",
+      "level": 29,
+      "title": "The Toad Show",
+      "pages": [
+        {
+          "text": "There is a toad show at the park.",
+          "pictureBrief": "A sign and a crowd at a park",
+          "picture": null
+        },
+        {
+          "text": "Moe brings his toad, Oak, in a little box.",
+          "pictureBrief": "A boy carrying a toad",
+          "picture": null
+        },
+        {
+          "text": "Oak has to sit still on a pillow and show off for the judges.",
+          "pictureBrief": "The toad on a pillow",
+          "picture": null
+        },
+        {
+          "text": "But Oak hops off the pillow and floats in the pond!",
+          "pictureBrief": "The toad floating in the pond",
+          "picture": null
+        },
+        {
+          "text": "Moe follows Oak, and he gets soaked.",
+          "pictureBrief": "The boy wading in, soaked",
+          "picture": null
+        },
+        {
+          "text": "Oak gets a gold bow for best float. Moe gets a hot bath at home.",
+          "pictureBrief": "The toad with a bow; the boy in a bath",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L30-the-night-the-lights-went-off",
+      "level": 30,
+      "title": "The Night the Lights Went Off",
+      "pages": [
+        {
+          "text": "It was late at night. A storm made the lights go off.",
+          "pictureBrief": "A dark house in a storm",
+          "picture": null
+        },
+        {
+          "text": "Mike did not like the dark. He held his flashlight tight.",
+          "pictureBrief": "A boy holding a flashlight",
+          "picture": null
+        },
+        {
+          "text": "Then a bright flash lit up the sky. Was it lightning? Mike felt a fright.",
+          "pictureBrief": "Lightning in the window",
+          "picture": null
+        },
+        {
+          "text": "But Dad sat with him and gave him pie.",
+          "pictureBrief": "Dad sitting with the boy, sharing pie",
+          "picture": null
+        },
+        {
+          "text": "\"It is all right,\" Dad said. \"The sun will be high in the morning.\"",
+          "pictureBrief": "Dad comforting the boy",
+          "picture": null
+        },
+        {
+          "text": "Mike gave a sigh and slept all night.",
+          "pictureBrief": "The boy asleep",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L30-the-kite",
+      "level": 30,
+      "title": "The Kite",
+      "pages": [
+        {
+          "text": "Kate has a kite with a bright tail.",
+          "pictureBrief": "A girl with a kite with a bright tail",
+          "picture": null
+        },
+        {
+          "text": "She takes it to the hill at first light.",
+          "pictureBrief": "The girl on a hill at sunrise",
+          "picture": null
+        },
+        {
+          "text": "The kite flies high in the sky.",
+          "pictureBrief": "The kite high in the sky",
+          "picture": null
+        },
+        {
+          "text": "Then the wind dies, and the kite dives down!",
+          "pictureBrief": "The kite diving",
+          "picture": null
+        },
+        {
+          "text": "It lands in a tree. Kate tries to get it, though it is very high.",
+          "pictureBrief": "The kite stuck in a tall tree",
+          "picture": null
+        },
+        {
+          "text": "Her dad helps, and they get it. \"Let us try again tomorrow,\" says Kate.",
+          "pictureBrief": "Dad and the girl walking home with the kite",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L30-pie-night",
+      "level": 30,
+      "title": "Pie Night",
+      "pages": [
+        {
+          "text": "Every Friday night, Gran makes a pie, and I help.",
+          "pictureBrief": "A grandma rolling dough",
+          "picture": null
+        },
+        {
+          "text": "Tonight, it is a peach pie.",
+          "pictureBrief": "A bowl of peaches",
+          "picture": null
+        },
+        {
+          "text": "I tie on my apron and get a big bowl.",
+          "pictureBrief": "A child tying an apron",
+          "picture": null
+        },
+        {
+          "text": "I help Gran slice the peaches.",
+          "pictureBrief": "The child slicing peaches",
+          "picture": null
+        },
+        {
+          "text": "The pie bakes, and the kitchen smells just right. I can not wait!",
+          "pictureBrief": "The pie in the oven",
+          "picture": null
+        },
+        {
+          "text": "We eat it by the light of the fire. It is the best night of the week.",
+          "pictureBrief": "The two eating pie by the fire",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L31-the-cookbook",
+      "level": 31,
+      "title": "The Cookbook",
+      "pages": [
+        {
+          "text": "Brook took a good book to the pool. It was a cookbook for kids.",
+          "pictureBrief": "A girl carrying a cookbook to a pool",
+          "picture": null
+        },
+        {
+          "text": "She read it on a stool in the cool shade of a tree.",
+          "pictureBrief": "The girl reading under a tree",
+          "picture": null
+        },
+        {
+          "text": "Soon she was in the mood for food.",
+          "pictureBrief": "The girl's tummy rumbling, picturing food",
+          "picture": null
+        },
+        {
+          "text": "At noon, she went to the kitchen and put a scoop of rice in a pot of water.",
+          "pictureBrief": "The girl scooping rice into a pot",
+          "picture": null
+        },
+        {
+          "text": "She stood by the pot with a big spoon. Stir, stir, stir!",
+          "pictureBrief": "The girl stirring",
+          "picture": null
+        },
+        {
+          "text": "The food was so good! Her brother took a look and had some too. \"You are a good cook,\" he said.",
+          "pictureBrief": "Brother and sister eating together",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L31-the-moose-and-the-goose",
+      "level": 31,
+      "title": "The Moose and the Goose",
+      "pages": [
+        {
+          "text": "A moose and a goose live by a cool brook in the woods.",
+          "pictureBrief": "A moose and a goose beside a brook in the forest",
+          "picture": null
+        },
+        {
+          "text": "Each morning, the goose takes a bath in the brook. The moose stands on the shore and munches leaves.",
+          "pictureBrief": "The goose splashing; the moose eating leaves",
+          "picture": null
+        },
+        {
+          "text": "One day, the moose put his foot in deep mud. He could not move!",
+          "pictureBrief": "The moose stuck in mud",
+          "picture": null
+        },
+        {
+          "text": "\"Help!\" he called. The goose swooped down to look.",
+          "pictureBrief": "The goose flying down",
+          "picture": null
+        },
+        {
+          "text": "The goose pushed and pulled with all her might. Shoop! His foot came loose.",
+          "pictureBrief": "The goose tugging; the moose's hoof popping free",
+          "picture": null
+        },
+        {
+          "text": "\"You are a good friend,\" said the moose. They had a snack of roots by the brook until the moon was up.",
+          "pictureBrief": "The two friends under the moon",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L31-whose-shoe",
+      "level": 31,
+      "title": "Whose Shoe?",
+      "pages": [
+        {
+          "text": "Whose shoe is this? It is on the roof!",
+          "pictureBrief": "A shoe on a house roof",
+          "picture": null
+        },
+        {
+          "text": "Luke looks up. It is his school shoe!",
+          "pictureBrief": "A boy looking up in surprise",
+          "picture": null
+        },
+        {
+          "text": "How did it get to the roof? Luke thinks and thinks.",
+          "pictureBrief": "The boy scratching his head",
+          "picture": null
+        },
+        {
+          "text": "He looks at his dog, Hoot. Hoot looks at the moon and wags his tail.",
+          "pictureBrief": "A dog looking innocent",
+          "picture": null
+        },
+        {
+          "text": "Luke gets a broom and a stool. He pushes the shoe, and it drops into the bush.",
+          "pictureBrief": "The boy pushing the shoe off the roof with a broom",
+          "picture": null
+        },
+        {
+          "text": "Then he finds his other shoe in the dog bed, full of fur. \"Hoot! You took my shoes!\" Hoot just wags.",
+          "pictureBrief": "The dog in its bed beside a furry shoe",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L32-sue-and-the-blue-suit",
+      "level": 32,
+      "title": "Sue and the Blue Suit",
+      "pages": [
+        {
+          "text": "Sue has a new blue suit. On Tuesday, she flew to see her nephew.",
+          "pictureBrief": "A woman in a blue suit on a plane",
+          "picture": null
+        },
+        {
+          "text": "She gave him fruit juice and a few clues for a game.",
+          "pictureBrief": "The woman giving a boy juice",
+          "picture": null
+        },
+        {
+          "text": "\"Is it true that you grew?\" said Sue. \"You are so tall!\"",
+          "pictureBrief": "The boy standing on tiptoe",
+          "picture": null
+        },
+        {
+          "text": "Her nephew just blew a bubble and chewed his stew. He did not say a thing.",
+          "pictureBrief": "The boy blowing a bubble at the table",
+          "picture": null
+        },
+        {
+          "text": "Then he drew a blue bird for Sue, with a big yellow beak.",
+          "pictureBrief": "The boy drawing a blue bird",
+          "picture": null
+        },
+        {
+          "text": "She will glue it in her book. \"What a beautiful bird,\" said Sue. \"What a beautiful day!\"",
+          "pictureBrief": "The woman hugging her nephew with the drawing",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L32-the-crew",
+      "level": 32,
+      "title": "The Crew",
+      "pages": [
+        {
+          "text": "Drew and his crew are busy. They have a new boat.",
+          "pictureBrief": "A boy and his friends beside a small sailboat",
+          "picture": null
+        },
+        {
+          "text": "First, they need to fix a few screws and paint the deck blue. It is a lot of work.",
+          "pictureBrief": "The kids painting the deck",
+          "picture": null
+        },
+        {
+          "text": "Then Drew threw a rope to the crew, and they set sail.",
+          "pictureBrief": "The boy tossing a rope",
+          "picture": null
+        },
+        {
+          "text": "The wind blew, and the boat flew over the waves. Drew held on to the rail and grinned at his crew.",
+          "pictureBrief": "The boat skimming over waves",
+          "picture": null
+        },
+        {
+          "text": "At noon, the crew had fruit and hot stew on the deck. The sun was hot, and the sea was blue.",
+          "pictureBrief": "The kids eating on the deck",
+          "picture": null
+        },
+        {
+          "text": "\"This is the best crew,\" said Drew. \"You are true friends.\"",
+          "pictureBrief": "The crew grinning together",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L32-june-needs-glue",
+      "level": 32,
+      "title": "June Needs Glue",
+      "pages": [
+        {
+          "text": "June needs glue. Her paper bird has a broken wing.",
+          "pictureBrief": "A girl holding a paper bird with a broken wing",
+          "picture": null
+        },
+        {
+          "text": "She hunts in the kitchen. She hunts in her room. No glue.",
+          "pictureBrief": "The girl looking in kitchen drawers",
+          "picture": null
+        },
+        {
+          "text": "Is it in the hall? Is it on the shelf? Is it in the toolbox?",
+          "pictureBrief": "The girl searching a shelf and a toolbox",
+          "picture": null
+        },
+        {
+          "text": "No luck. June feels blue. She sits on the steps and sighs.",
+          "pictureBrief": "The girl slumped on the stairs",
+          "picture": null
+        },
+        {
+          "text": "At last, she finds it in her jacket. It was there all along! June has to grin.",
+          "pictureBrief": "The girl pulling glue from her jacket pocket",
+          "picture": null
+        },
+        {
+          "text": "June fixes the wing. Now her bird looks new again, and it is beautiful. She hangs it by the window.",
+          "pictureBrief": "The paper bird hanging in a sunny window",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L33-the-hawk-and-the-fawn",
+      "level": 33,
+      "title": "The Hawk and the Fawn",
+      "pages": [
+        {
+          "text": "At dawn, a hawk saw a fawn on the lawn.",
+          "pictureBrief": "A hawk on a branch watching a fawn",
+          "picture": null
+        },
+        {
+          "text": "The fawn gave a yawn and began to crawl under the fence.",
+          "pictureBrief": "The fawn crawling under a fence",
+          "picture": null
+        },
+        {
+          "text": "Its mother had taught it to be ready. It kept its head low.",
+          "pictureBrief": "The fawn hiding with its head down",
+          "picture": null
+        },
+        {
+          "text": "The weather was cool, and the fawn was as soft as a feather.",
+          "pictureBrief": "The fawn curled in the grass",
+          "picture": null
+        },
+        {
+          "text": "The hawk did not want a fight. It flew off to hunt for its breakfast instead.",
+          "pictureBrief": "The hawk flying away",
+          "picture": null
+        },
+        {
+          "text": "I saw it all from my window, and I had to draw it. It was the best morning of August.",
+          "pictureBrief": "A child drawing at a window",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L33-breakfast-in-bed",
+      "level": 33,
+      "title": "Breakfast in Bed",
+      "pages": [
+        {
+          "text": "It was Saturday morning. Paul wanted to make breakfast for his mom.",
+          "pictureBrief": "A boy in the kitchen early in the morning",
+          "picture": null
+        },
+        {
+          "text": "He spread jam on bread and got a glass of milk.",
+          "pictureBrief": "The boy spreading jam",
+          "picture": null
+        },
+        {
+          "text": "He brought it to her on a tray with a straw and a fresh daisy.",
+          "pictureBrief": "The boy carrying a tray with a daisy",
+          "picture": null
+        },
+        {
+          "text": "Then his foot caught on the rug!",
+          "pictureBrief": "The boy tripping",
+          "picture": null
+        },
+        {
+          "text": "Paul paused. The tray tipped, but he held it steady.",
+          "pictureBrief": "The boy balancing the tray",
+          "picture": null
+        },
+        {
+          "text": "Mom woke up and saw the tray. \"I thought I would sleep in, but this is better!\" she said, and she gave Paul a hug.",
+          "pictureBrief": "Mom in bed hugging the boy",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L33-wash-the-dog",
+      "level": 33,
+      "title": "Wash the Dog",
+      "pages": [
+        {
+          "text": "Shawn wants to wash his dog, Paws.",
+          "pictureBrief": "A boy with a bucket and a shaggy dog",
+          "picture": null
+        },
+        {
+          "text": "But Paws does not want a bath. He crawls under the bed and hides.",
+          "pictureBrief": "The dog hiding under the bed",
+          "picture": null
+        },
+        {
+          "text": "Shawn has a plan. He gets a treat, sits on the floor and waits.",
+          "pictureBrief": "The boy holding a treat, waiting",
+          "picture": null
+        },
+        {
+          "text": "Paws smells the treat. First his head peeks from under the bed. Then his paws. Then the rest of him.",
+          "pictureBrief": "The dog's nose and paws poking out",
+          "picture": null
+        },
+        {
+          "text": "Shawn catches him and puts him in the bath. Paws shakes. Splash!",
+          "pictureBrief": "The dog shaking water everywhere",
+          "picture": null
+        },
+        {
+          "text": "Shawn is soaked, but Paws is clean. \"That was a lot of work for one bath,\" Shawn thought.",
+          "pictureBrief": "The soaked boy and the clean dog",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L34-the-proud-mouse",
+      "level": 34,
+      "title": "The Proud Mouse",
+      "pages": [
+        {
+          "text": "A brown mouse came out of its house. It found a coin on the ground.",
+          "pictureBrief": "A mouse finding a shiny coin",
+          "picture": null
+        },
+        {
+          "text": "\"Wow!\" it said in a loud voice.",
+          "pictureBrief": "The mouse holding up the coin",
+          "picture": null
+        },
+        {
+          "text": "The noise woke the owl in the tower. The owl flew down to look.",
+          "pictureBrief": "An owl swooping from a tower",
+          "picture": null
+        },
+        {
+          "text": "The mouse did not shout. It did not point.",
+          "pictureBrief": "The mouse frozen still",
+          "picture": null
+        },
+        {
+          "text": "It hid the coin in its mouth and crept round the flower pot without a sound.",
+          "pictureBrief": "The mouse tiptoeing around a flower pot",
+          "picture": null
+        },
+        {
+          "text": "The owl gave a frown and flew back up to its tower. The mouse took the coin home. What a proud mouse!",
+          "pictureBrief": "The mouse in its house with the coin",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L34-the-clown-and-the-cow",
+      "level": 34,
+      "title": "The Clown and the Cow",
+      "pages": [
+        {
+          "text": "A clown came to our town with a big brown cow.",
+          "pictureBrief": "A clown leading a brown cow into town",
+          "picture": null
+        },
+        {
+          "text": "The boys and girls gave a shout of joy.",
+          "pictureBrief": "Children cheering",
+          "picture": null
+        },
+        {
+          "text": "The clown made the cow bow. Then he made it spin round and round.",
+          "pictureBrief": "The cow bowing",
+          "picture": null
+        },
+        {
+          "text": "Then the cow sat down on the clown! The crowd gasped.",
+          "pictureBrief": "The cow sitting on the clown",
+          "picture": null
+        },
+        {
+          "text": "In a minute, the clown got out from under the cow and found his crown in the dirt.",
+          "pictureBrief": "The clown with a crooked crown",
+          "picture": null
+        },
+        {
+          "text": "\"Is this part of the show?\" a boy asked. \"Yes!\" said the clown, and the crowd howled with joy.",
+          "pictureBrief": "The crowd laughing; the clown bowing",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L34-a-choice-for-roy",
+      "level": 34,
+      "title": "A Choice for Roy",
+      "pages": [
+        {
+          "text": "Roy has four coins. He can buy one toy at the shop.",
+          "pictureBrief": "A boy holding four coins in a toy shop",
+          "picture": null
+        },
+        {
+          "text": "He points at a toy cowboy. He points at a round ball that bounces.",
+          "pictureBrief": "A toy cowboy and a bouncy ball on a shelf",
+          "picture": null
+        },
+        {
+          "text": "Which one should he choose? Roy thinks for a minute.",
+          "pictureBrief": "The boy thinking",
+          "picture": null
+        },
+        {
+          "text": "He thinks about his sister, Joy. She is sick in bed with a sore throat.",
+          "pictureBrief": "A girl in bed with a scarf",
+          "picture": null
+        },
+        {
+          "text": "Then Roy has his answer. He buys a soft brown owl for Joy.",
+          "pictureBrief": "The boy buying a stuffed owl",
+          "picture": null
+        },
+        {
+          "text": "Joy hugs the owl and smiles. Roy feels proud. That was the best choice of all.",
+          "pictureBrief": "The girl hugging the owl; the boy smiling",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L35-the-knight-and-the-lamb",
+      "level": 35,
+      "title": "The Knight and the Lamb",
+      "pages": [
+        {
+          "text": "The knight had a knot in his sock and a crumb on his knee.",
+          "pictureBrief": "A friendly knight with a crumb on his knee",
+          "picture": null
+        },
+        {
+          "text": "He did not know how to knit, and he did not know how to write. But he could climb!",
+          "pictureBrief": "The knight puzzled by knitting needles",
+          "picture": null
+        },
+        {
+          "text": "One night, a lamb was stuck on a high rock.",
+          "pictureBrief": "A lamb on a rocky ledge at night",
+          "picture": null
+        },
+        {
+          "text": "The knight did not knock or wait. He began to climb.",
+          "pictureBrief": "The knight climbing the rock",
+          "picture": null
+        },
+        {
+          "text": "His wrist went numb, but he did not stop. He got the lamb in his arms and came down.",
+          "pictureBrief": "The knight carrying the lamb down",
+          "picture": null
+        },
+        {
+          "text": "Now the lamb will often listen for his knock at the gate.",
+          "pictureBrief": "The lamb waiting by a gate",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L35-a-note-from-wren",
+      "level": 35,
+      "title": "A Note from Wren",
+      "pages": [
+        {
+          "text": "Wren wrote a note to her friend on the island.",
+          "pictureBrief": "A girl writing a note at a desk by the sea",
+          "picture": null
+        },
+        {
+          "text": "She wrapped it in paper and tied it with a knot. Then she wrote her name on the front.",
+          "pictureBrief": "The note rolled up and tied",
+          "picture": null
+        },
+        {
+          "text": "She put it in a bottle and threw it into the sea.",
+          "pictureBrief": "The girl throwing a bottle into the waves",
+          "picture": null
+        },
+        {
+          "text": "The waves took the bottle to the island. It landed on the sand.",
+          "pictureBrief": "The bottle washing up on an island beach",
+          "picture": null
+        },
+        {
+          "text": "Her friend knelt on the sand, picked it up and read it. Then he jumped up and waved at the sea.",
+          "pictureBrief": "A boy kneeling, reading the note",
+          "picture": null
+        },
+        {
+          "text": "It said: Come for lunch! I will make crumb cake. Do not be late! Love, Wren",
+          "pictureBrief": "The note with a drawing of a cake",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L35-knock-knock",
+      "level": 35,
+      "title": "Knock, Knock",
+      "pages": [
+        {
+          "text": "Knock, knock! Who is at the door?",
+          "pictureBrief": "A front door with a knock",
+          "picture": null
+        },
+        {
+          "text": "It is my friend Kim, with a lamb in her arms!",
+          "pictureBrief": "A girl at the door holding a lamb",
+          "picture": null
+        },
+        {
+          "text": "The lamb wriggles free and runs to the kitchen. Its little feet go tap, tap, tap.",
+          "pictureBrief": "The lamb running across the kitchen",
+          "picture": null
+        },
+        {
+          "text": "It knocks over a jar of crumbs and licks them off the floor.",
+          "pictureBrief": "The lamb licking crumbs from the floor",
+          "picture": null
+        },
+        {
+          "text": "Kim and I kneel down. I comb its wool, and it lies still on my knee.",
+          "pictureBrief": "Two kids kneeling, combing the lamb",
+          "picture": null
+        },
+        {
+          "text": "\"I know a lamb should not be in a kitchen,\" says Kim. \"But it often visits me, and I could not say no.\"",
+          "pictureBrief": "The girls laughing with the lamb between them",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L36-the-kindest-friend",
+      "level": 36,
+      "title": "The Kindest Friend",
+      "pages": [
+        {
+          "text": "Fern is the tallest girl in her class, and she is the kindest too. Her friend Ray is smaller, but he is the fastest runner in the school.",
+          "pictureBrief": "A tall girl and a smaller boy at school",
+          "picture": null
+        },
+        {
+          "text": "On the coldest day of winter, the pond froze. Ray wanted to be the first to skate on it.",
+          "pictureBrief": "A frozen pond",
+          "picture": null
+        },
+        {
+          "text": "He ran quickly onto the ice. His feet slid, and he fell with a thud. He felt helpless and sore.",
+          "pictureBrief": "The boy sliding and falling on the ice",
+          "picture": null
+        },
+        {
+          "text": "Fern did not panic. She went slowly and safely across the ice to help him up.",
+          "pictureBrief": "The girl stepping carefully across the ice",
+          "picture": null
+        },
+        {
+          "text": "She was so helpful! She held his arm, and they went back step by step. \"You are the bravest friend I have,\" said Ray gladly.",
+          "pictureBrief": "The girl helping the boy off the ice",
+          "picture": null
+        },
+        {
+          "text": "Fern was thankful that he was not badly hurt. They went home early and had hot milk by the fire.",
+          "pictureBrief": "The two friends with mugs by a fire",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L36-the-restless-puppy",
+      "level": 36,
+      "title": "The Restless Puppy",
+      "pages": [
+        {
+          "text": "Our puppy, Pickles, is playful and hopeful. He is never still. He is the most restless puppy on our street.",
+          "pictureBrief": "A bouncy puppy",
+          "picture": null
+        },
+        {
+          "text": "At night, he whines and paces in the kitchen. The kitchen floor is spotless, but Pickles is not sleepy.",
+          "pictureBrief": "The puppy pacing in a dark kitchen",
+          "picture": null
+        },
+        {
+          "text": "Dad tried a softer bed. Mom tried a quieter clock. I sang him a song. Nothing worked, and we were all sleepless.",
+          "pictureBrief": "Dad with a dog bed, Mom with a clock",
+          "picture": null
+        },
+        {
+          "text": "Then I had a plan. I gave him my oldest sock, the one that smells like me.",
+          "pictureBrief": "A child holding out an old sock",
+          "picture": null
+        },
+        {
+          "text": "Pickles sniffed it slowly. Then he curled up with it, and he was still at last.",
+          "pictureBrief": "The puppy curled around the sock",
+          "picture": null
+        },
+        {
+          "text": "Now he sleeps peacefully every night, with his nose on the sock. A sock is a useful thing for a lonely puppy.",
+          "pictureBrief": "The puppy sleeping",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L36-earth-day",
+      "level": 36,
+      "title": "Earth Day",
+      "pages": [
+        {
+          "text": "On Earth Day, our class went to the park to learn how to help the earth.",
+          "pictureBrief": "A class arriving at a park",
+          "picture": null
+        },
+        {
+          "text": "Our teacher gave us gloves and bags. \"Be careful,\" she said. \"Some trash is sharp.\"",
+          "pictureBrief": "The teacher handing out gloves",
+          "picture": null
+        },
+        {
+          "text": "We picked up cans, cups, wrappers and plastic bags. We were quickly busy, and the bags got heavy.",
+          "pictureBrief": "Kids picking up litter",
+          "picture": null
+        },
+        {
+          "text": "Then I heard a sad chirp in a bush. A little bird was stuck in a plastic ring. It could not fly.",
+          "pictureBrief": "A bird tangled in a plastic ring",
+          "picture": null
+        },
+        {
+          "text": "Our teacher carefully cut the ring, and the bird was free. It flew to a branch and sang loudly.",
+          "pictureBrief": "The bird singing on a branch",
+          "picture": null
+        },
+        {
+          "text": "We filled ten bags that day. Our park was spotless, and we felt hopeful and proud. Every day can be Earth Day.",
+          "pictureBrief": "Ten full bags and a clean park",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L37-a-busy-saturday",
+      "level": 37,
+      "title": "A Busy Saturday",
+      "pages": [
+        {
+          "text": "Dad had to unpack the van and unlock the shed. Mom had to preheat the oven and reheat the stew.",
+          "pictureBrief": "Dad unpacking, Mom at the oven",
+          "picture": null
+        },
+        {
+          "text": "My sister had to refill the dog dish. I had to redo my bed, and I dislike that job.",
+          "pictureBrief": "A child remaking a messy bed",
+          "picture": null
+        },
+        {
+          "text": "I was unhappy. I sat on the steps with my arms crossed and a frown on my face.",
+          "pictureBrief": "The child sulking on the steps",
+          "picture": null
+        },
+        {
+          "text": "Then Dad said we could replay our best game when we return from the market.",
+          "pictureBrief": "Dad holding up a board game",
+          "picture": null
+        },
+        {
+          "text": "I did not disagree! My sister is young, so we had to retell the rules twice.",
+          "pictureBrief": "Kids explaining rules to a little sister",
+          "picture": null
+        },
+        {
+          "text": "It was still fun to be a team. We finished every job by lunch. Redoing my bed was not so bad after all.",
+          "pictureBrief": "The family playing a game together",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L37-jade-rewrites-her-story",
+      "level": 37,
+      "title": "Jade Rewrites Her Story",
+      "pages": [
+        {
+          "text": "Jade wrote a story about a young dragon who could not fly.",
+          "pictureBrief": "A girl writing about a little dragon",
+          "picture": null
+        },
+        {
+          "text": "She read it to her class, but she was unhappy with the ending. In her story, the dragon just sat on a rock and gave up.",
+          "pictureBrief": "The girl reading aloud, frowning",
+          "picture": null
+        },
+        {
+          "text": "\"I will rewrite it,\" she said. She unzipped her bag and took out a pencil.",
+          "pictureBrief": "The girl unzipping her bag",
+          "picture": null
+        },
+        {
+          "text": "In the new ending, the dragon is unafraid. It flaps and flaps, and it rises over the country hills.",
+          "pictureBrief": "A dragon flying over green hills",
+          "picture": null
+        },
+        {
+          "text": "Jade reread her story. She fixed a few words and added a picture of the dragon. Now it was just right.",
+          "pictureBrief": "The girl reading her story, pleased",
+          "picture": null
+        },
+        {
+          "text": "She retold it to her class the next day, and they cheered. Her teacher asked if she could display it on the wall.",
+          "pictureBrief": "The story pinned to the class wall",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L37-unwrap-it",
+      "level": 37,
+      "title": "Unwrap It!",
+      "pages": [
+        {
+          "text": "It was my birthday, and a big box sat on the table.",
+          "pictureBrief": "A big wrapped box on a table",
+          "picture": null
+        },
+        {
+          "text": "I untied the string and began to unwrap the box. My whole family was watching me.",
+          "pictureBrief": "A child untying the string",
+          "picture": null
+        },
+        {
+          "text": "Inside was a smaller box, wrapped in red paper. I opened that one too.",
+          "pictureBrief": "A smaller box inside the big one",
+          "picture": null
+        },
+        {
+          "text": "Inside was a smaller box, and a smaller one, and a smaller one! I began to giggle.",
+          "pictureBrief": "Boxes inside boxes",
+          "picture": null
+        },
+        {
+          "text": "My brother could not hide his grin. He had packed the boxes himself, one inside the other, just to tease me.",
+          "pictureBrief": "A big brother grinning",
+          "picture": null
+        },
+        {
+          "text": "At last, I found a tiny box. Inside was a ticket to the country show, with rides and games! I was not displeased at all. I gave my brother a big hug.",
+          "pictureBrief": "The child hugging the brother, holding a ticket",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L38-the-happiest-puppies",
+      "level": 38,
+      "title": "The Happiest Puppies",
+      "pages": [
+        {
+          "text": "The puppies were the happiest dogs at the party. They were running and hopping and digging in the garden, and they were having the best time.",
+          "pictureBrief": "Puppies playing at a garden party",
+          "picture": null
+        },
+        {
+          "text": "The biggest puppy grabbed a cake from the table and carried it off.",
+          "pictureBrief": "A puppy carrying a cake",
+          "picture": null
+        },
+        {
+          "text": "Mom was baking more, so she missed it. I tried to stop him, but he was faster than me. He zipped past my legs.",
+          "pictureBrief": "A child chasing the puppy",
+          "picture": null
+        },
+        {
+          "text": "He hurried under the table, wagging his tail and licking his lips.",
+          "pictureBrief": "The puppy under the table with the cake",
+          "picture": null
+        },
+        {
+          "text": "He looked so funny with icing on his nose that we all smiled. We could not be cross with him.",
+          "pictureBrief": "Everyone smiling at the puppy",
+          "picture": null
+        },
+        {
+          "text": "Then we gave the babies some cake too, and the hottest day of the summer got even nicer.",
+          "pictureBrief": "Babies and puppies with cake",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L38-swimming-in-the-ocean",
+      "level": 38,
+      "title": "Swimming in the Ocean",
+      "pages": [
+        {
+          "text": "Last summer, we went swimming in the ocean. The water was colder than the pool, but I was hoping for big waves.",
+          "pictureBrief": "A family at the ocean",
+          "picture": null
+        },
+        {
+          "text": "My sister was digging in the sand and making a castle with a moat and a tiny flag.",
+          "pictureBrief": "A girl building a sand castle",
+          "picture": null
+        },
+        {
+          "text": "I was running and hopping over the little waves. Splash, splash! The water tickled my toes.",
+          "pictureBrief": "A child jumping over waves",
+          "picture": null
+        },
+        {
+          "text": "Then the biggest wave of the day splashed me, and I tumbled into the water.",
+          "pictureBrief": "A big wave knocking the child over",
+          "picture": null
+        },
+        {
+          "text": "I cried, but Dad carried me back to our towel and hugged me. He wrapped me up until I was warm.",
+          "pictureBrief": "Dad carrying the child",
+          "picture": null
+        },
+        {
+          "text": "Soon I was smiling again. We had the sunniest day, and it was a special day by the ocean.",
+          "pictureBrief": "The family on a towel at sunset",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L38-baking-with-grandma",
+      "level": 38,
+      "title": "Baking with Grandma",
+      "pages": [
+        {
+          "text": "On Sundays, Grandma and I spend the morning baking. Her kitchen always smells sweet, and she lets me put on her old apron.",
+          "pictureBrief": "A grandma and child in aprons",
+          "picture": null
+        },
+        {
+          "text": "Today we are making the tastiest muffins we have ever baked. Grandma says the secret is lots of berries.",
+          "pictureBrief": "A muffin tin on the counter",
+          "picture": null
+        },
+        {
+          "text": "First, I scooped the flour. Then I dropped in the berries, one by one. I only ate a few of them.",
+          "pictureBrief": "The child adding berries",
+          "picture": null
+        },
+        {
+          "text": "Grandma let me do the stirring. I stirred and stirred until my arm was tired.",
+          "pictureBrief": "The child stirring a big bowl",
+          "picture": null
+        },
+        {
+          "text": "While the muffins were baking, we hopped and twirled in the kitchen. Grandma is the silliest dancer I know.",
+          "pictureBrief": "Grandma and child dancing",
+          "picture": null
+        },
+        {
+          "text": "The muffins were the yummiest ever, with purple berries popping out the top. We saved the biggest one for Grandpa.",
+          "pictureBrief": "A plate of muffins",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L39-a-trip-to-the-city",
+      "level": 39,
+      "title": "A Trip to the City",
+      "pages": [
+        {
+          "text": "Last year, we went to the city on a train. I bought a pencil and thought I would draw the square.",
+          "pictureBrief": "A family in a city square",
+          "picture": null
+        },
+        {
+          "text": "I could hear a whistle near the stairs. A chef in a tall white hat gave us fresh bread to share.",
+          "pictureBrief": "A chef handing out bread",
+          "picture": null
+        },
+        {
+          "text": "Then we saw the circus! A bear sat on a chair, and a giant did magic.",
+          "pictureBrief": "A circus with a bear on a chair",
+          "picture": null
+        },
+        {
+          "text": "A machine made a glowing ghost on a sign, and that gave me a scare.",
+          "pictureBrief": "A glowing ghost on a sign",
+          "picture": null
+        },
+        {
+          "text": "We were there for eight hours. My feet were sore, but I did not care one bit.",
+          "pictureBrief": "Tired family walking",
+          "picture": null
+        },
+        {
+          "text": "That night, I drew the city: the square, the chef, the bear and the ghost. It was my best picture all year.",
+          "pictureBrief": "A child's drawing of the city",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L39-the-bear-and-the-chair",
+      "level": 39,
+      "title": "The Bear and the Chair",
+      "pages": [
+        {
+          "text": "A bear lived near a fair in the hills. Every year, he could hear the music from his cave.",
+          "pictureBrief": "A bear listening from his cave",
+          "picture": null
+        },
+        {
+          "text": "One night, he thought he would go and see it. He went down the stairs of rock with care.",
+          "pictureBrief": "The bear walking down the rocky slope",
+          "picture": null
+        },
+        {
+          "text": "At the fair, there was a chair on a stage, and a sign that said: Rest Here.",
+          "pictureBrief": "A chair on a stage",
+          "picture": null
+        },
+        {
+          "text": "The bear sat on the chair. It gave a creak and broke in half! The people stared.",
+          "pictureBrief": "The chair breaking under the bear",
+          "picture": null
+        },
+        {
+          "text": "\"I am sorry,\" said the bear. \"To be honest, I only wanted to hear the music.\"",
+          "pictureBrief": "The bear looking sorry",
+          "picture": null
+        },
+        {
+          "text": "A kind girl gave him a pear and a big seat on the grass. The bear swayed to the music until the stars came out.",
+          "pictureBrief": "The bear swaying happily on the grass",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L39-the-gentle-giant",
+      "level": 39,
+      "title": "The Gentle Giant",
+      "pages": [
+        {
+          "text": "In a castle on a hill lived a gentle giant. He was eight times as tall as a man.",
+          "pictureBrief": "A giant beside a castle",
+          "picture": null
+        },
+        {
+          "text": "The people in the city were scared of him. Children ran when they heard his feet.",
+          "pictureBrief": "Children running",
+          "picture": null
+        },
+        {
+          "text": "But the giant only wanted a friend. He liked to whistle, to grow flowers and to bake bread.",
+          "pictureBrief": "The giant baking bread",
+          "picture": null
+        },
+        {
+          "text": "One day, a girl named Clair got lost in the forest near his castle. It was getting dark.",
+          "pictureBrief": "A girl lost among tall trees",
+          "picture": null
+        },
+        {
+          "text": "The giant heard her cry. He gently lifted her onto his hand and carried her home with care.",
+          "pictureBrief": "The giant carrying the girl",
+          "picture": null
+        },
+        {
+          "text": "After that, nobody in the city was scared of him. Clair came every week, and they shared the bread he baked.",
+          "pictureBrief": "The giant and girl sharing bread",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L40-our-invention",
+      "level": 40,
+      "title": "Our Invention",
+      "pages": [
+        {
+          "text": "Our teacher gave us a mission: make an invention for the future.",
+          "pictureBrief": "A teacher at the board",
+          "picture": null
+        },
+        {
+          "text": "I drew a picture of a tricycle with a television on it, so I could watch shows as I rode. My friend made a unicorn that can sail.",
+          "pictureBrief": "Drawings of a tricycle and a unicorn sailboat",
+          "picture": null
+        },
+        {
+          "text": "Our mixture of glue and paint was terrible. It was sticky and lumpy, but at least it was washable.",
+          "pictureBrief": "Kids with paint and glue everywhere",
+          "picture": null
+        },
+        {
+          "text": "A visitor had a question. \"Is this an adventure or an accident?\"",
+          "pictureBrief": "A visitor raising an eyebrow",
+          "picture": null
+        },
+        {
+          "text": "It was possible that she was right! We looked at our sticky hands and laughed at the mess together.",
+          "pictureBrief": "The kids laughing",
+          "picture": null
+        },
+        {
+          "text": "Still, we felt the enjoyment and the kindness in the room, and that was the best part of the whole invention.",
+          "pictureBrief": "The class with their inventions",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L40-vacation-adventure",
+      "level": 40,
+      "title": "Vacation Adventure",
+      "pages": [
+        {
+          "text": "On our vacation, we went on an adventure to a big park in the mountains.",
+          "pictureBrief": "A family car arriving at a park",
+          "picture": null
+        },
+        {
+          "text": "We rode our bicycles along a trail by a river. My little brother rode his tricycle, and he was the slowest, but he did not stop once.",
+          "pictureBrief": "A family on bikes on a trail",
+          "picture": null
+        },
+        {
+          "text": "At the station, a ranger told us about the creatures that live there.",
+          "pictureBrief": "A ranger talking to the family",
+          "picture": null
+        },
+        {
+          "text": "We saw a moose in motion, a turtle in the sunshine and a heron in the reeds.",
+          "pictureBrief": "A moose, a turtle and a heron",
+          "picture": null
+        },
+        {
+          "text": "Then the darkness came. We set up our tent, and I wore my warmest clothes.",
+          "pictureBrief": "A tent at dusk",
+          "picture": null
+        },
+        {
+          "text": "We sat by the fire and told stories. It was the best adventure of my life, and I want another one in the future.",
+          "pictureBrief": "The family by a campfire",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L40-the-creature-in-the-picture",
+      "level": 40,
+      "title": "The Creature in the Picture",
+      "pages": [
+        {
+          "text": "My sister is an artist. She painted a picture of a creature with three eyes and a long purple tongue.",
+          "pictureBrief": "A painting of a funny three-eyed creature",
+          "picture": null
+        },
+        {
+          "text": "Mom looked at it with confusion. \"What is this creature?\" she asked.",
+          "pictureBrief": "Mom puzzled",
+          "picture": null
+        },
+        {
+          "text": "\"It is a friendly monster,\" said my sister. \"It lives under the bed, and it eats bad dreams.\"",
+          "pictureBrief": "The creature under a bed",
+          "picture": null
+        },
+        {
+          "text": "I thought it was a wonderful invention. A monster who eats bad dreams would be very useful! I asked if it eats good dreams too. \"No,\" she said. \"Just bad ones.\"",
+          "pictureBrief": "A child smiling at the painting",
+          "picture": null
+        },
+        {
+          "text": "That night, my sister hung the picture above my bed. The creature looked kind, and I felt safe and calm.",
+          "pictureBrief": "The painting above a bed",
+          "picture": null
+        },
+        {
+          "text": "I slept the whole night with no bad dreams at all. Now I hope the creature stays with us forever.",
+          "pictureBrief": "A child sleeping peacefully",
+          "picture": null
+        }
+      ]
     }
   ]
 }
