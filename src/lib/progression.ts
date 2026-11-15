@@ -1,27 +1,24 @@
 import { desc, eq } from "drizzle-orm";
 import { db, schema } from "./db";
-import { GRADUATE_LEVEL, MAX_LEVEL, stageOf } from "./curriculum";
+import { GRADUATE_LEVEL, MAX_LEVEL } from "./curriculum";
 
-export type Decision = "up" | "stay" | "back";
+/** Nights at a level before moving up: two weeks, from the scope & sequence. */
+export const LEVEL_NIGHTS = 14;
+
+export type Feedback = "too_hard" | "just_right" | "too_easy" | null;
 
 /**
- * Weekly check rule from the scope & sequence:
- *  9/10 moves up, 7–8/10 stays one more week, 6 or fewer steps back a level.
- *  Level 1 has six words: 6/6 moves up.
- *  From Level 25 the fluency rating also counts: it must be 2 or 3 to move up.
+ * Should the child move up before tonight's routine? After two weeks at a
+ * level, yes, unless the last three nights included a "too hard" (then they
+ * stay a few more nights). Three "too easy" nights in a row move them up early.
  */
-export function decide(level: number, score: number, outOf: number, fluency: number | null): Decision {
-  const pct = score / outOf;
-  const fluent = stageOf(level) !== 3 || (fluency ?? 0) >= 2;
-  if (pct >= 0.9 && fluent) return "up";
-  if (pct >= 0.7) return "stay";
-  return "back";
+export function readyToMoveUp(nightsAtLevel: number, lastThree: Feedback[]): boolean {
+  if (lastThree.length === 3 && lastThree.every((f) => f === "too_easy")) return true;
+  return nightsAtLevel >= LEVEL_NIGHTS && !lastThree.includes("too_hard");
 }
 
-export function nextLevel(level: number, d: Decision): number {
-  if (d === "up") return Math.min(level + 1, GRADUATE_LEVEL);
-  if (d === "back") return Math.max(level - 1, 1);
-  return level;
+export function nextLevel(level: number): number {
+  return Math.min(level + 1, GRADUATE_LEVEL);
 }
 
 export async function setLevel(childId: string, level: number) {
@@ -33,8 +30,8 @@ export async function setLevel(childId: string, level: number) {
 
 /**
  * Records "too hard / just right / too easy". Three "too hard" nights in a row
- * step the child back a level; three "too easy" nights in a row bring the
- * weekly check forward to the next routine (handled when it is built).
+ * step the child back a level; three "too easy" nights in a row move them up
+ * when the next routine is built (see readyToMoveUp).
  */
 export async function recordFeedback(routineId: string, childId: string, value: "too_hard" | "just_right" | "too_easy") {
   await db.update(schema.routines).set({ feedback: value, feedbackAt: new Date() }).where(eq(schema.routines.id, routineId));

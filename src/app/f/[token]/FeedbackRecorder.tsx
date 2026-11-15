@@ -40,7 +40,7 @@ export function FeedbackRecorder(props: { token: string; value: keyof typeof LAB
           while to build confidence.
         </p>
       ) : value === "too_easy" ? (
-        <p className="muted">If it stays too easy, we&apos;ll bring the weekly check forward so {name} can move up sooner.</p>
+        <p className="muted">Three too-easy nights in a row and {name} moves up to the next level.</p>
       ) : value === "too_hard" ? (
         <p className="muted">One tricky night is normal. If it keeps feeling hard, we&apos;ll step back a level.</p>
       ) : (

@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest";
 import { isClosedSyllableDecodable, placeFromResults, undecodableWords } from "../src/lib/curriculum";
 import { auditReaders, colourSheetFor, heartWordsIn, READERS, TEACHING, teachingBooksFor } from "../src/lib/content";
 import { isDecodable } from "../src/lib/decoder";
-import { decide, nextLevel } from "../src/lib/progression";
+import { nextLevel, readyToMoveUp } from "../src/lib/progression";
 import { countWord, pickReviewWords, pickSparkWords } from "../src/lib/story/sparkWords";
 
 describe("decodability", () => {
@@ -34,20 +34,17 @@ describe("placement", () => {
   });
 });
 
-describe("weekly check", () => {
-  it("moves up at 9/10, stays at 7-8, steps back at 6", () => {
-    expect(decide(10, 9, 10, null)).toBe("up");
-    expect(decide(10, 8, 10, null)).toBe("stay");
-    expect(decide(10, 6, 10, null)).toBe("back");
-    expect(decide(1, 6, 6, null)).toBe("up");
+describe("moving up a level", () => {
+  it("moves up after two weeks unless the last nights were too hard", () => {
+    expect(readyToMoveUp(13, [null, null, null])).toBe(false);
+    expect(readyToMoveUp(14, ["just_right", null, "too_easy"])).toBe(true);
+    expect(readyToMoveUp(14, ["too_hard", "just_right", null])).toBe(false);
   });
-  it("needs fluency 2+ in Stage 3", () => {
-    expect(decide(30, 10, 10, 1)).toBe("stay");
-    expect(decide(30, 10, 10, 2)).toBe("up");
+  it("moves up early after three too-easy nights", () => {
+    expect(readyToMoveUp(4, ["too_easy", "too_easy", "too_easy"])).toBe(true);
   });
   it("graduates after Level 40", () => {
-    expect(nextLevel(40, "up")).toBe(41);
-    expect(nextLevel(1, "back")).toBe(1);
+    expect(nextLevel(40)).toBe(41);
   });
 });
 

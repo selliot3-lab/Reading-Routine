@@ -7,31 +7,39 @@ import { LEVELS, tokenize, undecodableWords } from "./curriculum";
 export type HuntItem = { word: string; has: boolean; pictureBrief: string; picture: string | null };
 
 /**
- * One page of a little book. Story pages are just text and a picture. Teaching
- * books (sound books and heart-word books) use activity pages, set by `kind`:
- *  - meet:   meet the sound (big letters, keyword picture, how to say it)
- *  - hunt:   colour the pictures with the sound
- *  - listen: the grown-up reads words; clap for the sound
- *  - find:   circle every target in a grid
- *  - robot:  sound boxes to tap and blend
- *  - silly:  a silly sentence to read together
- *  - heart:  a heart word, with a sentence that uses it
- *  - talk:   words to say sentences with, or to read fast
+ * One page of a little book. Story pages are just text and a picture.
+ * Teaching books use activity pages, set by `kind`:
+ *  Letter books (Levels 1-9): poem, find (circle the letters), hunt (colour the pictures), write (printing practice).
+ *  Pattern books (digraphs, vowel teams, prefixes, suffixes): pattern (meet the spellings), sort (word sort),
+ *    find (word hunt), fill (missing letters), readDraw (read and draw) or sums (word sums), silly (a silly sentence).
+ *  Heart-word books: heart (a heart word and a sentence), find, talk (say sentences).
  */
 export type ReaderPage = {
   text: string;
   pictureBrief: string;
   picture: string | null;
-  kind?: "meet" | "hunt" | "listen" | "find" | "robot" | "silly" | "heart" | "talk";
-  /** Shown large: the letters on a meet page, the word on a heart page, the target on a find page. */
+  kind?: "poem" | "hunt" | "find" | "write" | "pattern" | "sort" | "fill" | "readDraw" | "sums" | "silly" | "heart" | "talk";
+  /** Shown large: the letters, the heart word, the find target, the letter to print. */
   display?: string;
   /** A short instruction for the grown-up. */
   prompt?: string;
-  items?: HuntItem[];
+  /** hunt: pictures to colour; fill: words with missing letters. */
+  items?: (HuntItem | FillItem)[];
   words?: string[];
   grid?: string[];
-  segments?: string[][];
+  say?: string;
+  character?: string;
+  action?: string;
+  spellings?: { spelling: string; keyword: string }[];
+  columns?: { heading: string; words: string[] }[];
+  sums?: [string, string, string][];
 };
+
+export type FillItem = { word: string; blanked: string; pictureBrief: string; picture: string | null };
+
+/** A letter book's cover: its character and hand action. */
+export type BookCover = { display: string; character: string; action: string; tip: string; pictureBrief: string; picture: string | null };
+
 export type Reader = {
   id: string;
   level: number;
@@ -43,6 +51,8 @@ export type Reader = {
   type?: "story" | "sound" | "heart";
   /** For sound books, how to say the sound, e.g. "/m/". */
   say?: string;
+  /** Letter books: the character on the cover. */
+  cover?: BookCover;
 };
 export type SparkWord = {
   word: string;

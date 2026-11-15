@@ -67,7 +67,7 @@ const faqs = [
   },
   {
     q: "How does it know if the level is right?",
-    a: "After each routine you tap Too hard, Just right or Too easy. Once a week there's a quick 10-word check. Your child moves up, stays or steps back based on both.",
+    a: "After each routine you tap Too hard, Just right or Too easy. Each level lasts about two weeks. Three \"too easy\" nights in a row move your child up sooner, and three \"too hard\" nights step them back to build confidence.",
   },
   {
     q: "Where is my child's information kept?",
@@ -215,7 +215,7 @@ export default function Home() {
             </li>
             <li>
               <h3>Read, clap, and tell us how it went</h3>
-              <p>One tap after reading (too hard, just right or too easy) and a quick weekly check keep your child at the right level.</p>
+              <p>One tap after reading (too hard, just right or too easy) keeps your child at the right level. No tests, no scores.</p>
             </li>
           </ol>
         </div>

@@ -1,16 +1,17 @@
 /* eslint-disable jsx-a11y/alt-text -- react-pdf <Image> has no alt prop */
 import React from "react";
-import { Image, Path, Svg, Text, View } from "@react-pdf/renderer";
-import type { ReaderPage } from "../content";
+import { Image, Line, Path, Svg, Text, View } from "@react-pdf/renderer";
+import type { BookCover, FillItem, HuntItem, ReaderPage } from "../content";
 import { INK, SOFT, publicPath } from "./RoutinePdf";
 
 /*
- * Activity pages for the teaching books (sound books and heart-word books).
- * Drawn at "print" size inside a fold-book panel, and at "screen" size
- * (s = 1.8) on the phone/tablet version.
+ * Activity pages for the teaching books (letter books, pattern books and
+ * heart-word books). Drawn at "print" size inside a fold-book panel, and at
+ * "screen" size (s = 1.75) on the phone/tablet version.
  */
 
 const GREY = "#B5B5B5";
+const TRACE = "#C9C9C9";
 
 function Prompt({ text, s }: { text?: string; s: number }) {
   if (!text) return null;
@@ -37,14 +38,57 @@ export function HeartIcon({ size }: { size: number }) {
 
 const reader = { fontFamily: "Andika", textAlign: "center" as const, lineHeight: 1.3 };
 
+/*
+ * Andika's measurements (units per em 2048): ascent 2500, cap height 1485,
+ * x-height 1040. Capitals fill the row from the top line to the baseline,
+ * and the dashed line sits at the x-height, so lowercase letters fit under it.
+ */
+const ANDIKA = { ascent: 2500 / 2048, cap: 1485 / 2048, x: 1040 / 2048 };
+
+/** One row of handwriting lines (top, dashed x-height, baseline), with letters to trace. */
+function WriteRow({ letter, copies, width, s }: { letter: string; copies: number; width: number; s: number }) {
+  const h = 32 * s;
+  const size = h / ANDIKA.cap;
+  const mid = h - size * ANDIKA.x;
+  return (
+    <View style={{ width, height: h, marginTop: 10 * s, position: "relative" }}>
+      <Svg width={width} height={h + 1} style={{ position: "absolute", top: 0, left: 0 }}>
+        <Line x1={0} y1={0.5} x2={width} y2={0.5} stroke={INK} strokeWidth={0.6} />
+        <Line x1={0} y1={mid} x2={width} y2={mid} stroke={GREY} strokeWidth={0.6} strokeDasharray="3 3" />
+        <Line x1={0} y1={h} x2={width} y2={h} stroke={INK} strokeWidth={0.9} />
+      </Svg>
+      {Array.from({ length: copies }, (_, i) => (
+        <Text
+          key={i}
+          style={{ position: "absolute", top: h - size * ANDIKA.ascent, left: (width / copies) * i + width / copies / 2 - size * 0.3, fontFamily: "Andika", fontSize: size, color: TRACE }}
+        >
+          {letter}
+        </Text>
+      ))}
+    </View>
+  );
+}
+
+/** The cover of a letter book: its character, the letters, how to say it and the action. */
+export function LetterCover({ cover, say, s = 1, width }: { cover: BookCover; say?: string; s?: number; width: number }) {
+  return (
+    <View style={{ alignItems: "center", width }}>
+      <Picture brief={`Character: ${cover.pictureBrief}`} picture={cover.picture} width={width * 0.75} height={78 * s} s={s} />
+      <Text style={[reader, { fontSize: 34 * s, fontWeight: 700, lineHeight: 1.35, marginTop: 4 * s }]}>{cover.display}</Text>
+      <Text style={[reader, { fontSize: 12 * s, fontWeight: 700 }]}>{cover.character}</Text>
+      {say && <Text style={{ fontSize: 7.5 * s, marginTop: 3 * s }}>Say: {say}</Text>}
+      <Text style={{ fontSize: 7 * s, color: SOFT, textAlign: "center", lineHeight: 1.35, marginTop: 4 * s }}>{cover.action}</Text>
+    </View>
+  );
+}
+
 export function ActivityPage({ page, width, s = 1 }: { page: ReaderPage; width: number; s?: number }) {
   switch (page.kind) {
-    case "meet":
+    case "poem":
       return (
         <View style={{ alignItems: "center", width }}>
-          <Text style={[reader, { fontSize: (page.display!.length > 6 ? 20 : 40) * s, fontWeight: 700, lineHeight: 1.35, marginBottom: 6 * s }]}>{page.display}</Text>
-          <Picture brief={page.pictureBrief} picture={page.picture} width={width} height={100 * s} s={s} />
-          <Text style={[reader, { fontSize: 16 * s, marginTop: 6 * s, marginBottom: 6 * s }]}>{page.text}</Text>
+          <Picture brief={page.pictureBrief} picture={page.picture} width={width * 0.6} height={62 * s} s={s} />
+          <Text style={[reader, { fontSize: 9.5 * s, lineHeight: 1.45, marginVertical: 8 * s }]}>{page.text}</Text>
           <Prompt text={page.prompt} s={s} />
         </View>
       );
@@ -53,76 +97,129 @@ export function ActivityPage({ page, width, s = 1 }: { page: ReaderPage; width: 
         <View style={{ alignItems: "center", width }}>
           <Prompt text={page.prompt} s={s} />
           <View style={{ flexDirection: "row", flexWrap: "wrap", justifyContent: "space-between", width }}>
-            {page.items!.map((it) => (
+            {(page.items as HuntItem[]).map((it) => (
               <View key={it.word} style={{ width: width / 2 - 4 * s, alignItems: "center", marginBottom: 8 * s }}>
-                <Picture brief={it.pictureBrief} picture={it.picture} width={width / 2 - 4 * s} height={70 * s} s={s} />
-                <Text style={{ fontSize: 7 * s, color: SOFT, marginTop: 2 * s }}>{it.word}</Text>
+                <Picture brief={it.pictureBrief} picture={it.picture} width={width / 2 - 4 * s} height={72 * s} s={s} />
+                <Text style={[reader, { fontSize: 10 * s, marginTop: 2 * s }]}>{it.word}</Text>
               </View>
             ))}
           </View>
         </View>
       );
-    case "listen":
-      return (
-        <View style={{ alignItems: "center", width }}>
-          <Prompt text={page.prompt} s={s} />
-          {page.words!.map((w) => (
-            <View key={w} style={{ flexDirection: "row", alignItems: "center", width: width * 0.8, marginBottom: 7 * s }}>
-              <View style={{ width: 11 * s, height: 11 * s, borderRadius: 6 * s, borderWidth: 0.75, borderColor: INK, marginRight: 10 * s }} />
-              <Text style={[reader, { fontSize: 15 * s, textAlign: "left" }]}>{w}</Text>
-            </View>
-          ))}
-          <Text style={{ fontSize: 6.5 * s, color: SOFT, marginTop: 4 * s, textAlign: "center" }}>Colour a circle for every clap.</Text>
-        </View>
-      );
     case "find": {
-      const cols = page.grid!.length > 12 ? 4 : 3;
+      const n = page.grid!.length;
+      const cols = n >= 25 ? 5 : n > 12 ? 4 : 3;
       const cell = width / cols;
+      const long = page.grid!.some((g) => g.length > 3);
       return (
         <View style={{ alignItems: "center", width }}>
           <Prompt text={page.prompt} s={s} />
           <View style={{ flexDirection: "row", flexWrap: "wrap", width }}>
             {page.grid!.map((g, i) => (
-              <View key={i} style={{ width: cell, height: cell * (cols === 4 ? 0.9 : 0.7), alignItems: "center", justifyContent: "center" }}>
-                <Text style={[reader, { fontSize: (g.length > 3 ? 11 : 17) * s }]}>{g}</Text>
+              <View key={i} style={{ width: cell, height: cell * (cols === 3 ? 0.62 : 0.85), alignItems: "center", justifyContent: "center" }}>
+                <Text style={[reader, { fontSize: (long ? 10.5 : 17) * s }]}>{g}</Text>
               </View>
             ))}
           </View>
         </View>
       );
     }
-    case "robot":
+    case "write":
+      return (
+        <View style={{ alignItems: "center", width }}>
+          <Text style={[reader, { fontSize: 40 * s, fontWeight: 700, lineHeight: 1.2 }]}>{page.display}</Text>
+          <Prompt text={page.prompt} s={s} />
+          <WriteRow letter={page.display!} copies={3} width={width} s={s} />
+          <WriteRow letter={page.display!} copies={3} width={width} s={s} />
+          <WriteRow letter={page.display!} copies={0} width={width} s={s} />
+          <WriteRow letter={page.display!} copies={0} width={width} s={s} />
+        </View>
+      );
+    case "pattern":
+      return (
+        <View style={{ alignItems: "center", width }}>
+          <Text style={[reader, { fontSize: (page.display!.length > 8 ? 17 : 30) * s, fontWeight: 700, lineHeight: 1.3 }]}>{page.display}</Text>
+          {page.character ? (
+            <>
+              <Picture brief={page.pictureBrief} picture={page.picture} width={width * 0.6} height={56 * s} s={s} />
+              <Text style={[reader, { fontSize: 10.5 * s, fontWeight: 700, marginTop: 3 * s }]}>{page.character}</Text>
+              <Text style={{ fontSize: 7 * s, color: SOFT, textAlign: "center", lineHeight: 1.3, marginBottom: 4 * s }}>{page.action}</Text>
+            </>
+          ) : null}
+          <View style={{ flexDirection: "row", flexWrap: "wrap", justifyContent: "center", marginVertical: 4 * s }}>
+            {page.spellings!.map((sp, i) => (
+              <View key={i} style={{ borderWidth: 0.75, borderColor: INK, borderRadius: 6 * s, paddingHorizontal: 5 * s, paddingVertical: 2 * s, margin: 2 * s, alignItems: "center" }}>
+                <Text style={[reader, { fontSize: 13 * s, fontWeight: 700 }]}>{sp.spelling}</Text>
+                <Text style={[reader, { fontSize: 8 * s }]}>{sp.keyword}</Text>
+              </View>
+            ))}
+          </View>
+          <Prompt text={page.prompt} s={s} />
+        </View>
+      );
+    case "sort": {
+      const cols = page.columns!;
+      const colW = width / cols.length;
+      const rows = Math.max(...cols.map((c) => c.words.length));
       return (
         <View style={{ alignItems: "center", width }}>
           <Prompt text={page.prompt} s={s} />
-          {page.segments!.map((parts, i) => {
-            const box = Math.min(28 * s, (width - 4) / Math.max(parts.length, 1) - 4 * s);
-            const wide = parts.some((p) => p.length > 2);
-            return (
-              <View key={i} style={{ alignItems: "center", marginBottom: 10 * s }}>
-                <View style={{ flexDirection: "row" }}>
-                  {parts.map((p, j) => (
-                    <View
-                      key={j}
-                      style={{
-                        minWidth: box,
-                        height: box,
-                        paddingHorizontal: wide ? 4 * s : 0,
-                        borderWidth: 1,
-                        borderColor: INK,
-                        marginHorizontal: 2 * s,
-                        alignItems: "center",
-                        justifyContent: "center",
-                      }}
-                    >
-                      <Text style={[reader, { fontSize: 14 * s }]}>{p}</Text>
-                    </View>
-                  ))}
-                </View>
-                <View style={{ borderBottomWidth: 0.75, borderColor: SOFT, width: "80%", marginTop: 4 * s }} />
+          <View style={{ flexDirection: "row", flexWrap: "wrap", justifyContent: "center", borderWidth: 0.75, borderColor: GREY, padding: 3 * s, marginBottom: 6 * s, width }}>
+            {page.words!.map((w, i) => (
+              <Text key={i} style={[reader, { fontSize: 9.5 * s, marginHorizontal: 4 * s }]}>{w}</Text>
+            ))}
+          </View>
+          <View style={{ flexDirection: "row", width }}>
+            {cols.map((c, i) => (
+              <View key={i} style={{ width: colW, paddingHorizontal: 2 * s, borderLeftWidth: i ? 0.5 : 0, borderColor: GREY }}>
+                <Text style={[reader, { fontSize: (cols.length > 3 ? 7 : 8) * s, fontWeight: 700, marginBottom: 2 * s }]}>{c.heading}</Text>
+                {Array.from({ length: rows }, (_, j) => (
+                  <View key={j} style={{ borderBottomWidth: 0.6, borderColor: INK, height: 16 * s }} />
+                ))}
               </View>
-            );
-          })}
+            ))}
+          </View>
+        </View>
+      );
+    }
+    case "fill":
+      return (
+        <View style={{ alignItems: "center", width }}>
+          <Prompt text={page.prompt} s={s} />
+          <View style={{ flexDirection: "row", flexWrap: "wrap", justifyContent: "space-between", width }}>
+            {(page.items as FillItem[]).map((it) => (
+              <View key={it.word} style={{ width: width / 2 - 4 * s, alignItems: "center", marginBottom: 8 * s }}>
+                <Picture brief={it.pictureBrief} picture={it.picture} width={width / 2 - 4 * s} height={52 * s} s={s} />
+                <Text style={[reader, { fontSize: 13 * s, letterSpacing: 1.5 * s, marginTop: 3 * s }]}>{it.blanked}</Text>
+              </View>
+            ))}
+          </View>
+        </View>
+      );
+    case "readDraw":
+      return (
+        <View style={{ alignItems: "center", width }}>
+          <Prompt text={page.prompt} s={s} />
+          {page.words!.map((w, i) => (
+            <View key={i} style={{ width, marginBottom: 6 * s }}>
+              <Text style={[reader, { fontSize: 11 * s, marginBottom: 3 * s }]}>{w}</Text>
+              <View style={{ width, height: (page.words!.length > 1 ? 80 : 160) * s, borderWidth: 0.75, borderColor: GREY }} />
+            </View>
+          ))}
+        </View>
+      );
+    case "sums":
+      return (
+        <View style={{ alignItems: "center", width }}>
+          <Prompt text={page.prompt} s={s} />
+          {page.sums!.map(([a, b], i) => (
+            <View key={i} style={{ flexDirection: "row", alignItems: "flex-end", marginBottom: 12 * s }}>
+              <Text style={[reader, { fontSize: 12 * s }]}>
+                {a} + {b} ={" "}
+              </Text>
+              <View style={{ width: width * 0.4, borderBottomWidth: 0.75, borderColor: INK, height: 14 * s }} />
+            </View>
+          ))}
         </View>
       );
     case "silly":

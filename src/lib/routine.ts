@@ -2,6 +2,7 @@ import { and, desc, eq, inArray, sql } from "drizzle-orm";
 import { db, schema } from "./db";
 import type { Child, Parent, Routine, RoutineSparkWord } from "./db/schema";
 import { getLevel, MAX_LEVEL, warmUpFor } from "./curriculum";
+import { nextLevel, readyToMoveUp, setLevel, type Feedback } from "./progression";
 import { colourSheetFor, heartWordsIn, isHeartBook, pickReader, readerById, SPARK_WORDS, teachingBooksFor } from "./content";
 import { countWord, pickReviewWords, pickSparkWords } from "./story/sparkWords";
 import { writeChapter } from "./story/generate";
@@ -14,30 +15,36 @@ import { env } from "./env";
 import { sendEmail } from "./email";
 import { routineEmail } from "./emails";
 
-/** Nights a child stays on a level before the weekly check (from the scope & sequence: 2 weeks per level, checked weekly). */
-const CHECK_EVERY = 7;
-
 export async function buildRoutine(child: Child, forDate: string): Promise<Routine> {
   const existing = await db.query.routines.findFirst({
     where: and(eq(schema.routines.childId, child.id), eq(schema.routines.forDate, forDate)),
   });
   if (existing && existing.status !== "failed") return existing;
 
-  const level = child.level;
+  const nightsAt = async (lv: number) => {
+    const [{ count }] = await db
+      .select({ count: sql<number>`count(*)::int` })
+      .from(schema.routines)
+      .where(and(eq(schema.routines.childId, child.id), eq(schema.routines.level, lv)));
+    return count;
+  };
+
+  // Move up after two weeks at a level, or early after three "too easy" nights.
+  let level = child.level;
+  if (level <= MAX_LEVEL) {
+    const recent = await db.query.routines.findMany({
+      where: and(eq(schema.routines.childId, child.id), eq(schema.routines.level, level)),
+      orderBy: desc(schema.routines.forDate),
+      limit: 3,
+    });
+    if (readyToMoveUp(await nightsAt(level), recent.map((r) => r.feedback as Feedback))) {
+      level = nextLevel(level);
+      await setLevel(child.id, level);
+      child = { ...child, level };
+    }
+  }
   const chapterMode = level > MAX_LEVEL;
-
-  const [{ count }] = await db
-    .select({ count: sql<number>`count(*)::int` })
-    .from(schema.routines)
-    .where(and(eq(schema.routines.childId, child.id), eq(schema.routines.level, level)));
-
-  const recent = await db.query.routines.findMany({
-    where: eq(schema.routines.childId, child.id),
-    orderBy: desc(schema.routines.forDate),
-    limit: 3,
-  });
-  const askedForCheck = recent.length === 3 && recent.every((r) => r.feedback === "too_easy");
-  const includesCheck = !chapterMode && ((count + 1) % CHECK_EVERY === 0 || askedForCheck);
+  const count = await nightsAt(level);
 
   // A level opens with its teaching books: a sound book for each new sound,
   // then the heart-word book (with the colour-by-heart-word sheet). After
@@ -108,7 +115,7 @@ export async function buildRoutine(child: Child, forDate: string): Promise<Routi
     sparkWords,
     reviewWords,
     story,
-    includesCheck,
+    includesCheck: false,
     token: existing?.token ?? randomToken(18),
     status: "ready",
     error: null,
@@ -131,7 +138,6 @@ export function routineLinks(token: string) {
   return {
     pdf: `${base}/r/${token}`,
     screen: `${base}/r/${token}?format=screen`,
-    check: `${base}/check/${token}`,
     feedback: (v: "too_hard" | "just_right" | "too_easy") => `${base}/f/${token}?v=${v}`,
     account: `${base}/account`,
   };
@@ -157,7 +163,7 @@ export function pdfProps(routine: Routine, child: Child): RoutinePdfProps {
     sparkWords: routine.sparkWords,
     reviewWords: routine.reviewWords,
     story: routine.story ?? { title: "", paragraphs: [], talkQuestion: "" },
-    check: routine.includesCheck ? { words: lv.checkWords, passage: lv.checkPassage, url: links.check } : null,
+    check: null,
     feedbackUrl: links.feedback,
     accountUrl: links.account,
   };

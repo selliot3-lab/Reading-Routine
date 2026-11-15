@@ -16,7 +16,7 @@ export default function Privacy() {
           About your child: first name, age, the pronouns to use in stories, interests, and the first names of the special people
           and pets you choose to add.
         </li>
-        <li>Your child&apos;s reading level, placement and weekly check results, and the feedback you tap after reading.</li>
+        <li>Your child&apos;s reading level, placement results, and the feedback you tap after reading.</li>
       </ul>
       <h2>How we use it</h2>
       <p>

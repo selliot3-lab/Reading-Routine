@@ -6,7 +6,7 @@ import { Document, Font, Image, Page, StyleSheet, Text, View } from "@react-pdf/
 import type { ColourSheet, Reader } from "../content";
 import { ColourSheetPage } from "./ColourSheet";
 import type { RoutineSparkWord, RoutineStory } from "../db/schema";
-import { ActivityPage } from "./ActivityPage";
+import { ActivityPage, LetterCover } from "./ActivityPage";
 
 const fontDir = path.join(process.cwd(), "assets", "fonts");
 let fontsReady = false;
@@ -195,7 +195,13 @@ export function RoutinePdf(p: RoutinePdfProps) {
               <Text style={s.kicker}>
                 {p.reader.type === "sound" ? "Tonight's sound book: do it together" : p.reader.type === "heart" ? "Tonight's heart words: do it together" : `${p.childName} reads to you`}
               </Text>
-              <Text style={[s.readerText, { fontSize: 34, fontWeight: 700, marginTop: 20 }]}>{p.reader.title}</Text>
+              {p.reader.cover ? (
+                <View style={{ marginTop: 16 }}>
+                  <LetterCover cover={p.reader.cover} say={p.reader.say} width={300} s={1.6} />
+                </View>
+              ) : (
+                <Text style={[s.readerText, { fontSize: 34, fontWeight: 700, marginTop: 20 }]}>{p.reader.title}</Text>
+              )}
               {p.bookHeartWords.length > 0 && (
                 <View style={{ marginTop: 20, alignItems: "center" }}>
                   <Text style={s.kicker}>heart words in this book</Text>

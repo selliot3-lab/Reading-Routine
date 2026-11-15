@@ -30,7 +30,7 @@ export function routineEmail(opts: {
   parent: Parent;
   child: Child;
   routine: Routine;
-  links: { pdf: string; screen: string; feedback: (v: "too_hard" | "just_right" | "too_easy") => string; check: string };
+  links: { pdf: string; screen: string; feedback: (v: "too_hard" | "just_right" | "too_easy") => string };
 }) {
   const { child, routine, links } = opts;
   const name = esc(child.firstName);
@@ -46,7 +46,6 @@ export function routineEmail(opts: {
 ${chapter ? "" : `<p style="font-size:14px;background:#fffdf8;border:1px solid #161616;padding:10px 12px"><strong>Making the little book:</strong> print page 1 single-sided. Fold it in half the long way and open it. Fold it in half the short way, then in half again, and open it. Fold it in half the short way and cut along the dashed line, from the fold to where the creases cross. Open it, fold it the long way, push the ends together so the middle opens, and fold the pages into a book with the cover on the front.</p>`}
 <p><strong>Tonight's Spark Words:</strong> ${words.map((w) => `<em>${esc(w)}</em>`).join(", ")}</p>
 ${chapter ? `<p>${name} reads tonight's chapter to you: <em>${esc(routine.story?.title ?? "")}</em>.</p>` : `<p><strong>Bedtime story:</strong> <em>${esc(routine.story?.title ?? "")}</em></p>`}
-${routine.includesCheck ? `<p><strong>It's check night!</strong> There's a short word check in the PDF. <a href="${links.check}">Record the result here</a> when you're done.</p>` : ""}
 <hr style="border:none;border-top:1px solid #161616;margin:22px 0">
 <p style="text-align:center;margin-bottom:6px">After reading, how was it for ${name}?</p>
 <p style="text-align:center;margin:0">${smallButton(links.feedback("too_hard"), "Too hard")}${smallButton(links.feedback("just_right"), "Just right")}${smallButton(links.feedback("too_easy"), "Too easy")}</p>`,
@@ -54,7 +53,6 @@ ${routine.includesCheck ? `<p><strong>It's check night!</strong> There's a short
   );
   const text = `Tonight's routine for ${child.firstName} is attached. Print it: ${links.pdf}\nOr read it on a phone or tablet: ${links.screen}
 Spark Words: ${words.join(", ")}
-${routine.includesCheck ? `Check night! Record the result: ${links.check}\n` : ""}
 How was it? Too hard: ${links.feedback("too_hard")}
 Just right: ${links.feedback("just_right")}
 Too easy: ${links.feedback("too_easy")}`;

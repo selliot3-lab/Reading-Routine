@@ -4,7 +4,7 @@ import { Document, Image, Page, Polygon, StyleSheet, Svg, Text, View } from "@re
 import type { ReaderPage } from "../content";
 import { INK, LINEN, SOFT, publicPath, registerFonts, withSparkWords, type RoutinePdfProps } from "./RoutinePdf";
 import { ColourSheetPage } from "./ColourSheet";
-import { ActivityPage, HeartIcon } from "./ActivityPage";
+import { ActivityPage, HeartIcon, LetterCover } from "./ActivityPage";
 
 /*
  * The print version: one sheet that folds into an 8-page little book for the
@@ -103,8 +103,10 @@ function LittleBook(props: RoutinePdfProps & { logo: string | null }) {
     1,
     <View style={{ flexGrow: 1, alignItems: "center", justifyContent: "center", borderWidth: 1, borderColor: INK, width: "100%", padding: 8 }}>
       <Text style={p.kicker}>{r.type === "sound" ? "a sound book" : r.type === "heart" ? "a heart word book" : "a little book"}</Text>
-      {props.logo && <Image src={props.logo} style={{ width: 46, marginVertical: 10 }} />}
-      {r.type === "sound" ? (
+      {props.logo && !r.cover && <Image src={props.logo} style={{ width: 46, marginVertical: 10 }} />}
+      {r.cover ? (
+        <LetterCover cover={r.cover} say={r.say} width={PANEL_W - 46} />
+      ) : r.type === "sound" ? (
         <>
           <Text style={[p.readerText, { fontSize: (r.pages[0]?.display?.length ?? 0) > 6 ? 20 : 40, fontWeight: 700, lineHeight: 1.35 }]}>{r.pages[0]?.display}</Text>
           <Text style={[p.small, { marginTop: 6, textAlign: "center" }]}>Say: {r.say}</Text>
