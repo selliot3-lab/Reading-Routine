@@ -336,7 +336,7 @@ export function Onboarding(props: { interests: Interest[]; checkpoints: Checkpoi
             {kids.map((k, i) => (
               <li key={i}>
                 <strong>{k.firstName}</strong>, age {k.age}: starting at {k.level ? `Level ${k.level}` : "Level 1"}
-                {i > 0 && <span className="muted"> (+$5/month)</span>}
+                {i > 0 && <span className="muted"> (+$8/month)</span>}
               </li>
             ))}
           </ul>
@@ -344,7 +344,7 @@ export function Onboarding(props: { interests: Interest[]; checkpoints: Checkpoi
             Daily at <strong>{deliveryTime}</strong> to <strong>{email}</strong>.
           </p>
           <p>
-            14 days free, then <strong>${10 + 5 * (kids.length - 1)} CAD a month</strong>. Cancel anytime from your account.
+            14 days free, then <strong>${10 + 8 * (kids.length - 1)} CAD a month</strong>. Cancel anytime from your account.
           </p>
           <label style={{ display: "flex", gap: 10, alignItems: "flex-start", fontWeight: 400 }}>
             <input type="checkbox" checked={consent} onChange={(e) => setConsent(e.target.checked)} style={{ width: 22, height: 22, marginTop: 3 }} />

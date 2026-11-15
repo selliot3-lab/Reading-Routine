@@ -9,7 +9,7 @@ A daily 15-minute reading routine for families. Each day at a time the parent pi
 
 After Level 40, children "graduate": each day they read a chapter of an ongoing book (starring them) to the parent, with Spark Words and a talk question.
 
-$10 CAD/month for the first child, $5 for each sibling, 14-day free trial.
+$10 CAD/month for the first child, $8 for each sibling ($2 off), 14-day free trial.
 
 ## How it's built
 

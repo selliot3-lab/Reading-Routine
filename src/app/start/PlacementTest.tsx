@@ -42,7 +42,7 @@ export function PlacementTest(props: {
             Next: delivery time
           </button>
           <button className="btn btn-ghost" onClick={props.onAddSibling}>
-            + Add a brother or sister ($5/month)
+            + Add a brother or sister ($8/month)
           </button>
           <button
             className="btn btn-ghost"

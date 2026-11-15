@@ -8,7 +8,7 @@ export function getStripe(): Stripe {
   return stripe;
 }
 
-/** $10 for the first child, $5 for each brother or sister. */
+/** $10 for the first child, $8 for each brother or sister ($2 off). */
 export function subscriptionItems(childCount: number): Stripe.Checkout.SessionCreateParams.LineItem[] {
   const items: Stripe.Checkout.SessionCreateParams.LineItem[] = [{ price: env.STRIPE_PRICE_FIRST_CHILD, quantity: 1 }];
   if (childCount > 1) items.push({ price: env.STRIPE_PRICE_SIBLING, quantity: childCount - 1 });

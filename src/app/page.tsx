@@ -67,7 +67,7 @@ const faqs = [
   },
   {
     q: "Can I use it for more than one child?",
-    a: "Yes. Each child gets their own level, books and stories. The first child is $10 a month and each brother or sister is $5.",
+    a: "Yes. Each child gets their own level, books and stories. The first child is $10 a month and each brother or sister is $8 ($2 off).",
   },
 ];
 
@@ -239,7 +239,7 @@ export default function Home() {
               <li>14-day free trial, cancel anytime</li>
               <li>A new routine every day, at the time you choose</li>
               <li>Bedtime stories starring your child</li>
-              <li>Add a brother or sister for $5/month</li>
+              <li>Add a brother or sister for $8/month ($2 off)</li>
             </ul>
             <Link href="/start" className="btn">
               Start your free trial

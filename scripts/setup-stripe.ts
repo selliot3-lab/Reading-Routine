@@ -1,6 +1,6 @@
 /**
  * Creates the product and two monthly prices in Stripe (CAD):
- *   first child $10, each brother or sister $5.
+ *   first child $10, each brother or sister $8 ($2 off).
  * Prints the price IDs to put in .env as STRIPE_PRICE_FIRST_CHILD / STRIPE_PRICE_SIBLING.
  *
  *   STRIPE_SECRET_KEY=sk_test_... npm run stripe:setup
@@ -26,7 +26,7 @@ async function main() {
   const sibling = await stripe.prices.create({
     product: product.id,
     currency: "cad",
-    unit_amount: 500,
+    unit_amount: 800,
     recurring: { interval: "month" },
     nickname: "Each additional child",
   });
