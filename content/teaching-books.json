@@ -19,7 +19,7 @@
         {
           "kind": "poem",
           "display": "Aa",
-          "text": "Alligator Al always looks angry.\nAl has an appetite for apples.\nHe acts angry when ants eat them first!\nSnap, snap! a, a, a goes Alligator Al!",
+          "text": "Alligator Al always looks angry with the animals.\nHe has an appetite for apples.\nHe acts angry when ants eat them first!\nSnap, snap! a, a, a goes Alligator Al!",
           "prompt": "Read the poem to your child. Every time you hear /a/, do Alligator Al's action together!",
           "pictureBrief": "A grinning alligator with his jaws wide open",
           "picture": null
@@ -435,19 +435,19 @@
       "say": "/t/",
       "cover": {
         "display": "Tt",
-        "character": "Tick-Tock Tess",
+        "character": "Tick-Tock Turtle",
         "action": "Tap one finger on your wrist like a ticking watch: t, t, t.",
         "tip": "Tap the tip of your tongue behind your top teeth. Keep it quick and quiet.",
-        "pictureBrief": "A friendly clock with arms and legs",
+        "pictureBrief": "A friendly turtle with a clock on her shell",
         "picture": null
       },
       "pages": [
         {
           "kind": "poem",
           "display": "Tt",
-          "text": "Tick-Tock Tess taps two times on the table.\nShe tells the time to tigers and turtles.\nTen o'clock, tea time, toast with a treat.\nT, t, t goes Tess, tapping her feet!",
-          "prompt": "Read the poem to your child. Every time you hear /t/, do Tick-Tock Tess's action together!",
-          "pictureBrief": "A friendly clock with arms and legs",
+          "text": "Tick-Tock Turtle taps two times on the table.\nShe tells the time to tigers and tarantulas.\nTen o'clock, tea time, toast with a treat.\nT, t, t goes the turtle, tapping her feet!",
+          "prompt": "Read the poem to your child. Every time you hear /t/, do Tick-Tock Turtle's action together!",
+          "pictureBrief": "A friendly turtle with a clock on her shell",
           "picture": null
         },
         {
@@ -729,7 +729,7 @@
         {
           "kind": "poem",
           "display": "Ff",
-          "text": "Frosty Fred has fingers full of frost.\nHe flaps and he flutters and fumbles his flag.\nHe blows on his fingers: fff, fff, fff.\nFour fluffy foxes say: Fred, you're fun!",
+          "text": "Frosty Fred has frozen fingers!\nHe flaps and he flutters and fumbles his flag.\nHe blows on his fingers: fff, fff, fff.\nFour fluffy foxes say: Fred, you're funny!",
           "prompt": "Read the poem to your child. Every time you hear /f/, do Frosty Fred's action together!",
           "pictureBrief": "A snowman blowing on his cold hands",
           "picture": null
