@@ -168,6 +168,34 @@ export default function Home() {
         </div>
       </section>
 
+      <section className={`${s.section} stripes`} id="research">
+        <div className="container">
+          <div className={`card ${s.researchCard}`}>
+            <div className="kicker">research-backed · evidence-based</div>
+            <blockquote className={s.bigQuote}>
+              &ldquo;Literacy-rich home environments contribute more powerfully to children&apos;s early successful literacy
+              development than do excellent preschool and kindergarten classrooms.&rdquo;
+            </blockquote>
+            <p className="small muted">Tracey &amp; Morrow, Lenses on Reading, 2017</p>
+            <p>
+              Learning to read is eight skills that build on each other: oral language, sounds, decoding, fluency, vocabulary,
+              word parts, writing and comprehension. Most programs focus on one or two. The Reading Routine touches all eight,
+              every night, in 15 minutes.
+            </p>
+            <div className={s.skills}>
+              {["Oral language", "Phonological awareness", "Decoding", "Fluency", "Vocabulary", "Morphology", "Writing", "Comprehension"].map(
+                (k) => (
+                  <span key={k}>{k}</span>
+                ),
+              )}
+            </div>
+            <Link href="/research" className="btn btn-ghost">
+              See the research behind every page
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <section className={s.section} id="how">
         <div className="container">
           <h2>How it works</h2>

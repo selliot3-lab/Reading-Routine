@@ -1,7 +1,7 @@
 import { and, desc, eq, inArray, sql } from "drizzle-orm";
 import { db, schema } from "./db";
 import type { Child, Parent, Routine, RoutineSparkWord } from "./db/schema";
-import { getLevel, MAX_LEVEL } from "./curriculum";
+import { getLevel, MAX_LEVEL, warmUpFor } from "./curriculum";
 import { colourSheetFor, heartWordsIn, isPrereading, pickReader, prereadingFor, readerById, SPARK_WORDS } from "./content";
 import { pickReviewWords, pickSparkWords } from "./story/sparkWords";
 import { proposeSparkWords, writeBedtimeStory, writeChapter } from "./story/generate";
@@ -85,7 +85,7 @@ export async function buildRoutine(child: Child, forDate: string): Promise<Routi
   let story;
   if (chapterMode) {
     const chapter = await writeChapter({ child: storyChild, sparkWords, reviewWords, book: child.chapterBook ?? null });
-    story = { title: chapter.title, paragraphs: chapter.paragraphs, talkQuestion: chapter.talkQuestion };
+    story = { title: chapter.title, paragraphs: chapter.paragraphs, talkQuestion: chapter.talkQuestion, beforeQuestion: chapter.beforeQuestion };
     await db
       .update(schema.children)
       .set({ chapterBook: { title: chapter.bookTitle, summary: chapter.summary, chapter: (child.chapterBook?.chapter ?? 0) + 1 } })
@@ -153,6 +153,7 @@ export function pdfProps(routine: Routine, child: Child): RoutinePdfProps {
     pattern: lv.patterns,
     heartWords,
     reader,
+    warmUp: chapter ? null : warmUpFor(routine.level, routine.forDate),
     bookHeartWords: reader ? heartWordsIn(reader) : [],
     colourSheet: isPrereading(reader) ? colourSheetFor(Math.min(routine.level, MAX_LEVEL)) : null,
     sparkWords: routine.sparkWords,

@@ -64,6 +64,8 @@ export type RoutineStory = {
   title: string;
   paragraphs: string[];
   talkQuestion: string;
+  /** A prediction question to ask before reading, from the title. */
+  beforeQuestion?: string;
 };
 
 export type RoutineSparkWord = {

@@ -65,6 +65,8 @@ export type RoutinePdfProps = {
   pattern: string;
   heartWords: string[];
   reader: Reader | null;
+  /** One-minute sound warm-up before the little book. */
+  warmUp: { mode: "robot" | "quick"; words: string[][] } | null;
   /** Heart words in tonight's book, shown on its cover for review. */
   bookHeartWords: string[];
   /** On pre-reading nights: the colour-by-heart-word sheet. */
@@ -150,7 +152,10 @@ export function RoutinePdf(p: RoutinePdfProps) {
                 ["Tell us how it went", "Tap too hard, just right or too easy in tonight\u2019s email."],
               ]
             : [
-                [`${p.childName} reads to you`, "5 min. The little book on the next pages. Let them sound words out; wait before helping."],
+                ["Sound warm-up", p.warmUp?.mode === "robot"
+                  ? `1 min. Robot talk: ${p.warmUp.words.map((x) => x.join("-")).join(", ")}. They blend the sounds into a word.`
+                  : `1 min. Quick read: ${p.warmUp?.words.map((x) => x[0]).join(", ") ?? ""}.`],
+                [`${p.childName} reads to you`, "5 min. The little book, three ways: they sound it out, you read it together, they read it alone."],
                 ["Spark Words", "2 min. Meet three new words, then agree on the clap signal."],
                 ["You read the bedtime story", "8 min. Read aloud while they listen and clap for each Spark Word."],
                 ["Tell us how it went", "Tap too hard, just right or too easy in tonight\u2019s email."],
@@ -285,6 +290,12 @@ export function RoutinePdf(p: RoutinePdfProps) {
       <Page size={[396, 612]} style={s.page}>
         <Text style={s.kicker}>{chapter ? `${p.childName} reads tonight's chapter` : "You read · they listen and clap"}</Text>
         <Text style={[s.h2, { textAlign: "center", marginTop: 4 }]}>{p.story.title}</Text>
+        {p.story.beforeQuestion && (
+          <Text style={s.storyP}>
+            <Text style={{ fontWeight: 700 }}>Before you read: </Text>
+            {p.story.beforeQuestion}
+          </Text>
+        )}
         {p.story.paragraphs.map((para, i) => (
           <Text key={i} style={[s.storyP, chapter ? { fontFamily: "Andika", fontSize: 13 } : {}]}>
             {withSparkWords(para, p.sparkWords.map((w) => w.word))}
@@ -293,6 +304,9 @@ export function RoutinePdf(p: RoutinePdfProps) {
         <View style={{ borderTopWidth: 1, borderColor: INK, paddingTop: 8, marginTop: 6 }} wrap={false}>
           <Text style={{ fontWeight: 700 }}>Talk about it</Text>
           <Text>{p.story.talkQuestion}</Text>
+          <Text style={[s.small, { marginTop: 3 }]}>
+            Wait a few seconds for an answer. If it is short, ask &quot;What makes you think that?&quot; Praise the thinking, not just the answer.
+          </Text>
         </View>
         <Text style={[s.small, { textAlign: "center", marginTop: 14 }]}>Sweet dreams. See you tomorrow.</Text>
         <Footer childName={p.childName} />

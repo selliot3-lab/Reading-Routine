@@ -321,3 +321,29 @@
   background: #fffdf8;
   padding: 18px 22px;
 }
+
+.researchCard {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+}
+.bigQuote {
+  font-family: var(--serif);
+  font-size: clamp(20px, 3.2vw, 26px);
+  line-height: 1.4;
+  margin: 14px 0 6px;
+}
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin: 8px 0 22px;
+}
+.skills span {
+  border: var(--line);
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 14px;
+  background: #fffdf8;
+}

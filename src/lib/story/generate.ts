@@ -25,11 +25,12 @@ export type StoryInput = {
   patternWords: string[];
 };
 
-export type Story = { title: string; paragraphs: string[]; talkQuestion: string };
+export type Story = { title: string; paragraphs: string[]; talkQuestion: string; beforeQuestion: string };
 
 const StorySchema = z.object({
   title: z.string(),
   paragraphs: z.array(z.string()),
+  beforeQuestion: z.string(),
   talkQuestion: z.string(),
 });
 
@@ -45,9 +46,10 @@ Write a story that:
 - Is about 950 to 1,050 words, so it fills one printed page front and back: roughly 7 to 8 minutes read aloud. Stay inside that range. Give it a real shape: a cosy start, an adventure in the middle, and a calm, sleepy ending.
 - Is warm, funny and a little adventurous in the middle, then slows down: the last few paragraphs get calmer and cosier, ending with the child settling down to sleep, safe and happy. Nothing frightening, sad or violent; no peril that is not resolved warmly.
 - Is right for the child's age, in plain read-aloud language, with short paragraphs (2 to 5 sentences each). Use Canadian spelling.
-- Ends with one open, gentle talk question the parent can ask after reading (about the story, not a quiz on the words).
+- Comes with a short "before" question the parent asks after reading the title, inviting the child to predict (for example, "What do you think might happen when Maya finds the map?").
+- Ends with one open "talk" question in the Text Talk style (Beck & McKeown): it asks why or how, so the child has to think about the events and the characters' feelings, not just recall a detail. Ask "Why was Nana so excited?" rather than "What did Nana find?"
 
-Return a title, the story as an array of paragraphs, and the talk question.`;
+Return a title, the story as an array of paragraphs, the before question, and the talk question.`;
 
 const CHAPTER_SYSTEM = `You write one chapter a night of an ongoing chapter book for The Reading Routine. The child has finished all 40 phonics levels and now reads the chapter aloud to their parent, so the chapter builds fluency and vocabulary.
 
@@ -56,9 +58,10 @@ Write a chapter that:
 - Uses each of tonight's three Spark Words at least twice, with the meaning clear from context. Uses any review words once each.
 - Is about 450 to 650 words, in short paragraphs, with varied sentence lengths that are good for reading aloud with expression, and some dialogue.
 - Is engaging and kind, right for the child's age, ending on a gentle hook for tomorrow. Canadian spelling.
-- Ends with one talk question that asks the child to think, predict or connect, not a recall quiz.
+- Comes with a short "before" question about what might happen next, from the summary and title.
+- Ends with one talk question in the Text Talk style: it asks why or how, so the child has to think about events and feelings, not just recall a detail.
 
-Return the chapter title, the paragraphs, the talk question, the book's title, and an updated running summary of the whole book so far (under 150 words) for writing tomorrow's chapter.`;
+Return the chapter title, the paragraphs, the before question, the talk question, the book's title, and an updated running summary of the whole book so far (under 150 words) for writing tomorrow's chapter.`;
 
 function childBrief(c: StoryChild): string {
   return JSON.stringify(
@@ -197,6 +200,7 @@ function mockStory(input: StoryInput): Story {
       ),
       `Back in bed, ${c.firstName} snuggled down. The night was ${b} and quiet, the stars were ${d}, and the whole day had been ${a}. Soon ${they} ${they === "they" ? "were" : "was"} fast asleep.`,
     ],
-    talkQuestion: `If you could follow a map anywhere tomorrow, where would you want it to take you?`,
+    beforeQuestion: `The story is called "${c.firstName} and the ${a ? a[0].toUpperCase() + a.slice(1) : "Starry"} Night". What do you think might happen?`,
+    talkQuestion: `Why do you think ${friend} wanted to follow the map with ${c.firstName}? How would you have felt at the top of the hill?`,
   };
 }

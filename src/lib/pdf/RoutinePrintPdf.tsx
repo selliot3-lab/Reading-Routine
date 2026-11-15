@@ -214,6 +214,49 @@ function SparkWords(props: RoutinePdfProps) {
   );
 }
 
+/** Before the little book: a one-minute sound warm-up and the three reads. */
+function BeforeTheBook(props: RoutinePdfProps) {
+  const w = props.warmUp;
+  if (!w || !props.reader) return null;
+  return (
+    <View wrap={false} style={{ flexDirection: "row", marginBottom: 12 }}>
+      <View style={[p.box, { flexGrow: 1, flexBasis: 0, marginRight: 8 }]}>
+        <Text style={{ fontWeight: 700 }}>1-minute sound warm-up</Text>
+        {w.mode === "robot" ? (
+          <>
+            <Text style={p.small}>Say each word in robot talk. {props.childName} blends it back. Then swap: you say the word, they say the sounds.</Text>
+            <View style={{ flexDirection: "row", marginTop: 4 }}>
+              {w.words.map((parts) => (
+                <View key={parts.join("")} style={{ flexGrow: 1, flexBasis: 0, alignItems: "center" }}>
+                  <Text style={{ fontFamily: "Andika", fontSize: 13, lineHeight: 1.35 }}>{parts.join(" · ")}</Text>
+                  <Text style={{ fontFamily: "Andika", fontWeight: 700, fontSize: 15, lineHeight: 1.35 }}>{parts.join("")}</Text>
+                </View>
+              ))}
+            </View>
+          </>
+        ) : (
+          <>
+            <Text style={p.small}>{props.childName} reads each word quickly. Any slow ones? Read them again together.</Text>
+            <View style={{ flexDirection: "row", marginTop: 4 }}>
+              {w.words.map((x) => (
+                <Text key={x[0]} style={{ flexGrow: 1, flexBasis: 0, textAlign: "center", fontFamily: "Andika", fontWeight: 700, fontSize: 15, lineHeight: 1.35 }}>
+                  {x[0]}
+                </Text>
+              ))}
+            </View>
+          </>
+        )}
+      </View>
+      <View style={[p.box, { flexGrow: 1, flexBasis: 0 }]}>
+        <Text style={{ fontWeight: 700 }}>Read the little book three ways</Text>
+        <Text style={p.small}>1. {props.childName} sounds it out to you. Wait before you help.</Text>
+        <Text style={p.small}>2. Read it together, side by side, pointing to each word.</Text>
+        <Text style={p.small}>3. {props.childName} reads it alone, smooth like talking. Celebrate!</Text>
+      </View>
+    </View>
+  );
+}
+
 function ParentSheet(props: RoutinePdfProps & { logo: string | null }) {
   const chapter = props.mode === "chapter";
   const words = props.sparkWords.map((w) => w.word);
@@ -234,6 +277,7 @@ function ParentSheet(props: RoutinePdfProps & { logo: string | null }) {
         </View>
       </View>
 
+      <BeforeTheBook {...props} />
       <SparkWords {...props} />
 
       {/* The story (or tonight's chapter) */}
@@ -243,6 +287,12 @@ function ParentSheet(props: RoutinePdfProps & { logo: string | null }) {
         </Text>
       </View>
       <Text style={[p.script, { fontSize: 28, marginBottom: 6, marginTop: 2 }]}>{props.story.title}</Text>
+      {props.story.beforeQuestion && (
+        <Text style={[p.storyP, { fontStyle: "normal" }]}>
+          <Text style={{ fontWeight: 700 }}>Before you read: </Text>
+          {props.story.beforeQuestion}
+        </Text>
+      )}
       {props.story.paragraphs.map((para, i) => (
         <Text key={i} style={[p.storyP, chapter ? { fontFamily: "Andika", fontSize: 13 } : {}]}>
           {withSparkWords(para, words)}
@@ -251,6 +301,9 @@ function ParentSheet(props: RoutinePdfProps & { logo: string | null }) {
       <View style={[p.box, { marginTop: 6, backgroundColor: LINEN }]} wrap={false}>
         <Text style={{ fontWeight: 700 }}>Talk about it</Text>
         <Text>{props.story.talkQuestion}</Text>
+        <Text style={[p.small, { marginTop: 3 }]}>
+          Wait a few seconds for an answer. If it is short, ask &quot;What makes you think that?&quot; or &quot;Tell me more.&quot; Praise the thinking, not just the answer.
+        </Text>
       </View>
 
       {props.check && (

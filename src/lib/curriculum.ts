@@ -134,6 +134,44 @@ export function isClosedSyllableDecodable(word: string, level: number): boolean 
   return true;
 }
 
+/**
+ * Splits a word into the sounds (graphemes) taught by `level`, e.g. "shop" →
+ * ["sh", "o", "p"]. Returns null if the word uses anything not yet taught.
+ * Used for the "robot talk" sound warm-up.
+ */
+export function segmentWord(word: string, level: number): string[] | null {
+  const w = word.toLowerCase();
+  const g = taughtGraphemes(level);
+  const parts: string[] = [];
+  for (let i = 0; i < w.length; ) {
+    const tri = w.slice(i, i + 3);
+    const di = w.slice(i, i + 2);
+    if (g.has(tri)) { parts.push(tri); i += 3; }
+    else if (g.has(di)) { parts.push(di); i += 2; }
+    else if (g.has(w[i])) { parts.push(w[i]); i += 1; }
+    else return null;
+  }
+  return parts;
+}
+
+/**
+ * The one-minute sound warm-up (phonological awareness): three words from the
+ * child's level said in "robot talk" for blending and segmenting. Above the
+ * levels where words split cleanly into single sounds, it becomes a quick
+ * word warm-up instead.
+ */
+export function warmUpFor(level: number, date: string): { mode: "robot" | "quick"; words: string[][] } {
+  const lv = getLevel(Math.min(level, MAX_LEVEL));
+  const day = Number(date.replaceAll("-", ""));
+  const pick = <T,>(xs: T[], n: number) => Array.from({ length: Math.min(n, xs.length) }, (_, i) => xs[(day + i * 7) % xs.length]);
+  const robot = lv.words
+    .map((w) => ({ w, parts: segmentWord(w, level) }))
+    .filter((x): x is { w: string; parts: string[] } => Boolean(x.parts && x.parts.length >= 2 && x.parts.length <= 5 && x.w === x.w.toLowerCase()));
+  // Robot talk while words split cleanly into taught sounds (closed syllables, to Level 17).
+  if (level <= 17 && robot.length >= 3) return { mode: "robot", words: pick(robot, 3).map((x) => x.parts) };
+  return { mode: "quick", words: pick(lv.sampleWords, 3).map((w) => [w]) };
+}
+
 const cache = new Map<number, Set<string>>();
 
 /** Every word a child at `level` may meet in their own reader. */

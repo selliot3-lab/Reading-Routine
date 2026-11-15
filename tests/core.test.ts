@@ -89,3 +89,18 @@ describe("pre-reading books and heart words", () => {
     for (const { word } of sheet.words) expect(sheet.sea).toContain(word);
   });
 });
+
+describe("sound warm-up", () => {
+  it("splits words into taught sounds for robot talk", async () => {
+    const { segmentWord } = await import("../src/lib/curriculum");
+    expect(segmentWord("shop", 14)).toEqual(["sh", "o", "p"]);
+    expect(segmentWord("mat", 1)).toEqual(["m", "a", "t"]);
+    expect(segmentWord("ship", 3)).toBeNull();
+  });
+  it("uses robot talk to Level 17 and quick words above", async () => {
+    const { warmUpFor } = await import("../src/lib/curriculum");
+    expect(warmUpFor(1, "2026-11-16").mode).toBe("robot");
+    expect(warmUpFor(1, "2026-11-16").words).toHaveLength(3);
+    expect(warmUpFor(30, "2026-11-16").mode).toBe("quick");
+  });
+});
