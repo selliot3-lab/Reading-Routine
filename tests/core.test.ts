@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { isClosedSyllableDecodable, placeFromResults, undecodableWords } from "../src/lib/curriculum";
-import { auditReaders, READERS } from "../src/lib/content";
+import { auditReaders, colourSheetFor, heartWordsIn, PREREADING, READERS } from "../src/lib/content";
 import { decide, nextLevel } from "../src/lib/progression";
 import { countWord, pickReviewWords, pickSparkWords } from "../src/lib/story/sparkWords";
 
@@ -68,5 +68,24 @@ describe("Spark Words", () => {
   it("counts word forms", () => {
     expect(countWord("She stomped. Stomp! stomping", "stomp")).toBe(3);
     expect(countWord("a gentle pat, gently", "gentle")).toBe(2);
+  });
+});
+
+describe("pre-reading books and heart words", () => {
+  it("has a 6-page pre-reading book for each level with story books", () => {
+    for (const level of new Set(READERS.map((r) => r.level))) {
+      const pre = PREREADING.find((p) => p.level === level);
+      expect(pre?.pages.length, `Level ${level}`).toBe(6);
+    }
+  });
+  it("lists a book's heart words for its cover", () => {
+    const pot = READERS.find((r) => r.id === "L03-the-pot")!;
+    expect(heartWordsIn(pot)).toEqual(["the", "is", "and"]);
+  });
+  it("builds a colour-by-heart-word sheet with every word hidden in the sea", () => {
+    const sheet = colourSheetFor(1)!;
+    expect(sheet.words.map((w) => w.word)).toEqual(["the", "a", "I"]);
+    expect(sheet.sea).toHaveLength(48);
+    for (const { word } of sheet.words) expect(sheet.sea).toContain(word);
   });
 });

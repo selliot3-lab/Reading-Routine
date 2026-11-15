@@ -7,292 +7,258 @@
       "title": "Sam Sat",
       "pages": [
         {
+          "text": "Sam! Sam!",
+          "pictureBrief": "A child calling out for Sam",
+          "picture": null
+        },
+        {
           "text": "I am Sam.",
-          "pictureBrief": "Sam, a smiling child, waving hello",
+          "pictureBrief": "Sam waving: 'that's me'",
           "picture": null
         },
         {
           "text": "Sam sat.",
-          "pictureBrief": "Sam sitting cross-legged",
-          "picture": null
-        },
-        {
-          "text": "Tam sat.",
-          "pictureBrief": "Tam, another child, sitting down",
+          "pictureBrief": "Sam sitting down",
           "picture": null
         },
         {
           "text": "Sam sat at the mat.",
-          "pictureBrief": "Sam sitting on a striped mat",
-          "picture": null
-        },
-        {
-          "text": "Tam sat at the mat.",
-          "pictureBrief": "Tam joining Sam on the mat",
-          "picture": null
-        },
-        {
-          "text": "I sat at the mat!",
-          "pictureBrief": "Both children on the mat, cheering",
-          "picture": null
-        }
-      ]
-    },
-    {
-      "id": "L01-tam",
-      "level": 1,
-      "title": "Tam",
-      "pages": [
-        {
-          "text": "I am Tam.",
-          "pictureBrief": "Tam in pyjamas, waving",
-          "picture": null
-        },
-        {
-          "text": "Tam sat.",
-          "pictureBrief": "Tam sitting on a cushion",
-          "picture": null
-        },
-        {
-          "text": "Sam sat.",
-          "pictureBrief": "Sam sitting on a cushion",
-          "picture": null
-        },
-        {
-          "text": "Tam sat at a mat.",
-          "pictureBrief": "Tam on a round mat",
-          "picture": null
-        },
-        {
-          "text": "Sam sat at a mat.",
-          "pictureBrief": "Sam on a square mat",
-          "picture": null
-        },
-        {
-          "text": "I am at the mat!",
-          "pictureBrief": "Tam and Sam on one big mat",
-          "picture": null
-        }
-      ]
-    },
-    {
-      "id": "L01-sam-at-the-mat",
-      "level": 1,
-      "title": "Sam at the Mat",
-      "pages": [
-        {
-          "text": "Sam! Sam!",
-          "pictureBrief": "Tam calling out to Sam",
-          "picture": null
-        },
-        {
-          "text": "Sam sat at a mat.",
           "pictureBrief": "Sam sitting on a mat",
           "picture": null
         },
         {
-          "text": "Tam sat at a mat.",
+          "text": "I am at the mat.",
+          "pictureBrief": "Sam on the mat, pointing to self",
+          "picture": null
+        },
+        {
+          "text": "I sat at the mat!",
+          "pictureBrief": "Sam sitting proudly on the mat",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L01-tam-sat",
+      "level": 1,
+      "title": "Tam Sat",
+      "pages": [
+        {
+          "text": "Tam! Tam!",
+          "pictureBrief": "Someone calling for Tam",
+          "picture": null
+        },
+        {
+          "text": "I am Tam.",
+          "pictureBrief": "Tam waving",
+          "picture": null
+        },
+        {
+          "text": "Tam sat.",
+          "pictureBrief": "Tam sitting down",
+          "picture": null
+        },
+        {
+          "text": "Tam sat at the mat.",
           "pictureBrief": "Tam sitting on a mat",
           "picture": null
         },
         {
-          "text": "I sat.",
-          "pictureBrief": "A child sitting, smiling",
+          "text": "I am at the mat.",
+          "pictureBrief": "Tam on the mat, pointing to self",
           "picture": null
         },
         {
-          "text": "I sat at the mat.",
-          "pictureBrief": "Three children sitting on one mat",
-          "picture": null
-        },
-        {
-          "text": "I am Sam!",
-          "pictureBrief": "Sam standing up proudly",
+          "text": "I sat at the mat!",
+          "pictureBrief": "Tam sitting proudly on the mat",
           "picture": null
         }
       ]
     },
     {
-      "id": "L02-tim",
-      "level": 2,
-      "title": "Tim",
+      "id": "L01-sam-and-tam",
+      "level": 1,
+      "title": "Sam and Tam",
       "pages": [
         {
-          "text": "Tim is fit.",
-          "pictureBrief": "Tim stretching after a run",
+          "text": "Sam! Sam!",
+          "pictureBrief": "Tam calling for Sam",
           "picture": null
         },
         {
-          "text": "Tim is at his map.",
-          "pictureBrief": "Tim holding a treasure map",
+          "text": "I am Sam.",
+          "pictureBrief": "Sam waving",
           "picture": null
         },
         {
-          "text": "Tap, tap! It is a pit.",
-          "pictureBrief": "Tim tapping the map, a pit drawn on it",
+          "text": "Tam! Tam!",
+          "pictureBrief": "Sam calling for Tam",
           "picture": null
         },
         {
-          "text": "Tim sat in the pit.",
-          "pictureBrief": "Tim sitting in a sandpit",
+          "text": "I am Tam.",
+          "pictureBrief": "Tam waving",
           "picture": null
         },
         {
-          "text": "Sip, sip, sip!",
-          "pictureBrief": "Tim sipping from a cup",
+          "text": "Tam and Sam sat.",
+          "pictureBrief": "Both children sitting down",
           "picture": null
         },
         {
-          "text": "Tim is fit in his pit.",
-          "pictureBrief": "Tim flexing his arms in the sandpit",
+          "text": "Tam and Sam sat at the mat.",
+          "pictureBrief": "Both children sitting together on a mat",
           "picture": null
         }
+      ],
+      "approvedWords": [
+        "and"
       ]
     },
     {
-      "id": "L02-the-fin",
+      "id": "L02-i-am-fit",
       "level": 2,
-      "title": "The Fin",
+      "title": "I Am Fit",
       "pages": [
         {
-          "text": "Pam sat.",
-          "pictureBrief": "Pam sitting on a dock by a lake",
+          "text": "I am Tim.",
+          "pictureBrief": "A boy named Tim in sports clothes",
           "picture": null
         },
         {
-          "text": "Pam sat at the tip.",
-          "pictureBrief": "Pam at the very end of the dock",
+          "text": "I am fit!",
+          "pictureBrief": "Tim flexing his arms",
           "picture": null
         },
         {
-          "text": "It is a fin!",
-          "pictureBrief": "A fish fin poking out of the water",
+          "text": "I sit.",
+          "pictureBrief": "Tim sitting on the floor to stretch",
           "picture": null
         },
         {
-          "text": "The fin is fat.",
-          "pictureBrief": "A round, chubby fish smiling up",
+          "text": "I tap. Tap! Tap!",
+          "pictureBrief": "Tim tapping his feet",
           "picture": null
         },
         {
-          "text": "Pam, tap the fin! Tap, tap.",
-          "pictureBrief": "Pam gently tapping the fin",
+          "text": "I sip. Sip! Sip!",
+          "pictureBrief": "Tim sipping water from a cup",
           "picture": null
         },
         {
-          "text": "The fin is in. Pam sat.",
-          "pictureBrief": "The fish swimming away, Pam waving",
+          "text": "I nap!",
+          "pictureBrief": "Tim asleep on a mat, smiling",
           "picture": null
         }
       ]
     },
     {
-      "id": "L02-the-pin",
+      "id": "L02-the-map",
       "level": 2,
-      "title": "The Pin",
+      "title": "The Map",
       "pages": [
         {
-          "text": "Tim is at a mat.",
-          "pictureBrief": "Tim kneeling on a mat",
+          "text": "Pam! Pam!",
+          "pictureBrief": "A friend calling to Pam, holding a paper",
           "picture": null
         },
         {
-          "text": "It is a pin!",
-          "pictureBrief": "A shiny pin on the mat",
+          "text": "It is a map.",
+          "pictureBrief": "A simple treasure map with an X on a sandpit",
           "picture": null
         },
         {
-          "text": "The pin is tin.",
-          "pictureBrief": "Close-up of a tin pin",
+          "text": "Tap the map, Pam.",
+          "pictureBrief": "Pam tapping the X on the map",
           "picture": null
         },
         {
-          "text": "Tim, tip it!",
-          "pictureBrief": "Tim tipping a small box",
+          "text": "It is a pit!",
+          "pictureBrief": "Pam finding a sandpit at the park",
           "picture": null
         },
         {
-          "text": "Tip, tip, tip.",
-          "pictureBrief": "The pin sliding out",
+          "text": "Pam is in the pit.",
+          "pictureBrief": "Pam stepping into the sandpit",
           "picture": null
         },
         {
-          "text": "The pin is in his map!",
-          "pictureBrief": "Tim pinning a map to the wall",
+          "text": "Pam sat in the pit.",
+          "pictureBrief": "Pam sitting happily in the sandpit",
           "picture": null
         }
       ]
     },
     {
-      "id": "L02-sip-it",
+      "id": "L02-sit-sam",
       "level": 2,
-      "title": "Sip It",
+      "title": "Sit, Sam!",
       "pages": [
         {
-          "text": "Pam is fit.",
-          "pictureBrief": "Pam doing jumping jacks",
+          "text": "It is Sam.",
+          "pictureBrief": "A puppy named Sam",
           "picture": null
         },
         {
-          "text": "Pam sat at the mat.",
-          "pictureBrief": "Pam sitting on a mat",
+          "text": "Sit, Sam!",
+          "pictureBrief": "A girl holding up one finger to the puppy",
           "picture": null
         },
         {
-          "text": "Sip it, Pam!",
-          "pictureBrief": "A cup held out to Pam",
+          "text": "Sam sat.",
+          "pictureBrief": "The puppy sitting",
           "picture": null
         },
         {
-          "text": "Sip, sip, sip.",
-          "pictureBrief": "Pam sipping from the cup",
+          "text": "Sam sat at the mat.",
+          "pictureBrief": "The puppy sitting on a mat",
           "picture": null
         },
         {
-          "text": "Nap, Pam, nap.",
-          "pictureBrief": "Pam lying down with a pillow",
+          "text": "I pat Sam.",
+          "pictureBrief": "The girl patting the puppy",
           "picture": null
         },
         {
-          "text": "Pam sat. Pam is fit!",
-          "pictureBrief": "Pam sitting up, smiling",
+          "text": "Sit, Sam, sit!",
+          "pictureBrief": "The puppy sitting proudly, tail wagging",
           "picture": null
         }
       ]
     },
     {
-      "id": "L03-dan-and-the-pot",
+      "id": "L03-the-pot",
       "level": 3,
-      "title": "Dan and the Pot",
+      "title": "The Pot",
       "pages": [
         {
-          "text": "Dan is sad.",
-          "pictureBrief": "Dan frowning in a kitchen",
-          "picture": null
-        },
-        {
-          "text": "His pot is not on the pan.",
-          "pictureBrief": "A small pot next to a pan",
+          "text": "Dan did tip the pot.",
+          "pictureBrief": "Dan bumping a pot of water",
           "picture": null
         },
         {
           "text": "The pot is on the mat!",
-          "pictureBrief": "The pot on the floor mat",
+          "pictureBrief": "The pot tipped over on the kitchen mat",
           "picture": null
         },
         {
-          "text": "Dad and Dan mop. Mop, mop, mop!",
-          "pictureBrief": "Dan and his dad mopping together",
+          "text": "Dan is sad.",
+          "pictureBrief": "Dan looking sad at the puddle",
           "picture": null
         },
         {
-          "text": "The pot is on top of the pan.",
-          "pictureBrief": "The pot stacked on the pan",
+          "text": "Dad and Dan mop.",
+          "pictureBrief": "Dad and Dan with mops",
           "picture": null
         },
         {
-          "text": "Dan is not sad!",
-          "pictureBrief": "Dan grinning, thumbs up",
+          "text": "Mop, mop, mop!",
+          "pictureBrief": "Mopping up the puddle",
+          "picture": null
+        },
+        {
+          "text": "Dan is not sad. Dad is not mad.",
+          "pictureBrief": "Dan and Dad smiling, the floor clean",
           "picture": null
         }
       ]
@@ -303,33 +269,33 @@
       "title": "Sid and Tom",
       "pages": [
         {
-          "text": "Sid and Tom sit on a pad.",
-          "pictureBrief": "Two friends on a cushion",
-          "picture": null
-        },
-        {
           "text": "Tom is sad.",
           "pictureBrief": "Tom looking sad",
           "picture": null
         },
         {
-          "text": "Tom did not nod.",
-          "pictureBrief": "Sid asking, Tom looking down",
+          "text": "Tom sat on a pad.",
+          "pictureBrief": "Tom sitting on a cushion",
           "picture": null
         },
         {
-          "text": "Sid did pat Tom. Pat, pat, pat.",
+          "text": "Sid sat on the pad.",
+          "pictureBrief": "Sid sitting beside Tom",
+          "picture": null
+        },
+        {
+          "text": "Sid did pat Tom.",
           "pictureBrief": "Sid patting Tom's back",
           "picture": null
         },
         {
-          "text": "Tom did nod.",
-          "pictureBrief": "Tom nodding a little",
+          "text": "Pat, pat, pat.",
+          "pictureBrief": "A close-up of a kind pat",
           "picture": null
         },
         {
-          "text": "Tom is not sad. Tom and Sid sit on the pad.",
-          "pictureBrief": "Both friends smiling on the cushion",
+          "text": "Tom is not sad!",
+          "pictureBrief": "Tom and Sid smiling together",
           "picture": null
         }
       ]
@@ -340,41 +306,41 @@
       "title": "The Fan",
       "pages": [
         {
-          "text": "It is Dad and Dan.",
-          "pictureBrief": "Dad and Dan on a couch",
-          "picture": null
-        },
-        {
-          "text": "Dad, a fan!",
-          "pictureBrief": "Dan pointing at an electric fan",
+          "text": "Dad and Dan sit at a fan.",
+          "pictureBrief": "Dad and Dan on a couch by a fan",
           "picture": null
         },
         {
           "text": "The fan is on.",
-          "pictureBrief": "The fan blowing, hair flying",
-          "picture": null
-        },
-        {
-          "text": "Dan and Dad sit at the fan.",
-          "pictureBrief": "Both sitting in front of the fan",
+          "pictureBrief": "The fan blowing their hair",
           "picture": null
         },
         {
           "text": "Pop! The fan is not on.",
-          "pictureBrief": "The fan stopped, a little spark",
+          "pictureBrief": "The fan stopped",
           "picture": null
         },
         {
-          "text": "Dad is mad! Dan is not mad.",
-          "pictureBrief": "Dad grumpy, Dan giggling",
+          "text": "Dad is mad.",
+          "pictureBrief": "Dad frowning at the fan",
+          "picture": null
+        },
+        {
+          "text": "Dan did tap the fan.",
+          "pictureBrief": "Dan tapping the fan's button",
+          "picture": null
+        },
+        {
+          "text": "The fan is on! Dad is not mad.",
+          "pictureBrief": "The fan blowing again, Dad smiling",
           "picture": null
         }
       ]
     },
     {
-      "id": "L03-pop-pop-pop",
+      "id": "L03-pop-pop",
       "level": 3,
-      "title": "Pop, Pop, Pop!",
+      "title": "Pop, Pop!",
       "pages": [
         {
           "text": "Mom and Tom sit.",
@@ -382,28 +348,28 @@
           "picture": null
         },
         {
-          "text": "Mom did pop a pod.",
-          "pictureBrief": "Mom popping open a pea pod",
+          "text": "It is a pod.",
+          "pictureBrief": "A pea pod",
+          "picture": null
+        },
+        {
+          "text": "Mom did pop the pod.",
+          "pictureBrief": "Mom opening a pea pod",
           "picture": null
         },
         {
           "text": "Pop!",
-          "pictureBrief": "Peas flying out",
+          "pictureBrief": "Peas spilling out",
           "picture": null
         },
         {
-          "text": "Tom did pop a pod. Pop, pop!",
-          "pictureBrief": "Tom popping a pea pod",
+          "text": "Tom did pop a pod.",
+          "pictureBrief": "Tom opening a pea pod",
           "picture": null
         },
         {
-          "text": "Pop, pop, pop!",
-          "pictureBrief": "Lots of peas bouncing",
-          "picture": null
-        },
-        {
-          "text": "Mom and Tom nap on a pad.",
-          "pictureBrief": "Mom and Tom napping on a cushion",
+          "text": "Pop, pop, pop! Tom and Mom did it!",
+          "pictureBrief": "A bowl full of peas, Mom and Tom cheering",
           "picture": null
         }
       ]
@@ -414,13 +380,13 @@
       "title": "The Mud Pup",
       "pages": [
         {
-          "text": "The pup dug in the mud.",
-          "pictureBrief": "A puppy digging in mud",
+          "text": "The pup is in the mud.",
+          "pictureBrief": "A puppy in a muddy puddle",
           "picture": null
         },
         {
           "text": "Dig, dig, dig!",
-          "pictureBrief": "Mud flying",
+          "pictureBrief": "The puppy digging, mud flying",
           "picture": null
         },
         {
@@ -429,18 +395,18 @@
           "picture": null
         },
         {
-          "text": "Mom got a cup.",
-          "pictureBrief": "Mom holding a cup of water",
+          "text": "Mom is mad.",
+          "pictureBrief": "Mom looking at the muddy puppy, hands on hips",
           "picture": null
         },
         {
-          "text": "The pup sat on a cot.",
-          "pictureBrief": "The muddy pup on a camp cot",
+          "text": "Mom did tip a cup on the pup.",
+          "pictureBrief": "Mom pouring a cup of water over the puppy",
           "picture": null
         },
         {
-          "text": "Can you pat the mud pup?",
-          "pictureBrief": "The pup wagging, ready for pats",
+          "text": "It is not a mud pup!",
+          "pictureBrief": "The clean puppy shaking off water",
           "picture": null
         }
       ]
@@ -461,31 +427,31 @@
           "picture": null
         },
         {
-          "text": "Dad got a cup of pop.",
-          "pictureBrief": "Dad holding a fizzy drink",
+          "text": "Dad got a cup.",
+          "pictureBrief": "Dad holding a cup",
           "picture": null
         },
         {
-          "text": "Tom got a cup, not a mug.",
-          "pictureBrief": "Tom holding a cup proudly",
+          "text": "Tom got a cup.",
+          "pictureBrief": "Tom holding a cup",
+          "picture": null
+        },
+        {
+          "text": "Sip, sip!",
+          "pictureBrief": "Tom and Dad sipping their drinks",
           "picture": null
         },
         {
           "text": "It is fun in the sun!",
-          "pictureBrief": "Tom and Dad by a sandcastle",
-          "picture": null
-        },
-        {
-          "text": "Do you dig in the sun?",
-          "pictureBrief": "A shovel and pail in the sand",
+          "pictureBrief": "Tom and Dad by their sandcastle",
           "picture": null
         }
       ]
     },
     {
-      "id": "L04-gus-and-the-cat",
+      "id": "L04-gus-can",
       "level": 4,
-      "title": "Gus and the Cat",
+      "title": "Gus Can",
       "pages": [
         {
           "text": "Gus is a pug.",
@@ -493,28 +459,28 @@
           "picture": null
         },
         {
-          "text": "A cat is on a cot.",
-          "pictureBrief": "A cat sitting on a cot",
+          "text": "Gus can dig.",
+          "pictureBrief": "Gus digging",
           "picture": null
         },
         {
-          "text": "Gus is up. Gus can tug.",
-          "pictureBrief": "Gus tugging a blanket",
+          "text": "Gus can tug.",
+          "pictureBrief": "Gus tugging a rope toy",
           "picture": null
         },
         {
-          "text": "Tug, tug, tug!",
-          "pictureBrief": "The blanket sliding",
+          "text": "Gus can sit.",
+          "pictureBrief": "Gus sitting",
           "picture": null
         },
         {
-          "text": "The cat is not mad.",
-          "pictureBrief": "The cat calm and curious",
+          "text": "Can Gus nap?",
+          "pictureBrief": "Gus yawning",
           "picture": null
         },
         {
-          "text": "Gus and the cat nap in the sun.",
-          "pictureBrief": "The pug and cat napping together",
+          "text": "Gus can nap in the sun!",
+          "pictureBrief": "Gus asleep in a patch of sun",
           "picture": null
         }
       ]
@@ -535,23 +501,23 @@
           "picture": null
         },
         {
-          "text": "Pop! The gum is on his cap!",
+          "text": "Pop!",
+          "pictureBrief": "The bubble popping",
+          "picture": null
+        },
+        {
+          "text": "The gum is on his cap!",
           "pictureBrief": "Gum stuck on Tom's cap",
           "picture": null
         },
         {
-          "text": "Mom got the gum.",
-          "pictureBrief": "Mom reaching for the cap",
-          "picture": null
-        },
-        {
-          "text": "Tug, tug!",
-          "pictureBrief": "Mom pulling the gum off",
+          "text": "Mom did tug it.",
+          "pictureBrief": "Mom pulling the gum off the cap",
           "picture": null
         },
         {
           "text": "Do not pop gum, Tom!",
-          "pictureBrief": "Mom wagging a finger, Tom laughing",
+          "pictureBrief": "Mom laughing, Tom grinning",
           "picture": null
         }
       ]
@@ -562,107 +528,70 @@
       "title": "The Big Bug",
       "pages": [
         {
-          "text": "Ben got a bug.",
-          "pictureBrief": "Ben holding a jar with a ladybug",
+          "text": "It is a bug!",
+          "pictureBrief": "A boy named Ben spotting a beetle",
           "picture": null
         },
         {
-          "text": "It is a big bug!",
+          "text": "It is a big bug.",
           "pictureBrief": "A large, friendly beetle",
           "picture": null
         },
         {
-          "text": "The bug sat on a bed.",
-          "pictureBrief": "The beetle on a bed",
+          "text": "Ben got the bug in a cup.",
+          "pictureBrief": "Ben gently catching the beetle in a cup",
           "picture": null
         },
         {
-          "text": "Ben fed the bug a bun.",
-          "pictureBrief": "Ben offering the beetle a bun",
+          "text": "Ben fed the bug a bit of bun.",
+          "pictureBrief": "Ben offering a crumb of bun",
           "picture": null
         },
         {
-          "text": "We can pet the bug.",
-          "pictureBrief": "Ben petting the beetle",
+          "text": "The bug is fed.",
+          "pictureBrief": "The beetle with a full tummy",
           "picture": null
         },
         {
-          "text": "Ben and the bug nap.",
-          "pictureBrief": "Ben and the beetle asleep",
+          "text": "Ben set the bug on a bud.",
+          "pictureBrief": "Ben letting the beetle go on a flower bud",
           "picture": null
         }
       ]
     },
     {
-      "id": "L05-the-big-cab",
+      "id": "L05-get-in-ben",
       "level": 5,
-      "title": "The Big Cab",
+      "title": "Get In, Ben!",
       "pages": [
         {
-          "text": "Ted got a big pen.",
-          "pictureBrief": "Ted holding a giant marker",
+          "text": "It is a tub.",
+          "pictureBrief": "A bathtub with bubbles",
           "picture": null
         },
         {
-          "text": "He can dab it on a bag.",
-          "pictureBrief": "Ted dabbing dots on a bag",
+          "text": "Get in, Ben!",
+          "pictureBrief": "Mom pointing to the tub",
           "picture": null
         },
-        {
-          "text": "Dab, dab, dab!",
-          "pictureBrief": "Dots covering the bag",
-          "picture": null
-        },
-        {
-          "text": "Ted and Mom get in a cab.",
-          "pictureBrief": "Ted and Mom climbing into a taxi",
-          "picture": null
-        },
-        {
-          "text": "The cab is big.",
-          "pictureBrief": "A big taxi",
-          "picture": null
-        },
-        {
-          "text": "It is fun in a big cab!",
-          "pictureBrief": "Ted waving from the taxi window",
-          "picture": null
-        }
-      ]
-    },
-    {
-      "id": "L05-ben-in-the-tub",
-      "level": 5,
-      "title": "Ben in the Tub",
-      "pages": [
         {
           "text": "Ben got in the tub.",
-          "pictureBrief": "Ben stepping into a bathtub",
+          "pictureBrief": "Ben in the bath",
           "picture": null
         },
         {
-          "text": "He got a cup.",
-          "pictureBrief": "Ben holding a cup in the tub",
+          "text": "Ben got a cup.",
+          "pictureBrief": "Ben pouring water with a cup",
           "picture": null
         },
         {
-          "text": "He got a pot.",
-          "pictureBrief": "Ben holding a little pot",
-          "picture": null
-        },
-        {
-          "text": "Bud got in!",
+          "text": "The pup got in the tub!",
           "pictureBrief": "A puppy jumping into the tub",
           "picture": null
         },
         {
-          "text": "Bud, the pup, got in the tub!",
-          "pictureBrief": "The puppy splashing",
-          "picture": null
-        },
-        {
-          "text": "Ben, Bud and a cup in a big tub!",
-          "pictureBrief": "Ben and the puppy in bubbles",
+          "text": "Get the pup, Mom!",
+          "pictureBrief": "Ben laughing, Mom reaching for the puppy",
           "picture": null
         }
       ]
@@ -683,7 +612,7 @@
           "picture": null
         },
         {
-          "text": "Meg can bat it.",
+          "text": "Meg can bat it!",
           "pictureBrief": "Meg swinging the bat",
           "picture": null
         },
@@ -694,12 +623,49 @@
         },
         {
           "text": "Dad and Meg get the cup.",
-          "pictureBrief": "Meg and Dad chasing the cup",
+          "pictureBrief": "Meg and Dad running after the cup",
           "picture": null
         },
         {
-          "text": "Bat it, Meg! It is fun!",
+          "text": "Meg can bat it! It is fun!",
           "pictureBrief": "Meg ready to swing again",
+          "picture": null
+        }
+      ]
+    },
+    {
+      "id": "L05-we-can",
+      "level": 5,
+      "title": "We Can",
+      "pages": [
+        {
+          "text": "We can dig.",
+          "pictureBrief": "Two kids digging",
+          "picture": null
+        },
+        {
+          "text": "We can tug.",
+          "pictureBrief": "Two kids tugging a rope",
+          "picture": null
+        },
+        {
+          "text": "We can bat.",
+          "pictureBrief": "Two kids with a bat and ball",
+          "picture": null
+        },
+        {
+          "text": "We can sip.",
+          "pictureBrief": "Two kids sipping drinks",
+          "picture": null
+        },
+        {
+          "text": "We can sit in the sun.",
+          "pictureBrief": "Two kids sitting in the sun",
+          "picture": null
+        },
+        {
+          "text": "We can get in bed!",
+          "pictureBrief": "Two kids tucked in bed",
           "picture": null
         }
       ]
@@ -720,23 +686,23 @@
           "picture": null
         },
         {
-          "text": "Kim has hats and cups.",
-          "pictureBrief": "A shelf of hats and cups",
+          "text": "Kim gets a fan.",
+          "pictureBrief": "Kim carrying a small fan",
           "picture": null
         },
         {
-          "text": "She said, \"Hop in, pup!\"",
-          "pictureBrief": "Kim calling a puppy",
+          "text": "The pup is hot.",
+          "pictureBrief": "A puppy panting",
           "picture": null
         },
         {
-          "text": "The pup hops in.",
-          "pictureBrief": "The puppy leaping into the hut",
+          "text": "She said, \"Sit, pup!\"",
+          "pictureBrief": "Kim pointing to a spot in front of the fan",
           "picture": null
         },
         {
-          "text": "The pup hugs Kim.",
-          "pictureBrief": "The puppy in Kim's arms",
+          "text": "Kim and the pup sit at the fan.",
+          "pictureBrief": "Kim and the puppy cooling off by the fan",
           "picture": null
         }
       ]
@@ -747,8 +713,13 @@
       "title": "The Hens",
       "pages": [
         {
-          "text": "The hens sit in the hut.",
-          "pictureBrief": "Hens in a henhouse",
+          "text": "Ken has hens.",
+          "pictureBrief": "Ken with three hens",
+          "picture": null
+        },
+        {
+          "text": "The hens sit in a hut.",
+          "pictureBrief": "Hens sitting in their henhouse",
           "picture": null
         },
         {
@@ -757,60 +728,55 @@
           "picture": null
         },
         {
-          "text": "\"Hens, get up!\" said Ken.",
+          "text": "\"Hens! Hens!\" said Ken.",
           "pictureBrief": "Ken calling the hens",
           "picture": null
         },
         {
-          "text": "The hens get up. Hop, hop, hop!",
+          "text": "The hens hop up.",
           "pictureBrief": "Hens hopping off their nests",
           "picture": null
         },
         {
-          "text": "The hens dig in the cup.",
-          "pictureBrief": "Hens pecking at the cup",
-          "picture": null
-        },
-        {
-          "text": "Ken hugs a hen. The hen is hot!",
-          "pictureBrief": "Ken hugging a fluffy hen",
+          "text": "The hens get the nuts.",
+          "pictureBrief": "Hens eating from the cup",
           "picture": null
         }
       ]
     },
     {
-      "id": "L06-kit-and-the-kids",
+      "id": "L06-kit-and-the-hat",
       "level": 6,
-      "title": "Kit and the Kids",
+      "title": "Kit and the Hat",
       "pages": [
         {
-          "text": "Kit is a kid.",
-          "pictureBrief": "A child named Kit",
+          "text": "Kit has a hat.",
+          "pictureBrief": "Kit wearing a favourite hat",
           "picture": null
         },
         {
-          "text": "Kit has a big hat.",
-          "pictureBrief": "Kit wearing a big hat",
-          "picture": null
-        },
-        {
-          "text": "The kids hid the hat in a bag.",
-          "pictureBrief": "Two kids hiding the hat in a bag",
+          "text": "Kit did not get his hat.",
+          "pictureBrief": "Kit looking around, no hat",
           "picture": null
         },
         {
           "text": "Kit is sad.",
-          "pictureBrief": "Kit looking sad, no hat",
+          "pictureBrief": "Kit looking sad",
           "picture": null
         },
         {
-          "text": "Mom said, \"Kids! Get the hat!\"",
-          "pictureBrief": "Mom with hands on hips",
+          "text": "Mom said, \"Is it in the bag?\"",
+          "pictureBrief": "Mom pointing to a bag",
           "picture": null
         },
         {
-          "text": "Kit has his hat. Kit is not sad!",
-          "pictureBrief": "Kit smiling in his hat",
+          "text": "Kit did dig in the bag.",
+          "pictureBrief": "Kit digging through the bag",
+          "picture": null
+        },
+        {
+          "text": "It is his hat! Kit is not sad.",
+          "pictureBrief": "Kit wearing his hat, smiling",
           "picture": null
         }
       ]
@@ -821,23 +787,23 @@
       "title": "Hugs",
       "pages": [
         {
+          "text": "Kim gets in bed.",
+          "pictureBrief": "Kim climbing into bed",
+          "picture": null
+        },
+        {
           "text": "Dad hugs Kim.",
           "pictureBrief": "Dad hugging Kim",
           "picture": null
         },
         {
-          "text": "Kim hugs Mom.",
-          "pictureBrief": "Kim hugging Mom",
+          "text": "Mom hugs Kim.",
+          "pictureBrief": "Mom hugging Kim",
           "picture": null
         },
         {
-          "text": "Mom hugs the pup.",
-          "pictureBrief": "Mom hugging a puppy",
-          "picture": null
-        },
-        {
-          "text": "The pup hops on the bed.",
-          "pictureBrief": "The puppy hopping onto a bed",
+          "text": "The pup hugs Kim!",
+          "pictureBrief": "The puppy snuggling Kim",
           "picture": null
         },
         {
@@ -846,8 +812,8 @@
           "picture": null
         },
         {
-          "text": "Hugs and a nap!",
-          "pictureBrief": "The family napping together",
+          "text": "Kim naps.",
+          "pictureBrief": "Kim asleep, smiling",
           "picture": null
         }
       ]

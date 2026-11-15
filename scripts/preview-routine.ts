@@ -1,7 +1,7 @@
 /**
  * Builds a sample routine for a demo child and writes the PDF to ./.outbox.
  * Uses the mock story writer unless STORY_ENGINE=bedrock.
- * Run: npm run preview -- --level 3
+ * Run: npm run preview -- --level 3 --night 2
  */
 import "dotenv/config";
 import { mkdir, writeFile } from "node:fs/promises";
@@ -34,12 +34,15 @@ async function main() {
       pets: [{ name: "Biscuit", kind: "dog" }],
     })
     .returning();
-  const date = arg("date", new Date().toISOString().slice(0, 10));
-  const routine = await buildRoutine(child, date);
+  // --night 1 is the level's pre-reading book; --night 2 and on are story books.
+  const night = Number(arg("night", "1"));
+  const start = Date.parse(arg("date", new Date().toISOString().slice(0, 10)));
+  let routine = await buildRoutine(child, new Date(start).toISOString().slice(0, 10));
+  for (let n = 2; n <= night; n++) routine = await buildRoutine(child, new Date(start + (n - 1) * 86_400_000).toISOString().slice(0, 10));
   await mkdir(".outbox", { recursive: true });
   for (const format of ["print", "screen"] as const) {
     const pdf = await routinePdf(routine, child, format);
-    const out = `.outbox/preview-level-${level}-${format}.pdf`;
+    const out = `.outbox/preview-level-${level}-night-${night}-${format}.pdf`;
     await writeFile(out, pdf);
     console.log(`Wrote ${out} (${Math.round(pdf.length / 1024)} KB)`);
   }

@@ -2,7 +2,7 @@ import { and, desc, eq, inArray, sql } from "drizzle-orm";
 import { db, schema } from "./db";
 import type { Child, Parent, Routine, RoutineSparkWord } from "./db/schema";
 import { getLevel, MAX_LEVEL } from "./curriculum";
-import { pickReader, readerById, SPARK_WORDS } from "./content";
+import { colourSheetFor, heartWordsIn, isPrereading, pickReader, prereadingFor, readerById, SPARK_WORDS } from "./content";
 import { pickReviewWords, pickSparkWords } from "./story/sparkWords";
 import { proposeSparkWords, writeBedtimeStory, writeChapter } from "./story/generate";
 import { renderRoutinePdf, type PdfFormat } from "./pdf/render";
@@ -38,7 +38,10 @@ export async function buildRoutine(child: Child, forDate: string): Promise<Routi
   const askedForCheck = recent.length === 3 && recent.every((r) => r.feedback === "too_easy");
   const includesCheck = !chapterMode && ((count + 1) % CHECK_EVERY === 0 || askedForCheck);
 
-  const reader = chapterMode ? null : pickReader(level, count);
+  // The first night at a level is its pre-reading book (sounds + colour-by-word);
+  // after that, the level's story books in turn.
+  const pre = chapterMode ? null : prereadingFor(level);
+  const reader = chapterMode ? null : count === 0 && pre ? pre : pickReader(level, pre ? count - 1 : count);
 
   // Spark Words: bank words for the child's interests, never repeated.
   const history = await db.query.sparkWordHistory.findMany({ where: eq(schema.sparkWordHistory.childId, child.id) });
@@ -141,6 +144,7 @@ export function pdfProps(routine: Routine, child: Child): RoutinePdfProps {
   const chapter = routine.mode === "chapter";
   const lv = getLevel(Math.min(routine.level, MAX_LEVEL));
   const heartWords = chapter ? [] : lvHeartWordsSoFar(routine.level);
+  const reader = readerById(routine.readerId);
   return {
     childName: child.firstName,
     dateLabel: formatLongDate(routine.forDate),
@@ -148,7 +152,9 @@ export function pdfProps(routine: Routine, child: Child): RoutinePdfProps {
     mode: chapter ? "chapter" : "standard",
     pattern: lv.patterns,
     heartWords,
-    reader: readerById(routine.readerId),
+    reader,
+    bookHeartWords: reader ? heartWordsIn(reader) : [],
+    colourSheet: isPrereading(reader) ? colourSheetFor(Math.min(routine.level, MAX_LEVEL)) : null,
     sparkWords: routine.sparkWords,
     reviewWords: routine.reviewWords,
     story: routine.story ?? { title: "", paragraphs: [], talkQuestion: "" },

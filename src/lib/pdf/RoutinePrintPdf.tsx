@@ -3,6 +3,7 @@ import React from "react";
 import { Document, Image, Page, Polygon, StyleSheet, Svg, Text, View } from "@react-pdf/renderer";
 import type { ReaderPage } from "../content";
 import { INK, LINEN, SOFT, publicPath, registerFonts, withSparkWords, type RoutinePdfProps } from "./RoutinePdf";
+import { ColourSheetPage } from "./ColourSheet";
 
 /*
  * The print version: one sheet that folds into an 8-page little book for the
@@ -79,9 +80,9 @@ function insidePages(pages: ReaderPage[]): ReaderPage[] {
 }
 
 /** The page picture: a colouring-style outline drawing, or a light frame until it's made. */
-function PagePicture({ page }: { page: ReaderPage }) {
+function PagePicture({ page, height: fixed }: { page: ReaderPage; height?: number }) {
   if (page.text.length > DROP_PICTURE_AT) return null;
-  const height = page.text.length > SHRINK_PICTURE_AT ? 95 : 150;
+  const height = fixed ?? (page.text.length > SHRINK_PICTURE_AT ? 95 : 150);
   const pic = publicPath(page.picture);
   if (pic) return <Image src={pic} style={{ width: PANEL_W - 28, height, objectFit: "contain", marginBottom: 10 }} />;
   return (
@@ -102,8 +103,8 @@ function LittleBook(props: RoutinePdfProps & { logo: string | null }) {
       <Text style={p.kicker}>a little book</Text>
       {props.logo && <Image src={props.logo} style={{ width: 46, marginVertical: 10 }} />}
       <Text style={[p.readerText, { fontSize: 22, fontWeight: 700 }]}>{r.title}</Text>
-      <Text style={[p.small, { marginTop: 14, textAlign: "center" }]}>Read by {props.childName}</Text>
-      <Text style={[p.small, { textAlign: "center" }]}>Level {props.level}</Text>
+      <Text style={[p.small, { marginTop: 10, textAlign: "center" }]}>Read by {props.childName} · Level {props.level}</Text>
+      {props.bookHeartWords.length > 0 && <HeartWords words={props.bookHeartWords} />}
     </View>,
   );
 
@@ -113,10 +114,16 @@ function LittleBook(props: RoutinePdfProps & { logo: string | null }) {
     const pg = inside[i];
     panels.set(
       i + 2,
-      pg ? (
+      pg?.kind === "sound" ? (
+        <>
+          <Text style={[p.readerText, { fontSize: 42, fontWeight: 700, lineHeight: 1.35, marginBottom: 8 }]}>{pg.display}</Text>
+          <PagePicture page={{ ...pg, text: "" }} height={120} />
+          <Text style={[p.readerText, { fontSize: 18 }]}>{pg.text}</Text>
+        </>
+      ) : pg ? (
         <>
           <PagePicture page={pg} />
-          <Text style={[p.readerText, { fontSize: bookFontSize(props.level, pg.text) }]}>{pg.text}</Text>
+          <Text style={[p.readerText, { fontSize: pg.kind === "word" ? 30 : bookFontSize(props.level, pg.text) }]}>{pg.text}</Text>
         </>
       ) : (
         <View style={{ flexGrow: 1, width: "100%" }}>
@@ -259,12 +266,29 @@ function ParentSheet(props: RoutinePdfProps & { logo: string | null }) {
   );
 }
 
+/** The heart words in the book, on its cover, to practise before reading. */
+function HeartWords({ words }: { words: string[] }) {
+  return (
+    <View style={{ marginTop: 12, alignItems: "center", width: "100%" }}>
+      <Text style={[p.kicker, { marginBottom: 4 }]}>heart words</Text>
+      <View style={{ flexDirection: "row", flexWrap: "wrap", justifyContent: "center" }}>
+        {words.map((w) => (
+          <Text key={w} style={{ fontFamily: "Andika", fontSize: 12, borderWidth: 0.75, borderColor: INK, borderRadius: 8, paddingHorizontal: 5, paddingVertical: 1, margin: 2 }}>
+            {w}
+          </Text>
+        ))}
+      </View>
+    </View>
+  );
+}
+
 export function RoutinePrintPdf(props: RoutinePdfProps) {
   registerFonts();
   const logo = publicPath("/brand/clock-180.png");
   return (
     <Document title={`${props.childName}'s Reading Routine — ${props.dateLabel} (print)`} author="The Reading Routine">
       {props.mode !== "chapter" && props.reader && <LittleBook {...props} logo={logo} />}
+      {props.colourSheet && <ColourSheetPage sheet={props.colourSheet} childName={props.childName} level={props.level} />}
       <ParentSheet {...props} logo={logo} />
     </Document>
   );

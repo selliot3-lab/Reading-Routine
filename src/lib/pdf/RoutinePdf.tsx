@@ -3,7 +3,8 @@ import path from "node:path";
 import { existsSync } from "node:fs";
 import React from "react";
 import { Document, Font, Image, Page, StyleSheet, Text, View } from "@react-pdf/renderer";
-import type { Reader } from "../content";
+import type { ColourSheet, Reader } from "../content";
+import { ColourSheetPage } from "./ColourSheet";
 import type { RoutineSparkWord, RoutineStory } from "../db/schema";
 
 const fontDir = path.join(process.cwd(), "assets", "fonts");
@@ -64,6 +65,10 @@ export type RoutinePdfProps = {
   pattern: string;
   heartWords: string[];
   reader: Reader | null;
+  /** Heart words in tonight's book, shown on its cover for review. */
+  bookHeartWords: string[];
+  /** On pre-reading nights: the colour-by-heart-word sheet. */
+  colourSheet: ColourSheet | null;
   sparkWords: RoutineSparkWord[];
   reviewWords: string[];
   story: RoutineStory;
@@ -179,8 +184,14 @@ export function RoutinePdf(p: RoutinePdfProps) {
             <View style={[s.frame, { justifyContent: "center", alignItems: "center" }]}>
               <Text style={s.kicker}>{p.childName} reads to you</Text>
               <Text style={[s.readerText, { fontSize: 34, fontWeight: 700, marginTop: 20 }]}>{p.reader.title}</Text>
+              {p.bookHeartWords.length > 0 && (
+                <View style={{ marginTop: 20, alignItems: "center" }}>
+                  <Text style={s.kicker}>heart words in this book</Text>
+                  <Text style={[s.readerText, { fontSize: 20, marginTop: 4 }]}>{p.bookHeartWords.join("   ")}</Text>
+                </View>
+              )}
               <Text style={[s.small, { marginTop: 24, textAlign: "center" }]}>
-                Let {p.childName} read the title, then turn the page.
+                {p.bookHeartWords.length > 0 ? `Practise the heart words first. Then let ${p.childName} read the title and turn the page.` : `Let ${p.childName} read the title, then turn the page.`}
               </Text>
             </View>
             <Footer childName={p.childName} />
@@ -198,7 +209,10 @@ export function RoutinePdf(p: RoutinePdfProps) {
                       <Text style={[s.small, { textAlign: "center" }]}>Picture: {pg.pictureBrief}</Text>
                     </View>
                   )}
-                  <Text style={[s.readerText, { fontSize: readerFontSize(p.level, pg.text) }]}>{pg.text}</Text>
+                  {pg.kind === "sound" && (
+                    <Text style={[s.readerText, { fontSize: 60, fontWeight: 700, lineHeight: 1.1 }]}>{pg.display}</Text>
+                  )}
+                  <Text style={[s.readerText, { fontSize: pg.kind ? 30 : readerFontSize(p.level, pg.text) }]}>{pg.text}</Text>
                 </View>
                 <Footer childName={p.childName} />
               </Page>
@@ -206,6 +220,8 @@ export function RoutinePdf(p: RoutinePdfProps) {
           })}
         </>
       )}
+
+      {p.colourSheet && <ColourSheetPage sheet={p.colourSheet} childName={p.childName} level={p.level} size={[396, 612]} />}
 
       {/* Weekly check */}
       {p.check && (

@@ -1,0 +1,71 @@
+{
+  "_about": "Pre-reading books: the first little book at each level. One page per new sound (the letter, a keyword and an outline picture to colour), then practice words to fill the six inside pages. The same night includes a 'colour by heart word' sheet built from the level's heart words. Review keywords before pictures are made.",
+  "levels": [
+    {
+      "level": 1,
+      "pages": [
+        { "kind": "sound", "display": "Aa", "text": "apple", "pictureBrief": "A simple apple with a leaf", "picture": null },
+        { "kind": "sound", "display": "Mm", "text": "moon", "pictureBrief": "A crescent moon with a few stars", "picture": null },
+        { "kind": "sound", "display": "Ss", "text": "sun", "pictureBrief": "A smiling sun with rays", "picture": null },
+        { "kind": "sound", "display": "Tt", "text": "turtle", "pictureBrief": "A friendly turtle", "picture": null },
+        { "kind": "word", "text": "mat", "pictureBrief": "A striped floor mat", "picture": null },
+        { "kind": "word", "text": "Sam", "pictureBrief": "A smiling child named Sam waving", "picture": null }
+      ]
+    },
+    {
+      "level": 2,
+      "pages": [
+        { "kind": "sound", "display": "Pp", "text": "pig", "pictureBrief": "A round, happy pig", "picture": null },
+        { "kind": "sound", "display": "Ff", "text": "fish", "pictureBrief": "A fish with big fins", "picture": null },
+        { "kind": "sound", "display": "Ii", "text": "insect", "pictureBrief": "A ladybug-style insect", "picture": null },
+        { "kind": "sound", "display": "Nn", "text": "nest", "pictureBrief": "A bird's nest with three eggs", "picture": null },
+        { "kind": "word", "text": "pin", "pictureBrief": "A safety pin", "picture": null },
+        { "kind": "word", "text": "map", "pictureBrief": "A treasure map with an X", "picture": null }
+      ]
+    },
+    {
+      "level": 3,
+      "pages": [
+        { "kind": "sound", "display": "am", "text": "jam", "pictureBrief": "A jar of jam with a spoon", "picture": null },
+        { "kind": "sound", "display": "an", "text": "fan", "pictureBrief": "A table fan", "picture": null },
+        { "kind": "sound", "display": "Oo", "text": "octopus", "pictureBrief": "A smiling octopus", "picture": null },
+        { "kind": "sound", "display": "Dd", "text": "dog", "pictureBrief": "A sitting dog", "picture": null },
+        { "kind": "word", "text": "pot", "pictureBrief": "A cooking pot", "picture": null },
+        { "kind": "word", "text": "mop", "pictureBrief": "A mop", "picture": null }
+      ]
+    },
+    {
+      "level": 4,
+      "pages": [
+        { "kind": "sound", "display": "Cc", "text": "cat", "pictureBrief": "A sitting cat", "picture": null },
+        { "kind": "sound", "display": "Uu", "text": "umbrella", "pictureBrief": "An open umbrella", "picture": null },
+        { "kind": "sound", "display": "Gg", "text": "goat", "pictureBrief": "A goat with little horns", "picture": null },
+        { "kind": "word", "text": "cup", "pictureBrief": "A cup", "picture": null },
+        { "kind": "word", "text": "gum", "pictureBrief": "A pack of gum and a bubble", "picture": null },
+        { "kind": "word", "text": "mud", "pictureBrief": "A muddy puddle with boot prints", "picture": null }
+      ]
+    },
+    {
+      "level": 5,
+      "pages": [
+        { "kind": "sound", "display": "Bb", "text": "bat", "pictureBrief": "A baseball bat", "picture": null },
+        { "kind": "sound", "display": "Ee", "text": "egg", "pictureBrief": "An egg in an egg cup", "picture": null },
+        { "kind": "word", "text": "bed", "pictureBrief": "A cozy bed", "picture": null },
+        { "kind": "word", "text": "bug", "pictureBrief": "A beetle", "picture": null },
+        { "kind": "word", "text": "pen", "pictureBrief": "A pen", "picture": null },
+        { "kind": "word", "text": "tub", "pictureBrief": "A bathtub with bubbles", "picture": null }
+      ]
+    },
+    {
+      "level": 6,
+      "pages": [
+        { "kind": "sound", "display": "-s", "text": "cats", "pictureBrief": "Two cats sitting side by side", "picture": null },
+        { "kind": "sound", "display": "Kk", "text": "kite", "pictureBrief": "A kite with a bow tail", "picture": null },
+        { "kind": "sound", "display": "Hh", "text": "hat", "pictureBrief": "A sun hat", "picture": null },
+        { "kind": "word", "text": "dogs", "pictureBrief": "Two dogs playing", "picture": null },
+        { "kind": "word", "text": "kid", "pictureBrief": "A child jumping for joy", "picture": null },
+        { "kind": "word", "text": "hug", "pictureBrief": "Two friends hugging", "picture": null }
+      ]
+    }
+  ]
+}
