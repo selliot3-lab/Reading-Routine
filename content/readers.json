@@ -159,68 +159,68 @@
       "pages": [
         {
           "text": "Pam! Pam!",
-          "pictureBrief": "A friend calling to Pam, holding a paper",
+          "pictureBrief": "A child calling to Pam, holding up a paper",
           "picture": null
         },
         {
           "text": "It is a map.",
-          "pictureBrief": "A simple treasure map with an X on a sandpit",
+          "pictureBrief": "A simple treasure map",
           "picture": null
         },
         {
           "text": "Tap the map, Pam.",
-          "pictureBrief": "Pam tapping the X on the map",
+          "pictureBrief": "Pam tapping a spot on the map",
           "picture": null
         },
         {
-          "text": "It is a pit!",
-          "pictureBrief": "Pam finding a sandpit at the park",
+          "text": "A pin is in the map.",
+          "pictureBrief": "A pin stuck in the map, marking a spot",
           "picture": null
         },
         {
-          "text": "Pam is in the pit.",
-          "pictureBrief": "Pam stepping into the sandpit",
+          "text": "Is it a pit?",
+          "pictureBrief": "Pam looking into a small pit in the sand",
           "picture": null
         },
         {
-          "text": "Pam sat in the pit.",
-          "pictureBrief": "Pam sitting happily in the sandpit",
+          "text": "It is a tin in a pit!",
+          "pictureBrief": "A shiny treasure tin in the pit; Pam delighted",
           "picture": null
         }
       ]
     },
     {
-      "id": "L02-sit-sam",
+      "id": "L02-sit-pip",
       "level": 2,
-      "title": "Sit, Sam!",
+      "title": "Sit, Pip!",
       "pages": [
         {
-          "text": "It is Sam.",
-          "pictureBrief": "A puppy named Sam",
+          "text": "It is Pip.",
+          "pictureBrief": "A puppy named Pip the puppy",
           "picture": null
         },
         {
-          "text": "Sit, Sam!",
+          "text": "Sit, Pip!",
           "pictureBrief": "A girl holding up one finger to the puppy",
           "picture": null
         },
         {
-          "text": "Sam sat.",
+          "text": "Pip sat.",
           "pictureBrief": "The puppy sitting",
           "picture": null
         },
         {
-          "text": "Sam sat at the mat.",
+          "text": "Pip sat at the mat.",
           "pictureBrief": "The puppy sitting on a mat",
           "picture": null
         },
         {
-          "text": "I pat Sam.",
+          "text": "I pat Pip.",
           "pictureBrief": "The girl patting the puppy",
           "picture": null
         },
         {
-          "text": "Sit, Sam, sit!",
+          "text": "Sit, Pip, sit!",
           "pictureBrief": "The puppy sitting proudly, tail wagging",
           "picture": null
         }
@@ -395,12 +395,12 @@
           "picture": null
         },
         {
-          "text": "Mom is mad.",
-          "pictureBrief": "Mom looking at the muddy puppy, hands on hips",
+          "text": "Mom got a cup.",
+          "pictureBrief": "Mom arriving with a big cup of water",
           "picture": null
         },
         {
-          "text": "Mom did tip a cup on the pup.",
+          "text": "Mom did tip the cup on the pup.",
           "pictureBrief": "Mom pouring a cup of water over the puppy",
           "picture": null
         },
@@ -750,13 +750,13 @@
       "title": "Kit and the Hat",
       "pages": [
         {
-          "text": "Kit has a hat.",
-          "pictureBrief": "Kit wearing a favourite hat",
+          "text": "Kit had a big hat.",
+          "pictureBrief": "A boy remembering his big hat",
           "picture": null
         },
         {
-          "text": "Kit did not get his hat.",
-          "pictureBrief": "Kit looking around, no hat",
+          "text": "His hat is not on the peg!",
+          "pictureBrief": "An empty coat peg",
           "picture": null
         },
         {
@@ -1103,8 +1103,8 @@
           "picture": null
         },
         {
-          "text": "Val and Liz give Rex a tip.",
-          "pictureBrief": "Two kids whispering a hint to the boy",
+          "text": "But Rex did not quit.",
+          "pictureBrief": "Rex trying again, tongue out, thinking hard",
           "picture": null
         },
         {
@@ -1399,7 +1399,7 @@
           "picture": null
         },
         {
-          "text": "Fran and Stan sat flat on the stump.",
+          "text": "Fran and Stan did not jump.",
           "pictureBrief": "Both kids crouched still on the stump, wide-eyed",
           "picture": null
         },
@@ -2795,7 +2795,7 @@
           "picture": null
         },
         {
-          "text": "\"Buzz off!\" Polly yells. \"This is my jelly!\"",
+          "text": "\"Stop, fly!\" Polly yells. \"This is my jelly!\"",
           "pictureBrief": "The girl waving at the fly",
           "picture": null
         },
@@ -3032,8 +3032,8 @@
           "picture": null
         },
         {
-          "text": "After all the work, they sat under the birch and had dinner. Kurt was the first to burp!",
-          "pictureBrief": "A picnic dinner under a birch",
+          "text": "After all the work, they sat under the birch and had dinner. Kurt still had dirt on his shirt!",
+          "pictureBrief": "Mom and Kurt eating under a birch tree, Kurt's shirt muddy",
           "picture": null
         }
       ]
@@ -3429,7 +3429,7 @@
           "picture": null
         },
         {
-          "text": "Then the wind dies, and the kite dives down!",
+          "text": "Then the wind stops, and the kite dives down!",
           "pictureBrief": "The kite diving",
           "picture": null
         },
@@ -3503,8 +3503,8 @@
           "picture": null
         },
         {
-          "text": "At noon, she went to the kitchen and put a scoop of rice in a pot of water.",
-          "pictureBrief": "The girl scooping rice into a pot",
+          "text": "At noon, she and her dad went to the kitchen. They put a scoop of rice in a pot of water.",
+          "pictureBrief": "A girl and her dad at the stove",
           "picture": null
         },
         {
@@ -3562,17 +3562,17 @@
       "title": "Whose Shoe?",
       "pages": [
         {
-          "text": "Whose shoe is this? It is on the roof!",
-          "pictureBrief": "A shoe on a house roof",
+          "text": "Whose shoe is this? It is in the brook!",
+          "pictureBrief": "A shoe floating in a little brook",
           "picture": null
         },
         {
-          "text": "Luke looks up. It is his school shoe!",
-          "pictureBrief": "A boy looking up in surprise",
+          "text": "Luke looks. It is his school shoe!",
+          "pictureBrief": "A boy looking into the brook in surprise",
           "picture": null
         },
         {
-          "text": "How did it get to the roof? Luke thinks and thinks.",
+          "text": "How did it get into the brook? Luke thinks and thinks.",
           "pictureBrief": "The boy scratching his head",
           "picture": null
         },
@@ -3582,8 +3582,8 @@
           "picture": null
         },
         {
-          "text": "Luke gets a broom and a stool. He pushes the shoe, and it drops into the bush.",
-          "pictureBrief": "The boy pushing the shoe off the roof with a broom",
+          "text": "Luke gets a broom and hooks the shoe. He pulls it from the brook, and it drips on his foot.",
+          "pictureBrief": "The boy fishing the shoe from the brook with a broom",
           "picture": null
         },
         {
