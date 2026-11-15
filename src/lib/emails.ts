@@ -76,7 +76,7 @@ export function welcomeEmail(opts: { childNames: string[]; deliveryTime: string;
     html: layout(
       `<p>Welcome! ${kids}'s first routine arrives today at ${esc(opts.deliveryTime)}, and every day after that.</p>
 <p><strong>How it works:</strong> your child reads a short book to you, you meet three Spark Words together, then you read a bedtime story made just for them. About 15 minutes, start to finish.</p>
-<p>Everything in The Reading Routine was designed by a classroom teacher with 20 years of experience and a Master of Education in literacy, so you can relax and simply enjoy reading together. No teaching background needed.</p>
+<p>Everything in The Reading Routine was designed by a mom and classroom teacher with 20 years of experience and a Master of Education in literacy, so you can relax and simply enjoy reading together. No teaching background needed.</p>
 ${opts.trialEnds ? `<p>Your free trial runs until ${esc(opts.trialEnds.toLocaleDateString("en-CA", { month: "long", day: "numeric" }))}.</p>` : ""}
 <p style="text-align:center;margin:22px 0">${button(opts.accountLink, "Your account")}</p>`,
     ),

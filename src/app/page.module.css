@@ -284,3 +284,40 @@
     gap: 24px;
   }
 }
+
+.note {
+  margin: 20px 0;
+  padding: 18px 22px;
+  border-left: none;
+  border: var(--line);
+  background: #fffdf8;
+  font-size: 17px;
+}
+.note p {
+  margin: 0 0 10px;
+}
+.note footer {
+  font-size: 14px;
+  color: var(--soft);
+}
+.point {
+  border: var(--line);
+  padding: 22px;
+  background: var(--linen);
+}
+.point h3 {
+  font-family: var(--script);
+  font-weight: 400;
+  font-size: 28px;
+  margin-bottom: 6px;
+}
+.point p {
+  margin: 0;
+}
+.callout {
+  margin: 24px auto 0;
+  max-width: 46em;
+  border: var(--line);
+  background: #fffdf8;
+  padding: 18px 22px;
+}

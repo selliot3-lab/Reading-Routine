@@ -42,8 +42,12 @@ const research = [
 
 const faqs = [
   {
+    q: "Is this another app or screen for my child?",
+    a: "No. There's nothing for your child to download or tap. Each day's routine is a PDF you print, so your child reads a real little book. If you can't print, you can open it on your phone or tablet and read it together, but there are no games, ads or autoplay.",
+  },
+  {
     q: "Who made The Reading Routine?",
-    a: "A classroom teacher with 20 years of experience and a Master of Education focused on literacy. The levels, the little books and the Spark Words are all built on the same structured approach used to teach reading in schools, and every book is reviewed by a teacher before it reaches your child.",
+    a: "A mom and classroom teacher with 20 years of experience and a Master of Education focused on literacy, who built the routine she wished she had for her own kids. The levels, the little books and the Spark Words are all built on the same structured approach used to teach reading in schools, and every book is reviewed by a teacher before it reaches your child.",
   },
   {
     q: "What ages is it for?",
@@ -87,7 +91,7 @@ export default function Home() {
             <h1>The Reading Routine</h1>
             <p className={s.lede}>
               A bedtime reading routine made for your child. They read a little book to you. You read them a story starring them.
-              Fifteen cozy minutes, every day.
+              Fifteen cozy minutes, every day. No apps, no screens: just you, your child and a book.
             </p>
             <div className={s.cta}>
               <Link href="/start" className="btn">
@@ -101,7 +105,7 @@ export default function Home() {
               Then $10 a month. Cancel anytime.
             </p>
             <p className={s.teacherBadge}>
-              Created by a classroom teacher with 20 years&apos; experience and a Master of Education in literacy
+              Created by a mom and classroom teacher with 20 years&apos; experience and a Master of Education in literacy
             </p>
           </div>
         </div>
@@ -112,16 +116,28 @@ export default function Home() {
           <div className={s.teacher}>
             <div>
               <div className="kicker">who made this</div>
-              <h2 className={s.left}>Built by a teacher, not a tech company</h2>
+              <h2 className={s.left}>Built by a teacher and a mom</h2>
               <p>
                 The Reading Routine was created by a classroom teacher with <strong>20 years of experience</strong> and a{" "}
-                <strong>Master of Education focused on literacy</strong>. After two decades of watching what actually turns
-                children into confident readers, the answer was never a flashy app. It&apos;s a grown-up and a child, side by side,
-                reading a little every day.
+                <strong>Master of Education focused on literacy</strong>, who is also a mom. After two decades of watching what
+                actually turns children into confident readers, the answer was never a flashy app. It&apos;s a grown-up and a
+                child, side by side, reading a little every day.
               </p>
+              <blockquote className={s.note}>
+                <p>
+                  &ldquo;I know I should read with my kids every day. I teach reading for a living! But at the end of a long day,
+                  even I find it hard to fit in. And finding books at just the right level, ones my kids can actually read on
+                  their own, takes time I don&apos;t have.
+                </p>
+                <p>
+                  So I built the thing I wanted: tonight&apos;s reading, already done for me, at exactly the right level, waiting in
+                  my inbox. All I have to do is sit down and read with them.&rdquo;
+                </p>
+                <footer>— Founder of The Reading Routine, teacher and mom</footer>
+              </blockquote>
               <p>
-                So that&apos;s what this is: the same structured, step-by-step approach used to teach reading in classrooms, made
-                simple enough for any parent to do at bedtime, with no teaching background and no prep.
+                It&apos;s the same structured, step-by-step approach used to teach reading in classrooms, made simple enough for any
+                parent to do at bedtime, with no teaching background and no prep.
               </p>
               <ul className={s.teacherList}>
                 <li>Every level follows a proven structured phonics sequence, in the order children actually learn to read.</li>
@@ -144,8 +160,8 @@ export default function Home() {
                 carefully sequenced phonics levels
               </div>
               <div>
-                <strong>15</strong>
-                minutes a day, at home
+                <strong>0</strong>
+                apps to download
               </div>
             </div>
           </div>
@@ -203,6 +219,47 @@ export default function Home() {
               <p>A brand-new bedtime story starring your child, their friends, family and pets. Fun in the middle, calm at the end, ready for sleep.</p>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className={s.section} id="screen-free">
+        <div className="container">
+          <h2>Real books, not another app</h2>
+          <p className={s.sectionLede}>
+            Kids already have plenty of screens. The Reading Routine isn&apos;t one more. There&apos;s nothing for your child to
+            download, tap or log in to.
+          </p>
+          <div className="grid-3">
+            <div className={s.point}>
+              <h3>A book in their hands</h3>
+              <p>Print tonight&apos;s routine and your child reads a real little book, turning real pages, on your lap.</p>
+            </div>
+            <div className={s.point}>
+              <h3>Nothing to keep them hooked</h3>
+              <p>No ads, games, points or autoplay. Just a story, read together, that ends with lights out.</p>
+            </div>
+            <div className={s.point}>
+              <h3>A screen-free wind-down</h3>
+              <p>
+                Reading on paper fits the Canadian Paediatric Society&apos;s advice to avoid screens for at least an hour before
+                bed.{" "}
+                <a href="https://cps.ca/uploads/tools/CPS_ScreenTime-EN.pdf" target="_blank" rel="noreferrer">
+                  CPS
+                </a>
+              </p>
+            </div>
+          </div>
+          <div className={s.callout}>
+            <strong>Why print matters:</strong> in a Pediatrics study, parents and toddlers talked and worked together more when
+            reading a print book than the same story as an e-book. With e-books, more of the talk was about the device
+            itself.{" "}
+            <a href="https://www.sciencedaily.com/releases/2019/03/190325080459.htm" target="_blank" rel="noreferrer">
+              Munzer et al., Pediatrics, 2019
+            </a>
+          </div>
+          <p className="small muted" style={{ textAlign: "center", marginTop: 16 }}>
+            Can&apos;t print tonight? The PDF also opens on your phone or tablet, with you holding it and reading together.
+          </p>
         </div>
       </section>
 
