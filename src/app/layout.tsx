@@ -10,7 +10,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "The Reading Routine — 15 minutes of reading together, every day",
   description:
-    "A nightly reading routine made for your child: they read a book at their level to you, then you read them a bedtime story starring them. $10/month, 14-day free trial.",
+    "A nightly reading routine made for your child, created by a classroom teacher with 20 years of experience and a Master of Education in literacy. They read a book at their level to you, then you read them a bedtime story starring them. $10/month, 14-day free trial.",
   metadataBase: new URL(process.env.APP_URL ?? "http://localhost:3000"),
 };
 
@@ -26,6 +26,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <span>The Reading Routine</span>
             </Link>
             <nav className="nav" aria-label="Main">
+              <Link href="/#teacher">Made by a teacher</Link>
               <Link href="/#how">How it works</Link>
               <Link href="/#why">Why it works</Link>
               <Link href="/#pricing">Pricing</Link>
@@ -36,7 +37,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main>{children}</main>
         <footer className="site-footer">
           <div className="container">
-            <span>© {new Date().getFullYear()} The Reading Routine · Made in Canada · Your family&apos;s data is stored in Canada</span>
+            <span>© {new Date().getFullYear()} The Reading Routine · Made in Canada by a teacher · Your family&apos;s data is stored in Canada</span>
             <span>
               <Link href="/privacy">Privacy</Link> · <Link href="/terms">Terms</Link>
             </span>

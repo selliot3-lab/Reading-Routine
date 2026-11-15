@@ -42,6 +42,10 @@ const research = [
 
 const faqs = [
   {
+    q: "Who made The Reading Routine?",
+    a: "A classroom teacher with 20 years of experience and a Master of Education focused on literacy. The levels, the little books and the Spark Words are all built on the same structured approach used to teach reading in schools, and every book is reviewed by a teacher before it reaches your child.",
+  },
+  {
     q: "What ages is it for?",
     a: "Children who are learning to read, usually around ages 4 to 8. Levels are set by what your child can do, not by age or grade: a short placement check at sign-up finds where to start.",
   },
@@ -96,6 +100,54 @@ export default function Home() {
             <p className="small muted" style={{ marginTop: 14 }}>
               Then $10 a month. Cancel anytime.
             </p>
+            <p className={s.teacherBadge}>
+              Created by a classroom teacher with 20 years&apos; experience and a Master of Education in literacy
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className={s.section} id="teacher">
+        <div className="container">
+          <div className={s.teacher}>
+            <div>
+              <div className="kicker">who made this</div>
+              <h2 className={s.left}>Built by a teacher, not a tech company</h2>
+              <p>
+                The Reading Routine was created by a classroom teacher with <strong>20 years of experience</strong> and a{" "}
+                <strong>Master of Education focused on literacy</strong>. After two decades of watching what actually turns
+                children into confident readers, the answer was never a flashy app. It&apos;s a grown-up and a child, side by side,
+                reading a little every day.
+              </p>
+              <p>
+                So that&apos;s what this is: the same structured, step-by-step approach used to teach reading in classrooms, made
+                simple enough for any parent to do at bedtime, with no teaching background and no prep.
+              </p>
+              <ul className={s.teacherList}>
+                <li>Every level follows a proven structured phonics sequence, in the order children actually learn to read.</li>
+                <li>Every little book uses only the sounds your child has been taught, so they read it, not guess it.</li>
+                <li>Every Spark Word is chosen and explained the way a teacher would introduce it in class.</li>
+                <li>Every book in the library is reviewed by a teacher before it reaches your child.</li>
+              </ul>
+            </div>
+            <div className={s.creds}>
+              <div>
+                <strong>20</strong>
+                years in the classroom
+              </div>
+              <div>
+                <strong>M.Ed.</strong>
+                Master of Education, literacy focus
+              </div>
+              <div>
+                <strong>40</strong>
+                carefully sequenced phonics levels
+              </div>
+              <div>
+                <strong>15</strong>
+                minutes a day, at home
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -205,8 +257,8 @@ export default function Home() {
         <div className="container">
           <h2>40 levels, then chapter books</h2>
           <p className={s.sectionLede}>
-            Every level follows a proven, structured phonics sequence, so each little book only uses sounds your child has been
-            taught.
+            Designed by a literacy specialist. Every level follows a proven, structured phonics sequence, so each little book
+            only uses sounds your child has been taught.
           </p>
           <div className={s.levels}>
             <div>

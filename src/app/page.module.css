@@ -227,3 +227,60 @@
     grid-template-columns: minmax(0, 1fr);
   }
 }
+
+.teacherBadge {
+  margin: 18px auto 0;
+  padding-top: 14px;
+  border-top: 1px solid var(--ink);
+  font-size: 14px;
+  max-width: 28em;
+}
+.teacher {
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+  gap: 40px;
+  align-items: center;
+}
+.section h2.left {
+  text-align: left;
+  margin-top: 6px;
+}
+.teacherList {
+  padding-left: 20px;
+  margin: 18px 0 0;
+}
+.teacherList li {
+  margin-bottom: 8px;
+}
+.creds {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border: var(--line);
+  background: var(--linen);
+}
+.creds > div {
+  padding: 22px 18px;
+  border-right: var(--line);
+  border-bottom: var(--line);
+  font-size: 14px;
+}
+.creds > div:nth-child(2n) {
+  border-right: none;
+}
+.creds > div:nth-last-child(-n + 2) {
+  border-bottom: none;
+}
+.creds strong {
+  display: block;
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.1;
+  margin-bottom: 4px;
+}
+@media (max-width: 860px) {
+  .teacher {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+  }
+}
