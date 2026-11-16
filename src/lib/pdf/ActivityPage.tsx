@@ -1,8 +1,9 @@
 /* eslint-disable jsx-a11y/alt-text -- react-pdf <Image> has no alt prop */
 import React from "react";
-import { Image, Line, Path, Svg, Text, View } from "@react-pdf/renderer";
+import { Image, Line, Svg, Text, View } from "@react-pdf/renderer";
 import type { BookCover, FillItem, HuntItem, ReaderPage } from "../content";
 import { INK, SOFT, publicPath } from "./RoutinePdf";
+import { MarkedWord } from "./MarkedWord";
 
 /*
  * Activity pages for the teaching books (letter books, pattern books and
@@ -28,13 +29,6 @@ function Picture({ brief, picture, width, height, s }: { brief: string; picture:
   );
 }
 
-export function HeartIcon({ size }: { size: number }) {
-  return (
-    <Svg width={size} height={size} viewBox="0 0 24 24">
-      <Path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.4 3 4.5 6.8 4.5c2.1 0 3.6 1.2 5.2 3.1 1.6-1.9 3.1-3.1 5.2-3.1 3.8 0 5.9 3.9 4.4 7.3C19.5 16.4 12 21 12 21z" stroke={INK} strokeWidth={1.4} fill="none" />
-    </Svg>
-  );
-}
 
 const reader = { fontFamily: "Andika", textAlign: "center" as const, lineHeight: 1.3 };
 
@@ -73,11 +67,11 @@ function WriteRow({ letter, copies, width, s }: { letter: string; copies: number
 export function LetterCover({ cover, say, s = 1, width }: { cover: BookCover; say?: string; s?: number; width: number }) {
   return (
     <View style={{ alignItems: "center", width }}>
-      <Picture brief={`Character: ${cover.pictureBrief}`} picture={cover.picture} width={width * 0.7} height={60 * s} s={s} />
-      <Text style={[reader, { fontSize: 34 * s, fontWeight: 700, lineHeight: 1.35, marginTop: 10 * s, marginBottom: 6 * s }]}>{cover.display}</Text>
-      <Text style={[reader, { fontSize: 12 * s, fontWeight: 700, marginTop: 4 * s }]}>{cover.character}</Text>
-      {say && <Text style={{ fontSize: 7.5 * s, marginTop: 4 * s }}>Say: {say}</Text>}
-      <Text style={{ fontSize: 7 * s, color: SOFT, textAlign: "center", lineHeight: 1.35, marginTop: 4 * s }}>{cover.action}</Text>
+      <Picture brief={`Character: ${cover.pictureBrief}`} picture={cover.picture} width={width * 0.6} height={48 * s} s={s} />
+      <Text style={[reader, { fontSize: 28 * s, fontWeight: 700, lineHeight: 1.3, marginTop: 8 * s, marginBottom: 6 * s }]}>{cover.display}</Text>
+      <Text style={[reader, { fontSize: 11 * s, fontWeight: 700, marginTop: 6 * s }]}>{cover.character}</Text>
+      {say && <Text style={{ fontSize: 7.5 * s, marginTop: 5 * s }}>Say: {say}</Text>}
+      <Text style={{ fontSize: 6.5 * s, color: SOFT, textAlign: "center", lineHeight: 1.3, marginTop: 5 * s }}>{cover.action}</Text>
     </View>
   );
 }
@@ -233,8 +227,9 @@ export function ActivityPage({ page, width, s = 1 }: { page: ReaderPage; width: 
     case "heart":
       return (
         <View style={{ alignItems: "center", width }}>
-          <HeartIcon size={22 * s} />
-          <Text style={[reader, { fontSize: 34 * s, fontWeight: 700, lineHeight: 1.35, marginVertical: 6 * s }]}>{page.display}</Text>
+          <View style={{ marginVertical: 14 * s }}>
+            <MarkedWord word={page.display!} size={36 * s} />
+          </View>
           {page.text ? <Text style={[reader, { fontSize: 13 * s, marginBottom: 10 * s }]}>{page.text}</Text> : null}
           <Prompt text={page.prompt} s={s} />
         </View>

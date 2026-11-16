@@ -1,8 +1,15 @@
 import React from "react";
-import { Circle, Svg, Text, View } from "@react-pdf/renderer";
+import { Circle, Path, Svg, Text, View } from "@react-pdf/renderer";
 import { markedParts } from "../heartMarks";
 import { INK, SOFT } from "./RoutinePdf";
-import { HeartIcon } from "./ActivityPage";
+
+export function HeartIcon({ size }: { size: number }) {
+  return (
+    <Svg width={size} height={size} viewBox="0 0 24 24">
+      <Path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.4 3 4.5 6.8 4.5c2.1 0 3.6 1.2 5.2 3.1 1.6-1.9 3.1-3.1 5.2-3.1 3.8 0 5.9 3.9 4.4 7.3C19.5 16.4 12 21 12 21z" stroke={INK} strokeWidth={1.4} fill="none" />
+    </Svg>
+  );
+}
 
 /*
  * A heart word with a marker under each part: a dot where the spelling says
@@ -10,14 +17,15 @@ import { HeartIcon } from "./ActivityPage";
  * are shown plainly.
  */
 export function MarkedWord({ word, size = 16 }: { word: string; size?: number }) {
+  const shown = word.toLowerCase() === "i" ? "I" : word;
   const parts = markedParts(word);
-  if (!parts) return <Text style={{ fontFamily: "Andika", fontSize: size }}>{word}</Text>;
+  if (!parts) return <Text style={{ fontFamily: "Andika", fontSize: size }}>{shown}</Text>;
   const dot = size * 0.22;
   return (
     <View style={{ flexDirection: "row", alignItems: "flex-end" }}>
       {parts.map(([text, kind], i) => (
         <View key={i} style={{ alignItems: "center" }}>
-          <Text style={{ fontFamily: "Andika", fontSize: size, lineHeight: 1.15 }}>{text}</Text>
+          <Text style={{ fontFamily: "Andika", fontSize: size, lineHeight: 1.15 }}>{text === "i" && word.toLowerCase() === "i" ? "I" : text}</Text>
           {kind === "d" ? (
             <Svg width={dot * 2} height={dot * 2} style={{ marginTop: 1 }}>
               <Circle cx={dot} cy={dot} r={dot * 0.8} fill={INK} />

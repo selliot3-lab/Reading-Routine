@@ -145,10 +145,8 @@ export function routineLinks(token: string) {
 
 /** The sound a book is about, shown on its front: the level's new sounds, or the book's own sound. */
 export function featuredFor(reader: ReturnType<typeof readerById>, level: number): string {
-  if (!reader) return "";
-  if (reader.type === "heart") return "heart words";
-  if (reader.cover) return `${reader.cover.display} (${reader.say})`;
-  if (reader.type === "sound") return `${reader.pages[0]?.display ?? reader.title}${reader.say ? ` (${reader.say})` : ""}`;
+  // Sound and heart-word books are about their sound already, so only story books say it.
+  if (!reader || reader.type === "heart" || reader.type === "sound") return "";
   return getLevel(Math.min(level, MAX_LEVEL)).patterns.split(" · ")[0];
 }
 

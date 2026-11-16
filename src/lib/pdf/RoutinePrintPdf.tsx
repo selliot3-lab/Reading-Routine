@@ -4,7 +4,7 @@ import { Document, Image, Page, Polygon, StyleSheet, Svg, Text, View } from "@re
 import type { ReaderPage } from "../content";
 import { INK, LINEN, SOFT, publicPath, registerFonts, withSparkWords, type RoutinePdfProps } from "./RoutinePdf";
 import { ColourSheetPage } from "./ColourSheet";
-import { ActivityPage, HeartIcon, LetterCover } from "./ActivityPage";
+import { ActivityPage, LetterCover } from "./ActivityPage";
 import { HeartWordsFront } from "./MarkedWord";
 
 /*
@@ -106,7 +106,7 @@ function LittleBook(props: RoutinePdfProps & { logo: string | null }) {
       <Text style={p.kicker}>{r.type === "sound" ? "a sound book" : r.type === "heart" ? "a heart word book" : "a little book"}</Text>
       {props.logo && !r.cover && <Image src={props.logo} style={{ width: 46, marginVertical: 10 }} />}
       <Text style={[p.readerText, { fontSize: 16, fontWeight: 700, marginTop: 4, marginBottom: 6 }]}>{r.title}</Text>
-      <Text style={[p.small, { marginBottom: 8, textAlign: "center" }]}>Featured sound: {props.featured}</Text>
+      {props.featured && <Text style={[p.small, { marginBottom: 8, textAlign: "center" }]}>Featured sound: {props.featured}</Text>}
       {r.cover ? (
         <LetterCover cover={r.cover} say={r.say} width={PANEL_W - 46} />
       ) : r.type === "sound" ? (
@@ -119,7 +119,7 @@ function LittleBook(props: RoutinePdfProps & { logo: string | null }) {
         {teaching ? `${props.childName} + a grown-up` : `Read by ${props.childName}`} · Level {props.level}
       </Text>
       {r.type === "heart" && <HeartWordsFront words={r.pages.filter((pg) => pg.kind === "heart").map((pg) => pg.display!)} />}
-      {r.type !== "heart" && <HeartWordsFront words={props.bookHeartWords} />}
+      {r.type !== "heart" && <HeartWordsFront words={props.bookHeartWords} size={r.cover ? 10 : 12} />}
     </View>,
   );
 
@@ -151,7 +151,7 @@ function LittleBook(props: RoutinePdfProps & { logo: string | null }) {
     <View style={{ flexGrow: 1, alignItems: "center", justifyContent: "center", width: "100%" }}>
       {teaching ? (
         <>
-          {r.type === "heart" && <HeartIcon size={22} />}
+
           <Text style={[p.readerText, { fontSize: 15, fontWeight: 700, marginTop: 4 }]}>
             {r.type === "sound" ? `I can hear ${r.say}!` : "I know my heart words!"}
           </Text>

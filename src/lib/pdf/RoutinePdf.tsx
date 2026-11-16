@@ -199,7 +199,7 @@ export function RoutinePdf(p: RoutinePdfProps) {
                 {p.reader.type === "sound" ? "Tonight's sound book: do it together" : p.reader.type === "heart" ? "Tonight's heart words: do it together" : `${p.childName} reads to you`}
               </Text>
               <Text style={[s.readerText, { fontSize: 26, fontWeight: 700, marginTop: 12 }]}>{p.reader.title}</Text>
-              <Text style={[s.small, { marginTop: 4, textAlign: "center" }]}>Featured sound: {p.featured}</Text>
+              {p.featured && <Text style={[s.small, { marginTop: 4, textAlign: "center" }]}>Featured sound: {p.featured}</Text>}
               {p.reader.cover ? (
                 <View style={{ marginTop: 12 }}>
                   <LetterCover cover={p.reader.cover} say={p.reader.say} width={300} s={1.6} />

@@ -11081,7 +11081,7 @@
           "kind": "heart",
           "display": "the",
           "text": "I am at the mat.",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -11089,7 +11089,7 @@
           "kind": "heart",
           "display": "a",
           "text": "Sam sat at a mat.",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -11097,7 +11097,7 @@
           "kind": "heart",
           "display": "I",
           "text": "I am Sam.",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -11179,7 +11179,7 @@
           "kind": "heart",
           "display": "is",
           "text": "It is Sam.",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -11187,7 +11187,7 @@
           "kind": "heart",
           "display": "his",
           "text": "It is his mat.",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -11195,7 +11195,7 @@
           "kind": "heart",
           "display": "to",
           "text": "Tip it to Pam.",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -11277,7 +11277,7 @@
           "kind": "heart",
           "display": "and",
           "text": "Dad and Dan mop.",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -11285,7 +11285,7 @@
           "kind": "heart",
           "display": "of",
           "text": "I am on top of a mat.",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -11373,7 +11373,7 @@
           "kind": "heart",
           "display": "was",
           "text": "The pup was in the mud.",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -11381,7 +11381,7 @@
           "kind": "heart",
           "display": "you",
           "text": "Can you dig?",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -11389,7 +11389,7 @@
           "kind": "heart",
           "display": "do",
           "text": "Do not pop gum, Tom!",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -11471,7 +11471,7 @@
           "kind": "heart",
           "display": "he",
           "text": "He can get the cup.",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -11479,7 +11479,7 @@
           "kind": "heart",
           "display": "we",
           "text": "We can bat.",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -11487,7 +11487,7 @@
           "kind": "heart",
           "display": "me",
           "text": "Get me a cup, Mom.",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -11495,7 +11495,7 @@
           "kind": "heart",
           "display": "be",
           "text": "It can be fun!",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -11543,7 +11543,7 @@
           "kind": "heart",
           "display": "she",
           "text": "She said, \"Sit, pup!\"",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -11551,7 +11551,7 @@
           "kind": "heart",
           "display": "said",
           "text": "Mom said, \"Is it in the bag?\"",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -11639,7 +11639,7 @@
           "kind": "heart",
           "display": "are",
           "text": "Ron and Lin are hot.",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -11647,7 +11647,7 @@
           "kind": "heart",
           "display": "for",
           "text": "Lin has a red cup for Ron.",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -11655,7 +11655,7 @@
           "kind": "heart",
           "display": "or",
           "text": "Is it a log or a rug?",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -11737,7 +11737,7 @@
           "kind": "heart",
           "display": "they",
           "text": "They rub and mop.",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -11745,7 +11745,7 @@
           "kind": "heart",
           "display": "my",
           "text": "My pup is wet.",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -11753,7 +11753,7 @@
           "kind": "heart",
           "display": "go",
           "text": "Go, Jen, go!",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -11761,7 +11761,7 @@
           "kind": "heart",
           "display": "no",
           "text": "No jam!",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -11769,7 +11769,7 @@
           "kind": "heart",
           "display": "so",
           "text": "Jim is so wet!",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -11799,7 +11799,7 @@
           "kind": "heart",
           "display": "have",
           "text": "Six kids have a quiz.",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -11807,7 +11807,7 @@
           "kind": "heart",
           "display": "from",
           "text": "Max got a box from Liz.",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -11815,7 +11815,7 @@
           "kind": "heart",
           "display": "give",
           "text": "Give me a hug!",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -11897,7 +11897,7 @@
           "kind": "heart",
           "display": "what",
           "text": "What is it?",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -11905,7 +11905,7 @@
           "kind": "heart",
           "display": "one",
           "text": "I have one pet frog.",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -11913,7 +11913,7 @@
           "kind": "heart",
           "display": "come",
           "text": "Come in, frog!",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -11921,7 +11921,7 @@
           "kind": "heart",
           "display": "some",
           "text": "Can I have some milk?",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -11969,7 +11969,7 @@
           "kind": "heart",
           "display": "does",
           "text": "Does your dog jump?",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -11977,7 +11977,7 @@
           "kind": "heart",
           "display": "your",
           "text": "Mom said, \"Gus, can you rest your drum?\"",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -12065,7 +12065,7 @@
           "kind": "heart",
           "display": "were",
           "text": "We were a grand band!",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -12073,7 +12073,7 @@
           "kind": "heart",
           "display": "there",
           "text": "There was a stump next to the tent.",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -12161,7 +12161,7 @@
           "kind": "heart",
           "display": "who",
           "text": "Who will help?",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -12169,7 +12169,7 @@
           "kind": "heart",
           "display": "two",
           "text": "The two pals sat still on the hill.",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -12257,7 +12257,7 @@
           "kind": "heart",
           "display": "her",
           "text": "It is not in her sock!",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -12265,7 +12265,7 @@
           "kind": "heart",
           "display": "where",
           "text": "Where is the cash?",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -12353,7 +12353,7 @@
           "kind": "heart",
           "display": "their",
           "text": "Their pants and socks were a mess.",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -12361,7 +12361,7 @@
           "kind": "heart",
           "display": "any",
           "text": "Is there any milk left?",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -12369,7 +12369,7 @@
           "kind": "heart",
           "display": "many",
           "text": "There are many fish in the pond.",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -12451,7 +12451,7 @@
           "kind": "heart",
           "display": "could",
           "text": "Could I have a chip?",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -12459,7 +12459,7 @@
           "kind": "heart",
           "display": "would",
           "text": "Would you sit with me?",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -12467,7 +12467,7 @@
           "kind": "heart",
           "display": "should",
           "text": "Champ should not dig in the mud!",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -12549,7 +12549,7 @@
           "kind": "heart",
           "display": "been",
           "text": "We have been on the swings so long!",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -12557,7 +12557,7 @@
           "kind": "heart",
           "display": "again",
           "text": "Sing it again!",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -12645,7 +12645,7 @@
           "kind": "heart",
           "display": "walk",
           "text": "They walk back.",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -12653,7 +12653,7 @@
           "kind": "heart",
           "display": "talk",
           "text": "We like to talk at lunch.",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -12741,7 +12741,7 @@
           "kind": "heart",
           "display": "now",
           "text": "Now it is time for bed.",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -12749,7 +12749,7 @@
           "kind": "heart",
           "display": "down",
           "text": "The mole woke up and dove down.",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -12757,7 +12757,7 @@
           "kind": "heart",
           "display": "how",
           "text": "How is the flute?",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -12839,7 +12839,7 @@
           "kind": "heart",
           "display": "done",
           "text": "The cake is done.",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -12847,7 +12847,7 @@
           "kind": "heart",
           "display": "gone",
           "text": "The mice were gone!",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -12855,7 +12855,7 @@
           "kind": "heart",
           "display": "once",
           "text": "Once, Grace did not shut the cage.",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -12863,7 +12863,7 @@
           "kind": "heart",
           "display": "love",
           "text": "Grace does love those mice.",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -12911,7 +12911,7 @@
           "kind": "heart",
           "display": "people",
           "text": "People like to sing.",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -12919,7 +12919,7 @@
           "kind": "heart",
           "display": "because",
           "text": "I like camping because it is fun.",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -13007,7 +13007,7 @@
           "kind": "heart",
           "display": "water",
           "text": "Bob can get water for the plants.",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -13015,7 +13015,7 @@
           "kind": "heart",
           "display": "other",
           "text": "\"Bob is the best robot,\" said the other kids.",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -13103,7 +13103,7 @@
           "kind": "heart",
           "display": "friend",
           "text": "His friend gave him a big hug.",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -13111,7 +13111,7 @@
           "kind": "heart",
           "display": "school",
           "text": "At school, Mitch got a badge for helping.",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -13199,7 +13199,7 @@
           "kind": "heart",
           "display": "pretty",
           "text": "What a pretty kite!",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -13207,7 +13207,7 @@
           "kind": "heart",
           "display": "buy",
           "text": "Can we buy a little cake?",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -13215,7 +13215,7 @@
           "kind": "heart",
           "display": "eye",
           "text": "The kitten has a black spot by its eye.",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -13297,7 +13297,7 @@
           "kind": "heart",
           "display": "very",
           "text": "I am very happy.",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -13305,7 +13305,7 @@
           "kind": "heart",
           "display": "every",
           "text": "Every evening, Norm and Carl sit on the porch.",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -13393,7 +13393,7 @@
           "kind": "heart",
           "display": "says",
           "text": "\"Not yet,\" says Bert.",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -13401,7 +13401,7 @@
           "kind": "heart",
           "display": "only",
           "text": "The bird only came back for a worm.",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -13489,7 +13489,7 @@
           "kind": "heart",
           "display": "great",
           "text": "What a great day!",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -13497,7 +13497,7 @@
           "kind": "heart",
           "display": "break",
           "text": "Let us take a break.",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -13585,7 +13585,7 @@
           "kind": "heart",
           "display": "mother",
           "text": "Mother has a key.",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -13593,7 +13593,7 @@
           "kind": "heart",
           "display": "father",
           "text": "Father reads to me.",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -13601,7 +13601,7 @@
           "kind": "heart",
           "display": "brother",
           "text": "My brother Lee plays hockey on a team.",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -13683,7 +13683,7 @@
           "kind": "heart",
           "display": "door",
           "text": "Joe shut the door.",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -13691,7 +13691,7 @@
           "kind": "heart",
           "display": "floor",
           "text": "The toast fell on the floor.",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -13699,7 +13699,7 @@
           "kind": "heart",
           "display": "four",
           "text": "Four crows sat on his hat and did not leave.",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -13781,7 +13781,7 @@
           "kind": "heart",
           "display": "though",
           "text": "It was cold, though the sun was up.",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -13789,7 +13789,7 @@
           "kind": "heart",
           "display": "through",
           "text": "The light came through the window.",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -13877,7 +13877,7 @@
           "kind": "heart",
           "display": "move",
           "text": "He could not move!",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -13885,7 +13885,7 @@
           "kind": "heart",
           "display": "shoe",
           "text": "I have one shoe!",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -13893,7 +13893,7 @@
           "kind": "heart",
           "display": "whose",
           "text": "Whose hat is this?",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -13975,7 +13975,7 @@
           "kind": "heart",
           "display": "beautiful",
           "text": "What a beautiful day!",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -13983,7 +13983,7 @@
           "kind": "heart",
           "display": "busy",
           "text": "Drew and his crew are busy.",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -14071,7 +14071,7 @@
           "kind": "heart",
           "display": "thought",
           "text": "I thought it was a great book.",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -14079,7 +14079,7 @@
           "kind": "heart",
           "display": "bought",
           "text": "Dad bought fresh bread.",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -14087,7 +14087,7 @@
           "kind": "heart",
           "display": "brought",
           "text": "Mom brought me a snack.",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -14169,7 +14169,7 @@
           "kind": "heart",
           "display": "minute",
           "text": "Roy thinks for a minute.",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -14177,7 +14177,7 @@
           "kind": "heart",
           "display": "answer",
           "text": "Then Roy has his answer.",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -14265,7 +14265,7 @@
           "kind": "heart",
           "display": "island",
           "text": "The waves took the bottle to the island.",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -14273,7 +14273,7 @@
           "kind": "heart",
           "display": "listen",
           "text": "Listen to the rain.",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -14281,7 +14281,7 @@
           "kind": "heart",
           "display": "often",
           "text": "Kim often visits me.",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -14363,7 +14363,7 @@
           "kind": "heart",
           "display": "early",
           "text": "They went home early and had hot milk by the fire.",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -14371,7 +14371,7 @@
           "kind": "heart",
           "display": "earth",
           "text": "Every day can be Earth Day.",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -14379,7 +14379,7 @@
           "kind": "heart",
           "display": "learn",
           "text": "We learn a lot at school.",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -14387,7 +14387,7 @@
           "kind": "heart",
           "display": "heard",
           "text": "Then I heard a sad chirp in a bush.",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -14435,7 +14435,7 @@
           "kind": "heart",
           "display": "country",
           "text": "It flaps and flaps, and it rises over the country hills.",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -14443,7 +14443,7 @@
           "kind": "heart",
           "display": "young",
           "text": "My sister is young, so we had to retell the rules twice.",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -14451,7 +14451,7 @@
           "kind": "heart",
           "display": "touch",
           "text": "Do not touch the hot oven.",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -14533,7 +14533,7 @@
           "kind": "heart",
           "display": "special",
           "text": "We had the sunniest day, and it was a special day by the ocean.",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -14541,7 +14541,7 @@
           "kind": "heart",
           "display": "ocean",
           "text": "Last summer, we went swimming in the ocean.",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -14629,7 +14629,7 @@
           "kind": "heart",
           "display": "half",
           "text": "I cut the apple in half.",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -14637,7 +14637,7 @@
           "kind": "heart",
           "display": "hour",
           "text": "We waited an hour for the train.",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -14645,7 +14645,7 @@
           "kind": "heart",
           "display": "honest",
           "text": "It is good to be honest.",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -14727,7 +14727,7 @@
           "kind": "heart",
           "display": "clothes",
           "text": "We set up our tent, and I wore my warmest clothes.",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
@@ -14735,7 +14735,7 @@
           "kind": "heart",
           "display": "tongue",
           "text": "She painted a picture of a creature with three eyes and a long purple tongue.",
-          "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
+          "prompt": "Read the word. Point to each part: a dot means it sounds the usual way, a heart means it is the tricky part.",
           "pictureBrief": "",
           "picture": null
         },
