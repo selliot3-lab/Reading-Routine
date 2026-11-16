@@ -143,6 +143,15 @@ export function routineLinks(token: string) {
   };
 }
 
+/** The sound a book is about, shown on its front: the level's new sounds, or the book's own sound. */
+export function featuredFor(reader: ReturnType<typeof readerById>, level: number): string {
+  if (!reader) return "";
+  if (reader.type === "heart") return "heart words";
+  if (reader.cover) return `${reader.cover.display} (${reader.say})`;
+  if (reader.type === "sound") return `${reader.pages[0]?.display ?? reader.title}${reader.say ? ` (${reader.say})` : ""}`;
+  return getLevel(Math.min(level, MAX_LEVEL)).patterns.split(" · ")[0];
+}
+
 export function pdfProps(routine: Routine, child: Child): RoutinePdfProps {
   const links = routineLinks(routine.token);
   const chapter = routine.mode === "chapter";
@@ -158,7 +167,8 @@ export function pdfProps(routine: Routine, child: Child): RoutinePdfProps {
     heartWords,
     reader,
     warmUp: chapter ? null : warmUpFor(routine.level, routine.forDate),
-    bookHeartWords: reader && reader.type !== "sound" ? heartWordsIn(reader) : [],
+    featured: featuredFor(reader, routine.level),
+    bookHeartWords: reader?.type === "heart" ? reader.pages.filter((pg) => pg.kind === "heart").map((pg) => pg.display!) : reader ? heartWordsIn(reader) : [],
     colourSheet: isHeartBook(reader) ? colourSheetFor(Math.min(routine.level, MAX_LEVEL)) : null,
     sparkWords: routine.sparkWords,
     reviewWords: routine.reviewWords,

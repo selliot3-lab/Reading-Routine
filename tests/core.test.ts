@@ -150,3 +150,17 @@ describe("prewritten story library", async () => {
     expect(pickStory({ interests: ["space"], heard: new Set(), metWords: new Set() })).toBeNull(); // drafts aren't served
   });
 });
+
+describe("heart word fronts", () => {
+  it("marks every heart word, with parts that spell the word", async () => {
+    const { HEART_MARKS, markedParts } = await import("../src/lib/heartMarks");
+    const { LEVELS } = await import("../src/lib/curriculum");
+    for (const l of LEVELS) for (const w of l.heartWords) {
+      const word = w.toLowerCase();
+      const parts = markedParts(word);
+      expect(parts, `marks for ${word}`).not.toBeNull();
+      expect(parts!.map(([t]) => t).join(""), word).toBe(word);
+    }
+    expect(Object.keys(HEART_MARKS).length).toBeGreaterThan(90);
+  });
+});

@@ -73,10 +73,10 @@ function WriteRow({ letter, copies, width, s }: { letter: string; copies: number
 export function LetterCover({ cover, say, s = 1, width }: { cover: BookCover; say?: string; s?: number; width: number }) {
   return (
     <View style={{ alignItems: "center", width }}>
-      <Picture brief={`Character: ${cover.pictureBrief}`} picture={cover.picture} width={width * 0.75} height={78 * s} s={s} />
-      <Text style={[reader, { fontSize: 34 * s, fontWeight: 700, lineHeight: 1.35, marginTop: 4 * s }]}>{cover.display}</Text>
-      <Text style={[reader, { fontSize: 12 * s, fontWeight: 700 }]}>{cover.character}</Text>
-      {say && <Text style={{ fontSize: 7.5 * s, marginTop: 3 * s }}>Say: {say}</Text>}
+      <Picture brief={`Character: ${cover.pictureBrief}`} picture={cover.picture} width={width * 0.7} height={60 * s} s={s} />
+      <Text style={[reader, { fontSize: 34 * s, fontWeight: 700, lineHeight: 1.35, marginTop: 10 * s, marginBottom: 6 * s }]}>{cover.display}</Text>
+      <Text style={[reader, { fontSize: 12 * s, fontWeight: 700, marginTop: 4 * s }]}>{cover.character}</Text>
+      {say && <Text style={{ fontSize: 7.5 * s, marginTop: 4 * s }}>Say: {say}</Text>}
       <Text style={{ fontSize: 7 * s, color: SOFT, textAlign: "center", lineHeight: 1.35, marginTop: 4 * s }}>{cover.action}</Text>
     </View>
   );

@@ -7,6 +7,7 @@ import type { ColourSheet, Reader } from "../content";
 import { ColourSheetPage } from "./ColourSheet";
 import type { RoutineSparkWord, RoutineStory } from "../db/schema";
 import { ActivityPage, LetterCover } from "./ActivityPage";
+import { HeartWordsFront } from "./MarkedWord";
 
 const fontDir = path.join(process.cwd(), "assets", "fonts");
 let fontsReady = false;
@@ -70,6 +71,8 @@ export type RoutinePdfProps = {
   warmUp: { mode: "robot" | "quick"; words: string[][] } | null;
   /** Heart words in tonight's book, shown on its cover for review. */
   bookHeartWords: string[];
+  /** What the book is about, shown on its front. */
+  featured: string;
   /** On pre-reading nights: the colour-by-heart-word sheet. */
   colourSheet: ColourSheet | null;
   sparkWords: RoutineSparkWord[];
@@ -195,21 +198,16 @@ export function RoutinePdf(p: RoutinePdfProps) {
               <Text style={s.kicker}>
                 {p.reader.type === "sound" ? "Tonight's sound book: do it together" : p.reader.type === "heart" ? "Tonight's heart words: do it together" : `${p.childName} reads to you`}
               </Text>
+              <Text style={[s.readerText, { fontSize: 26, fontWeight: 700, marginTop: 12 }]}>{p.reader.title}</Text>
+              <Text style={[s.small, { marginTop: 4, textAlign: "center" }]}>Featured sound: {p.featured}</Text>
               {p.reader.cover ? (
-                <View style={{ marginTop: 16 }}>
+                <View style={{ marginTop: 12 }}>
                   <LetterCover cover={p.reader.cover} say={p.reader.say} width={300} s={1.6} />
                 </View>
-              ) : (
-                <Text style={[s.readerText, { fontSize: 34, fontWeight: 700, marginTop: 20 }]}>{p.reader.title}</Text>
-              )}
-              {p.bookHeartWords.length > 0 && (
-                <View style={{ marginTop: 20, alignItems: "center" }}>
-                  <Text style={s.kicker}>heart words in this book</Text>
-                  <Text style={[s.readerText, { fontSize: 20, marginTop: 4 }]}>{p.bookHeartWords.join("   ")}</Text>
-                </View>
-              )}
+              ) : null}
+              <HeartWordsFront words={p.bookHeartWords} size={18} />
               <Text style={[s.small, { marginTop: 24, textAlign: "center" }]}>
-                {p.bookHeartWords.length > 0 ? `Practise the heart words first. Then let ${p.childName} read the title and turn the page.` : `Let ${p.childName} read the title, then turn the page.`}
+                {p.bookHeartWords.length > 0 ? `Practise the heart words first, following the dots and hearts. Then let ${p.childName} read the title and turn the page.` : `Let ${p.childName} read the title, then turn the page.`}
               </Text>
             </View>
             <Footer childName={p.childName} />
