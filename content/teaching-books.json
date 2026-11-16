@@ -445,7 +445,7 @@
         {
           "kind": "poem",
           "display": "Tt",
-          "text": "Tick-Tock Turtle taps two times on the table.\nShe tells the time to tigers and tarantulas.\nTen o'clock, tea time, toast with a treat.\nT, t, t goes the turtle, tapping her feet!",
+          "text": "Tick-Tock Turtle taps two times on the table.\nShe tells the time to tigers and tadpoles.\nTen o'clock, tea time, toast with a treat.\nT, t, t goes the turtle, tapping her feet!",
           "prompt": "Read the poem to your child. Every time you hear /t/, do Tick-Tock Turtle's action together!",
           "pictureBrief": "A friendly turtle with a clock on her shell",
           "picture": null
@@ -4332,8 +4332,7 @@
           "kind": "readDraw",
           "text": "",
           "words": [
-            "The doll fell off the wall!",
-            "Buzz off, bug!"
+            "The doll fell off the wall!"
           ],
           "prompt": "Read it together, then draw a picture to show what it says.",
           "pictureBrief": "",
@@ -11181,7 +11180,7 @@
         {
           "kind": "heart",
           "display": "is",
-          "text": "It is Pip.",
+          "text": "It is Sam.",
           "prompt": "Read it. Spell it out loud. Which part doesn't sound the way it looks? Draw a heart over that part.",
           "pictureBrief": "",
           "picture": null

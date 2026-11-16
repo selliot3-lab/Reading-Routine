@@ -190,37 +190,37 @@
       ]
     },
     {
-      "id": "L02-sit-pip",
+      "id": "L02-sit-sam",
       "level": 2,
-      "title": "Sit, Pip!",
+      "title": "Sit, Sam!",
       "pages": [
         {
-          "text": "It is Pip.",
-          "pictureBrief": "A puppy named Pip the puppy",
+          "text": "It is Sam.",
+          "pictureBrief": "A puppy named Sam the puppy",
           "picture": null
         },
         {
-          "text": "Sit, Pip!",
+          "text": "Sit, Sam!",
           "pictureBrief": "A girl holding up one finger to the puppy",
           "picture": null
         },
         {
-          "text": "Pip sat.",
+          "text": "Sam sat.",
           "pictureBrief": "The puppy sitting",
           "picture": null
         },
         {
-          "text": "Pip sat at the mat.",
+          "text": "Sam sat at the mat.",
           "pictureBrief": "The puppy sitting on a mat",
           "picture": null
         },
         {
-          "text": "I pat Pip.",
+          "text": "I pat Sam.",
           "pictureBrief": "The girl patting the puppy",
           "picture": null
         },
         {
-          "text": "Sit, Pip, sit!",
+          "text": "Sit, Sam, sit!",
           "pictureBrief": "The puppy sitting proudly, tail wagging",
           "picture": null
         }
@@ -1589,7 +1589,7 @@
           "picture": null
         },
         {
-          "text": "Tess lets the bug go on the grass. Buzz off, bug!",
+          "text": "Tess lets the bug go on the grass. Go, bug, go!",
           "pictureBrief": "The girl releasing the bee outside",
           "picture": null
         }
@@ -2393,7 +2393,7 @@
           "picture": null
         },
         {
-          "text": "Lunch landed on the rug. People yelled.",
+          "text": "Lunch landed on the rug. They all gasped.",
           "pictureBrief": "Food on the rug, everyone gasping",
           "picture": null
         },
@@ -2509,7 +2509,7 @@
           "picture": null
         },
         {
-          "text": "Yum! A robot could not have gone as fast.",
+          "text": "Yum! She ran to the muffin as fast as she could.",
           "pictureBrief": "The kitten racing to the muffin",
           "picture": null
         },
@@ -2847,7 +2847,7 @@
           "picture": null
         },
         {
-          "text": "Mark sat on the porch and had more and more as the storm went past.",
+          "text": "Mark sat on the porch and ate more popcorn as the storm went past.",
           "pictureBrief": "The boy eating popcorn, watching the storm",
           "picture": null
         }
@@ -3883,7 +3883,7 @@
           "picture": null
         },
         {
-          "text": "\"Is this part of the show?\" a boy asked. \"Yes!\" said the clown, and the crowd howled with joy.",
+          "text": "\"Is this part of the show?\" a boy asked. \"Yes!\" said the clown, and the crowd laughed.",
           "pictureBrief": "The crowd laughing; the clown bowing",
           "picture": null
         }
@@ -4253,7 +4253,7 @@
           "picture": null
         },
         {
-          "text": "At last, I found a tiny box. Inside was a ticket to the country show, with rides and games! I was not displeased at all. I gave my brother a big hug.",
+          "text": "At last, I found a tiny box. Inside was a ticket to the country show, with rides and games! I was very happy. I gave my brother a big hug.",
           "pictureBrief": "The child hugging the brother, holding a ticket",
           "picture": null
         }
