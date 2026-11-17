@@ -10,7 +10,7 @@
       "cover": {
         "display": "Aa",
         "character": "Alligator Al",
-        "action": "Put your arms out straight, one on top of the other, and snap them open and shut like alligator jaws: a, a, a!",
+        "action": "Say /a/ as you snap your arms open and shut like alligator jaws.",
         "tip": "Open your mouth wide, like Al's jaws.",
         "pictureBrief": "A grinning alligator with his jaws wide open",
         "picture": null
@@ -152,7 +152,7 @@
       "cover": {
         "display": "Mm",
         "character": "Marshmallow Man",
-        "action": "Rub your tummy and say mmmm, because marshmallows are yummy!",
+        "action": "Say /m/ as you rub your tummy, because marshmallows are yummy.",
         "tip": "Press your lips together and hum.",
         "pictureBrief": "A happy, puffy marshmallow man rubbing his tummy",
         "picture": null
@@ -294,7 +294,7 @@
       "cover": {
         "display": "Ss",
         "character": "Sammy Snake",
-        "action": "Wiggle your hand forward like a slithering snake and hiss: sssss.",
+        "action": "Say /s/ as you wiggle your hand forward like a slithering snake.",
         "tip": "Smile, keep your teeth close together and let the air hiss out.",
         "pictureBrief": "A smiling snake curled into an S shape",
         "picture": null
@@ -436,7 +436,7 @@
       "cover": {
         "display": "Tt",
         "character": "Tick-Tock Turtle",
-        "action": "Tap one finger on your wrist like a ticking watch: t, t, t.",
+        "action": "Say /t/ as you tap one finger on your wrist like a ticking watch.",
         "tip": "Tap the tip of your tongue behind your top teeth. Keep it quick and quiet.",
         "pictureBrief": "A friendly turtle with a clock on her shell",
         "picture": null
@@ -578,7 +578,7 @@
       "cover": {
         "display": "Pp",
         "character": "Popcorn Pip",
-        "action": "Close your hand in a fist, then pop your fingers open like popcorn: p, p, p!",
+        "action": "Say /p/ as you close your hand, then pop your fingers open like popcorn.",
         "tip": "Press your lips together, then pop them open. Feel the puff on your hand.",
         "pictureBrief": "A cheerful popcorn kernel popping out of a bowl",
         "picture": null
@@ -720,7 +720,7 @@
       "cover": {
         "display": "Ff",
         "character": "Frosty Fred",
-        "action": "Hold your hands up to your mouth and blow on them to warm them: fffff.",
+        "action": "Say /f/ as you blow on your cold fingers to warm them.",
         "tip": "Rest your top teeth on your bottom lip and blow.",
         "pictureBrief": "A snowman blowing on his cold hands",
         "picture": null
@@ -862,7 +862,7 @@
       "cover": {
         "display": "Ii",
         "character": "Itchy Iggy",
-        "action": "Scratch your arm like you have an itch: i, i, i!",
+        "action": "Say /i/ as you scratch your arm like you have an itch.",
         "tip": "Smile a little and say a short, quick /i/.",
         "pictureBrief": "A little iguana scratching an itch",
         "picture": null
@@ -1004,7 +1004,7 @@
       "cover": {
         "display": "Nn",
         "character": "Nosy Nell",
-        "action": "Touch your nose and hum through it: nnnn.",
+        "action": "Say /n/ as you touch your nose and hum through it.",
         "tip": "Put your tongue up behind your top teeth and hum through your nose.",
         "pictureBrief": "A curious little mouse with a big, twitchy nose",
         "picture": null
@@ -1146,7 +1146,7 @@
       "cover": {
         "display": "Oo",
         "character": "Oscar Octopus",
-        "action": "Make a big O with your arms over your head, open your mouth wide and say: o, o, o!",
+        "action": "Say /o/ as you make a big O with your arms over your head.",
         "tip": "Open your mouth into a tall, round shape.",
         "pictureBrief": "An octopus making an O shape with two arms",
         "picture": null
@@ -1288,7 +1288,7 @@
       "cover": {
         "display": "Dd",
         "character": "Drummer Dot",
-        "action": "Drum on your knees with both hands: d, d, d!",
+        "action": "Say /d/ as you drum on your knees with both hands.",
         "tip": "Tap your tongue behind your top teeth, like /t/, but turn your voice on.",
         "pictureBrief": "A girl happily playing a drum",
         "picture": null
@@ -1430,7 +1430,7 @@
       "cover": {
         "display": "Cc",
         "character": "Click Cleo",
-        "action": "Hold up a pretend camera and click the button: c, c, c!",
+        "action": "Say /k/ as you hold up a pretend camera and click the button.",
         "tip": "Lift the back of your tongue and let out a little puff.",
         "pictureBrief": "A girl taking a picture with a camera",
         "picture": null
@@ -1572,7 +1572,7 @@
       "cover": {
         "display": "Uu",
         "character": "Umbrella Ula",
-        "action": "Push your hands up high like you are opening an umbrella: u, u, u!",
+        "action": "Say /u/ as you push your hands up high, like opening an umbrella.",
         "tip": "Relax your mouth and say a short /u/, like when you are thinking.",
         "pictureBrief": "A girl pushing up her umbrella in the rain",
         "picture": null
@@ -1714,7 +1714,7 @@
       "cover": {
         "display": "Gg",
         "character": "Gulping Gus",
-        "action": "Put your hand on your throat and gulp like a goldfish: g, g, g!",
+        "action": "Say /g/ as you put your hand on your throat and gulp like a goldfish.",
         "tip": "Lift the back of your tongue, like /k/, but turn your voice on.",
         "pictureBrief": "A goldfish gulping water",
         "picture": null
@@ -1856,7 +1856,7 @@
       "cover": {
         "display": "Bb",
         "character": "Bouncy Bella",
-        "action": "Bounce a pretend ball with your hand: b, b, b!",
+        "action": "Say /b/ as you bounce a pretend ball with your hand.",
         "tip": "Press your lips together, then pop them open with your voice on.",
         "pictureBrief": "A girl bouncing a big ball",
         "picture": null
@@ -1998,7 +1998,7 @@
       "cover": {
         "display": "Ee",
         "character": "Eggy Ed",
-        "action": "Pretend to crack an egg on the side of a bowl: e, e, e!",
+        "action": "Say /e/ as you pretend to crack an egg on the side of a bowl.",
         "tip": "Smile a little and say a short /e/, like when you are not sure.",
         "pictureBrief": "A boy cracking an egg into a bowl",
         "picture": null
@@ -2140,7 +2140,7 @@
       "cover": {
         "display": "Kk",
         "character": "Kicking Kai",
-        "action": "Kick your foot forward like you are kicking a ball: k, k, k!",
+        "action": "Say /k/ as you kick your foot forward like you are kicking a ball.",
         "tip": "Same sound as c in cat: lift the back of your tongue and let out a puff.",
         "pictureBrief": "A boy kicking a soccer ball",
         "picture": null
@@ -2282,7 +2282,7 @@
       "cover": {
         "display": "Hh",
         "character": "Huffing Hank",
-        "action": "Hold your hand in front of your mouth and pant like a tired puppy: h, h, h.",
+        "action": "Say /h/ as you pant like a tired puppy, hand in front of your mouth.",
         "tip": "Open your mouth and breathe out, like fogging up a window.",
         "pictureBrief": "A puppy panting after a run",
         "picture": null
@@ -2424,7 +2424,7 @@
       "cover": {
         "display": "Rr",
         "character": "Racing Rosie",
-        "action": "Hold a pretend steering wheel and race your engine: rrrrr!",
+        "action": "Say /r/ as you hold a pretend steering wheel and race your engine.",
         "tip": "Pull your tongue back and round your lips a little.",
         "pictureBrief": "A girl in a little race car",
         "picture": null
@@ -2566,7 +2566,7 @@
       "cover": {
         "display": "Ll",
         "character": "Lollipop Lily",
-        "action": "Lick a pretend lollipop and sing: lllll.",
+        "action": "Say /l/ as you lick a pretend lollipop.",
         "tip": "Put the tip of your tongue up behind your top teeth.",
         "pictureBrief": "A girl licking a big swirly lollipop",
         "picture": null
@@ -2708,7 +2708,7 @@
       "cover": {
         "display": "Ww",
         "character": "Wiggly Will",
-        "action": "Wiggle one finger like a worm and say: w, w, w.",
+        "action": "Say /w/ as you wiggle one finger like a worm.",
         "tip": "Round your lips into a small circle, then open them.",
         "pictureBrief": "A friendly worm wiggling",
         "picture": null
@@ -2850,7 +2850,7 @@
       "cover": {
         "display": "Jj",
         "character": "Jiggly Jo",
-        "action": "Wobble your whole body like jelly: j, j, j!",
+        "action": "Say /j/ as you wobble your whole body like jelly.",
         "tip": "Push your lips forward, tongue up, and let out a quick sound with your voice on.",
         "pictureBrief": "A wobbly, smiling jelly on a plate",
         "picture": null
@@ -2992,7 +2992,7 @@
       "cover": {
         "display": "Yy",
         "character": "Yes-Yes Yara",
-        "action": "Nod your head and say: y, y, yes!",
+        "action": "Say /y/ as you nod your head: yes, yes!",
         "tip": "Smile, lift your tongue high and slide into the sound, like the start of yes.",
         "pictureBrief": "A girl nodding with a big smile",
         "picture": null
@@ -3134,7 +3134,7 @@
       "cover": {
         "display": "Xx",
         "character": "Max the Box Fox",
-        "action": "Cross your arms in an X across your chest: ks, ks!",
+        "action": "Say /ks/ as you cross your arms in an X across your chest.",
         "tip": "X is two sounds squished together, /k/ and /s/. Listen for it at the end: fo-ks.",
         "pictureBrief": "A fox sitting in a box marked with an X",
         "picture": null
@@ -3276,7 +3276,7 @@
       "cover": {
         "display": "Qu qu",
         "character": "Quacking Queenie",
-        "action": "Open and shut your hand like a duck's beak: qu, qu, quack!",
+        "action": "Say /kw/ as you open and shut your hand like a duck's beak.",
         "tip": "Q always comes with u. Say /k/ and /w/ together fast: kw.",
         "pictureBrief": "A duck wearing a little crown",
         "picture": null
@@ -3418,7 +3418,7 @@
       "cover": {
         "display": "Vv",
         "character": "Vroom Vic",
-        "action": "Hold the handlebars and rev the motorbike: vvvvv!",
+        "action": "Say /v/ as you hold the handlebars and rev the motorbike.",
         "tip": "Top teeth on your bottom lip, like /f/, but turn your voice on. It tickles!",
         "pictureBrief": "A boy riding a little motorbike",
         "picture": null
@@ -3560,7 +3560,7 @@
       "cover": {
         "display": "Zz",
         "character": "Buzzy Zara",
-        "action": "Zigzag your finger through the air like a buzzing bee: zzzzz.",
+        "action": "Say /z/ as you zigzag your finger through the air like a buzzing bee.",
         "tip": "Teeth close, like /s/, but turn your voice on and buzz.",
         "pictureBrief": "A friendly bumblebee",
         "picture": null
@@ -4511,7 +4511,7 @@
           "pictureBrief": "A duck with a quacking beak",
           "picture": null,
           "character": "Quacking Mack",
-          "action": "Snap your fingers and thumb together like a duck's beak: ck, ck!"
+          "action": "Say /k/ as you snap your fingers and thumb together like a duck's beak."
         },
         {
           "kind": "sort",
@@ -4656,7 +4656,7 @@
           "pictureBrief": "A librarian with a finger to her lips",
           "picture": null,
           "character": "Shushing Shelby",
-          "action": "Put one finger to your lips: shhhh!"
+          "action": "Say /sh/ as you put one finger to your lips."
         },
         {
           "kind": "sort",
@@ -4805,7 +4805,7 @@
           "pictureBrief": "A boy with his tongue peeking out, thinking",
           "picture": null,
           "character": "Thinking Theo",
-          "action": "Let the tip of your tongue peek out and tap your chin like you're thinking: th."
+          "action": "Say /th/ as you let your tongue peek out and tap your chin, like you're thinking."
         },
         {
           "kind": "sort",
@@ -4950,7 +4950,7 @@
           "pictureBrief": "A little train puffing along",
           "picture": null,
           "character": "Choo-Choo Charlie",
-          "action": "Move your arms like train wheels: ch, ch, ch, choo!"
+          "action": "Say /ch/ as you move your arms like train wheels."
         },
         {
           "kind": "sort",
@@ -5095,7 +5095,7 @@
           "pictureBrief": "A whale whispering behind its fin",
           "picture": null,
           "character": "Whispering Whitney",
-          "action": "Cup your hand by your mouth like you're whispering: wh, wh."
+          "action": "Say /w/ as you cup your hand by your mouth, like you're whispering."
         },
         {
           "kind": "sort",
@@ -5240,7 +5240,7 @@
           "pictureBrief": "A boy talking on a toy phone",
           "picture": null,
           "character": "Phone Phil",
-          "action": "Hold a pretend phone to your ear: fff!"
+          "action": "Say /f/ as you hold a pretend phone to your ear."
         },
         {
           "kind": "sort",
@@ -5367,7 +5367,7 @@
           "pictureBrief": "A bell ringing ding-dong",
           "picture": null,
           "character": "Ringo the Bell",
-          "action": "Ring a pretend bell over your head: ding, dong, ng!"
+          "action": "Say /ng/ as you ring a pretend bell over your head."
         },
         {
           "kind": "sort",
@@ -5512,7 +5512,7 @@
           "pictureBrief": "A goose honking a bicycle horn",
           "picture": null,
           "character": "Honk the Goose",
-          "action": "Squeeze a pretend horn: honk, honk, nk!"
+          "action": "Say /nk/ as you squeeze a pretend horn: honk, honk."
         },
         {
           "kind": "sort",
@@ -7017,7 +7017,7 @@
           "pictureBrief": "A boy catching a ball",
           "picture": null,
           "character": "Catch-It Mitch",
-          "action": "Clap your hands together like you're catching a ball: tch!"
+          "action": "Say /ch/ as you clap your hands together, like you're catching a ball."
         },
         {
           "kind": "sort",
@@ -7162,7 +7162,7 @@
           "pictureBrief": "A girl with a plate of fudge",
           "picture": null,
           "character": "Fudge-Loving Madge",
-          "action": "Wiggle your fingers like you're reaching for fudge: j, j!"
+          "action": "Say /j/ as you wiggle your fingers, like you're reaching for fudge."
         },
         {
           "kind": "sort",

@@ -1,7 +1,7 @@
 import React from "react";
 import { Circle, Path, Svg, Text, View } from "@react-pdf/renderer";
 import { markedParts } from "../heartMarks";
-import { INK, SOFT } from "./RoutinePdf";
+import { INK } from "./RoutinePdf";
 
 export function HeartIcon({ size }: { size: number }) {
   return (
@@ -57,7 +57,6 @@ export function HeartWordsFront({ words, size = 12 }: { words: string[]; size?: 
           </View>
         ))}
       </View>
-      <Text style={{ fontSize: 6.5, color: SOFT, marginTop: 8 }}>dot = sounds the usual way · heart = the tricky part</Text>
     </View>
   );
 }
