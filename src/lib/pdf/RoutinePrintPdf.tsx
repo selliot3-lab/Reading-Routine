@@ -106,7 +106,7 @@ function LittleBook(props: RoutinePdfProps & { logo: string | null }) {
     <View style={{ flexGrow: 1, alignItems: "center", justifyContent: "space-between", borderWidth: 1, borderColor: INK, width: "100%", paddingVertical: 10, paddingHorizontal: 8 }}>
       <View style={{ alignItems: "center" }}>
         <Text style={p.kicker}>{kicker}</Text>
-        {props.logo && <Image src={props.logo} style={{ width: 34, height: 38, marginTop: 6 }} />}
+        {props.logo && <Image src={props.logo} style={{ width: 40, height: 44, objectFit: "contain", marginTop: 6 }} />}
         <Text style={{ fontFamily: "Grand Hotel", fontSize: 12, marginTop: 2 }}>The Reading Routine</Text>
       </View>
       <View style={{ alignItems: "center", width: "100%" }}>
@@ -124,7 +124,8 @@ function LittleBook(props: RoutinePdfProps & { logo: string | null }) {
       <View style={{ alignItems: "center", width: "100%" }}>
         {!teaching && <Text style={[p.small, { textAlign: "center" }]}>Read by {props.childName} · Level {props.level}</Text>}
         {teaching && r.type !== "heart" && !r.cover && <Text style={[p.small, { textAlign: "center" }]}>{props.childName} + a grown-up · Level {props.level}</Text>}
-        {r.type === "heart" ? <HeartWordsFront words={r.pages.filter((pg) => pg.kind === "heart").map((pg) => pg.display!)} size={12} /> : <HeartWordsFront words={props.bookHeartWords} size={r.cover ? 10 : 12} />}
+        {r.type === "heart" && <HeartWordsFront words={r.pages.filter((pg) => pg.kind === "heart").map((pg) => pg.display!)} size={12} />}
+        {r.type !== "heart" && r.type !== "sound" && <HeartWordsFront words={props.bookHeartWords} size={12} />}
       </View>
     </View>,
   );
@@ -370,7 +371,7 @@ function ParentSheet(props: RoutinePdfProps & { logo: string | null }) {
 
 export function RoutinePrintPdf(props: RoutinePdfProps) {
   registerFonts();
-  const logo = publicPath("/brand/clock-180.png");
+  const logo = publicPath("/brand/clock-360.png");
   return (
     <Document title={`${props.childName}'s Reading Routine — ${props.dateLabel} (print)`} author="The Reading Routine">
       {props.mode !== "chapter" && props.reader && <LittleBook {...props} logo={logo} />}
