@@ -27,6 +27,8 @@ export type StoryReader = {
   pronouns: string;
   specialPeople: SpecialPerson[];
   pets: Pet[];
+  /** First names of the siblings in storytime, who join this child's story. */
+  cast?: string[];
 };
 
 /** Used when a family hasn't named a special person: a kind neighbour who can appear in any story. */
@@ -40,6 +42,13 @@ const PRONOUNS: Record<string, Record<string, string>> = {
 
 const cap = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
 
+/** "Leo", "Leo and Ava", "Leo, Ava and Sam". */
+export function joinNames(names: string[]): string {
+  const clean = names.map((n) => n.trim()).filter(Boolean);
+  if (clean.length <= 1) return clean[0] ?? "";
+  return `${clean.slice(0, -1).join(", ")} and ${clean[clean.length - 1]}`;
+}
+
 /** Fills one piece of template text for a child. */
 export function fill(text: string, c: StoryReader): string {
   const set = PRONOUNS[c.pronouns] ?? PRONOUNS.they;
@@ -47,12 +56,14 @@ export function fill(text: string, c: StoryReader): string {
   const person = c.specialPeople[0]?.name?.trim() || FALLBACK_PERSON;
   const person2 = c.specialPeople[1]?.name?.trim() || person;
   const pet = c.pets[0];
+  const cast = joinNames(c.cast ?? []);
   const values: Record<string, string> = {
     name: c.firstName,
     person,
     person2,
     pet: pet?.name ?? "",
     pet_kind: pet?.kind?.toLowerCase() ?? "",
+    cast,
     ...set,
   };
   return text
@@ -75,9 +86,10 @@ export type FilledStory = {
 
 export function personalize(t: StoryTemplate, c: StoryReader): FilledStory {
   const hasPet = c.pets.length > 0 && Boolean(c.pets[0].name?.trim());
+  const hasCast = (c.cast ?? []).some((n) => n.trim());
   const paragraphs = t.paragraphs
-    .filter((p) => hasPet || !p.startsWith("[pet]"))
-    .map((p) => fill(p.replace(/^\[pet\]\s*/, ""), c));
+    .filter((p) => (hasPet || !p.startsWith("[pet]")) && (hasCast || !p.startsWith("[cast]")))
+    .map((p) => fill(p.replace(/^\[(pet|cast)\]\s*/, ""), c));
   return {
     storyId: t.id,
     title: fill(t.title, c),
@@ -109,7 +121,7 @@ export function pickStory(opts: {
 /** Problems with a story template: unknown placeholders, missing Spark Words, length. */
 export function checkStory(t: StoryTemplate): string[] {
   const issues: string[] = [];
-  const known = new Set(["name", "they", "them", "their", "theirs", "themself", "person", "person2", "pet", "pet_kind"]);
+  const known = new Set(["name", "they", "them", "their", "theirs", "themself", "person", "person2", "pet", "pet_kind", "cast"]);
   const all = [t.title, t.beforeQuestion, t.talkQuestion, ...t.paragraphs].join("\n");
   for (const m of all.matchAll(/\{(\w+)\}/g)) if (!known.has(m[1].toLowerCase())) issues.push(`unknown placeholder {${m[1]}}`);
   for (const p of t.paragraphs) if (!p.startsWith("[pet]") && /\{pet(_kind)?\}/.test(p)) issues.push(`{pet} outside a [pet] paragraph: "${p.slice(0, 40)}…"`);

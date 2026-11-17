@@ -106,6 +106,10 @@ export default async function Account() {
               <summary style={{ cursor: "pointer", fontWeight: 700 }}>Edit interests, people and pets</summary>
               <form action={updateChild} style={{ marginTop: 14 }}>
                 <input type="hidden" name="childId" value={k.id} />
+                <label style={{ fontWeight: 400, display: "flex", gap: 8, alignItems: "flex-start", marginBottom: 12 }}>
+                  <input type="checkbox" name="inStorytime" defaultChecked={k.inStorytime} style={{ width: 20, height: 20, marginTop: 2 }} />
+                  <span>Put {k.firstName} in their siblings&apos; bedtime stories. Stories feature every sibling who is in storytime.</span>
+                </label>
                 <fieldset style={{ border: "none", padding: 0 }}>
                   <legend style={{ fontWeight: 700, marginBottom: 6 }}>Interests</legend>
                   <div className="grid-2" style={{ gap: 4 }}>

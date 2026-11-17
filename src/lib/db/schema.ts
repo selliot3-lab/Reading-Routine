@@ -55,6 +55,8 @@ export const children = pgTable(
     /** Graduate mode: the running book */
     chapterBook: jsonb("chapter_book").$type<{ title: string; summary: string; chapter: number } | null>(),
     active: boolean("active").notNull().default(true),
+    /** Siblings who are in storytime join each other's bedtime stories. */
+    inStorytime: boolean("in_storytime").notNull().default(false),
     createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
   },
   (t) => [index("children_parent_idx").on(t.parentId)],

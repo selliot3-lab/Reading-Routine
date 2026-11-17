@@ -70,7 +70,12 @@ export async function buildRoutine(child: Child, forDate: string): Promise<Routi
     const heard = new Set(past.flatMap((r) => (r.story?.storyId ? [r.story.storyId] : [])));
     const template = pickStory({ interests: child.interests, heard, metWords: alreadyMet, allowDrafts: env.ALLOW_DRAFT_STORIES });
     if (!template) throw new Error("No approved bedtime stories in the library yet.");
-    const filled = personalize(template, child);
+    // Siblings who are in storytime join this child's story.
+    const siblings = await db.query.children.findMany({
+      where: and(eq(schema.children.parentId, child.parentId), eq(schema.children.active, true), eq(schema.children.inStorytime, true)),
+    });
+    const cast = siblings.filter((s) => s.id !== child.id).map((s) => s.firstName);
+    const filled = personalize(template, { ...child, cast });
     story = {
       storyId: filled.storyId,
       title: filled.title,

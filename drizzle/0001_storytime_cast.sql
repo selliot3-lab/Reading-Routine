@@ -1,0 +1,1 @@
+ALTER TABLE "children" ADD COLUMN "in_storytime" boolean DEFAULT false NOT NULL;

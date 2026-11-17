@@ -11,10 +11,11 @@
         "enormous",
         "extinct"
       ],
-      "beforeQuestion": "The story is called \"{name} and the Fossil in the Garden.\" What do you think {name} might find?",
+      "beforeQuestion": "The story is called \"{name} and the Fossil in the Garden.\" What do you think this story might be about?",
       "talkQuestion": "Why do you think {name} felt a little bit sad and a little bit lucky when {they} remembered that dinosaurs are extinct? How would you feel?",
       "paragraphs": [
         "It was the first warm Saturday of spring, and {name} was helping {person} dig in the garden. The soil was dark and soft, and it smelled like rain. {name} had a little blue shovel, a bucket, and a very big feeling that something exciting was about to happen.",
+        "[cast] {cast} came out to help too, with buckets and a spoon each.",
         "[pet] {pet} the {pet_kind} was helping too, in {pet}'s own way. Mostly that meant sniffing every hole and sitting right where {name} wanted to dig next.",
         "\"What are we planting?\" {name} asked. \"Carrots,\" said {person}, \"and sunflowers, if we are lucky.\" {name} pushed the shovel down, and it went clunk. Not a soft, soily sound. A hard, stony clunk.",
         "{name} brushed the dirt away with careful fingers. Under the soil was a flat grey stone, and pressed into the stone was a curly shape, like a snail shell made of rock. \"{person}!\" {name} whispered. \"I think I found a fossil!\"",
@@ -30,7 +31,7 @@
         "[pet] And who should come bounding through the ferns but {pet}! Even here, in a time long, long ago, {pet} was right by {name}'s side, sniffing the giant dinosaur footprints with great interest.",
         "The dinosaur bent its long neck, and {name} understood. {They} climbed up onto its back, holding on carefully, and the dinosaur began to walk. Thud, thud, thud. From up high, {name} could see a lake that sparkled like glass, a family of little dinosaurs splashing at the edge, and a volcano far away, puffing a sleepy grey cloud.",
         "They stopped by the lake for a drink. The water was so clear that {name} could see little fish darting between the stones, and a long, flat footprint pressed into the mud at the edge. {name} put {their} own foot beside it. The footprint was bigger than {their} whole bed!",
-        "\"Will there be dinosaurs forever?\" {name} asked. The dinosaur did not answer, but {name} remembered what {person} had said. Dinosaurs are extinct. That means there are none left alive anywhere in the world. They lived so long ago that all we have now are their bones, their footprints and their fossils.",
+        "\"Will there be dinosaurs forever?\" {name} asked. The dinosaur did not answer, but {name} remembered what {person} had said. Dinosaurs are extinct. That means there are none left alive anywhere in the world. They lived so long ago that all we have now are fossils: their bones, their footprints and the shapes they left in the mud.",
         "It made {name} feel a little bit sad, and a little bit lucky. Extinct meant {they} could never meet a real dinosaur. But here {they} [was|were], riding on one, in a dream that felt very real indeed.",
         "\"I will remember you,\" {name} told the dinosaur, patting its enormous neck. \"Even if you are extinct, I will tell everyone about you.\"",
         "The dinosaur hummed a low, rumbly hum, the kind you feel in your tummy more than you hear with your ears. Then it walked slowly back through the ferns, to the place where {name} had first arrived. The silvery light was there again, glowing softly between the leaves.",
@@ -53,10 +54,11 @@
         "orbit",
         "glimmer"
       ],
-      "beforeQuestion": "The story is called \"{name} and the Distant Star.\" Where do you think {name} might go?",
+      "beforeQuestion": "The story is called \"{name} and the Distant Star.\" What do you think this story might be about?",
       "talkQuestion": "The star said it was never really alone. Why do you think it felt that way? Who do you think about when you look up at the sky?",
       "paragraphs": [
         "Every night before bed, {name} and {person} had a special job. They went out to the back porch, wrapped up in a blanket, and said goodnight to the sky.",
+        "[cast] {cast} came out to the porch as well, wrapped up in a blanket of their own.",
         "Tonight the sky was very clear. The moon was a thin silver smile, and the stars were coming out one by one, as if someone were switching on tiny lights.",
         "[pet] {pet} the {pet_kind} came too, of course. {pet} sat on the porch step, looking up as if {pet} were counting the stars as well.",
         "\"Look,\" said {person}, pointing. \"Do you see that little glimmer, just above the big tree?\" {name} looked. There it was: one small light, blinking softly, as if it were winking.",
