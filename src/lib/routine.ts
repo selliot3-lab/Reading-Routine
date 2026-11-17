@@ -247,7 +247,12 @@ export async function dispatchDue(now = new Date()) {
   for (const parent of due) {
     const today = localDate(parent.timezone, now);
     const kids = await db.query.children.findMany({
-      where: and(eq(schema.children.parentId, parent.id), eq(schema.children.active, true)),
+      where: and(
+        eq(schema.children.parentId, parent.id),
+        eq(schema.children.active, true),
+        // Only children in the full reading routine get their own little books.
+        eq(schema.children.inReadingProgram, true),
+      ),
     });
     for (const child of kids) {
       const done = await db.query.routines.findFirst({

@@ -1,0 +1,1 @@
+ALTER TABLE "children" ADD COLUMN "in_reading_program" boolean DEFAULT true NOT NULL;

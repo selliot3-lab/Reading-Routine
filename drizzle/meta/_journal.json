@@ -15,6 +15,13 @@
       "when": 1794935350686,
       "tag": "0001_storytime_cast",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1794939942213,
+      "tag": "0002_reading_program",
+      "breakpoints": true
     }
   ]
 }

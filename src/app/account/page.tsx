@@ -107,6 +107,10 @@ export default async function Account() {
               <form action={updateChild} style={{ marginTop: 14 }}>
                 <input type="hidden" name="childId" value={k.id} />
                 <label style={{ fontWeight: 400, display: "flex", gap: 8, alignItems: "flex-start", marginBottom: 12 }}>
+                  <input type="checkbox" name="inReadingProgram" defaultChecked={k.inReadingProgram} style={{ width: 20, height: 20, marginTop: 2 }} />
+                  <span>{k.firstName} is in the full reading routine: they get their own little books each night.</span>
+                </label>
+                <label style={{ fontWeight: 400, display: "flex", gap: 8, alignItems: "flex-start", marginBottom: 12 }}>
                   <input type="checkbox" name="inStorytime" defaultChecked={k.inStorytime} style={{ width: 20, height: 20, marginTop: 2 }} />
                   <span>Put {k.firstName} in their siblings&apos; bedtime stories. Stories feature every sibling who is in storytime.</span>
                 </label>

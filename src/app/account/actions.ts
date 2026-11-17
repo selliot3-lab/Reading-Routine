@@ -66,6 +66,7 @@ export async function updateChild(formData: FormData) {
       specialPeople: parsePairs(String(formData.get("specialPeople") ?? ""), "relation"),
       pets: parsePairs(String(formData.get("pets") ?? ""), "kind"),
       inStorytime: formData.get("inStorytime") === "on",
+      inReadingProgram: formData.get("inReadingProgram") === "on",
     })
     .where(and(eq(schema.children.id, childId), eq(schema.children.parentId, parent.id)));
   revalidatePath("/account");

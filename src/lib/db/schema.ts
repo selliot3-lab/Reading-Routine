@@ -57,6 +57,8 @@ export const children = pgTable(
     active: boolean("active").notNull().default(true),
     /** Siblings who are in storytime join each other's bedtime stories. */
     inStorytime: boolean("in_storytime").notNull().default(false),
+    /** Signed up for the full reading routine: this child gets their own little books. */
+    inReadingProgram: boolean("in_reading_program").notNull().default(true),
     createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
   },
   (t) => [index("children_parent_idx").on(t.parentId)],
