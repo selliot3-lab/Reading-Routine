@@ -100,26 +100,32 @@ function LittleBook(props: RoutinePdfProps & { logo: string | null }) {
   const panels = new Map<number, React.ReactNode>();
 
   const teaching = r.type === "sound" || r.type === "heart";
+  const kicker = r.type === "sound" ? "a sound book" : r.type === "heart" ? "a heart word book" : "a little book";
   panels.set(
     1,
-    <View style={{ flexGrow: 1, alignItems: "center", justifyContent: "center", borderWidth: 1, borderColor: INK, width: "100%", padding: 8 }}>
-      <Text style={p.kicker}>{r.type === "sound" ? "a sound book" : r.type === "heart" ? "a heart word book" : "a little book"}</Text>
-      {props.logo && !r.cover && <Image src={props.logo} style={{ width: 46, marginVertical: 10 }} />}
-      <Text style={[p.readerText, { fontSize: 16, fontWeight: 700, marginTop: 4, marginBottom: 6 }]}>{r.title}</Text>
-      {props.featured && <Text style={[p.small, { marginBottom: 8, textAlign: "center" }]}>Featured sound: {props.featured}</Text>}
-      {r.cover ? (
-        <LetterCover cover={r.cover} say={r.say} width={PANEL_W - 46} />
-      ) : r.type === "sound" ? (
-        <>
-          <Text style={[p.readerText, { fontSize: (r.pages[0]?.display?.length ?? 0) > 6 ? 20 : 40, fontWeight: 700, lineHeight: 1.35, marginTop: 6, marginBottom: 8 }]}>{r.pages[0]?.display}</Text>
-          <Text style={[p.small, { marginTop: 6, marginBottom: 6, textAlign: "center" }]}>Say: {r.say}</Text>
-        </>
-      ) : null}
-      <Text style={[p.small, { marginTop: 10, textAlign: "center" }]}>
-        {teaching ? `${props.childName} + a grown-up` : `Read by ${props.childName}`} · Level {props.level}
-      </Text>
-      {r.type === "heart" && <HeartWordsFront words={r.pages.filter((pg) => pg.kind === "heart").map((pg) => pg.display!)} />}
-      {r.type !== "heart" && <HeartWordsFront words={props.bookHeartWords} size={r.cover ? 10 : 12} />}
+    <View style={{ flexGrow: 1, alignItems: "center", justifyContent: "space-between", borderWidth: 1, borderColor: INK, width: "100%", paddingVertical: 10, paddingHorizontal: 8 }}>
+      <View style={{ alignItems: "center" }}>
+        <Text style={p.kicker}>{kicker}</Text>
+        {props.logo && <Image src={props.logo} style={{ width: 34, height: 38, marginTop: 6 }} />}
+        <Text style={{ fontFamily: "Grand Hotel", fontSize: 12, marginTop: 2 }}>The Reading Routine</Text>
+      </View>
+      <View style={{ alignItems: "center", width: "100%" }}>
+        <Text style={[p.readerText, { fontSize: 14, fontWeight: 700 }]}>{r.title}</Text>
+        {props.featured && <Text style={[p.small, { marginTop: 3, textAlign: "center" }]}>Featured sound: {props.featured}</Text>}
+        {r.cover ? (
+          <View style={{ marginTop: 6 }}><LetterCover cover={r.cover} say={r.say} width={PANEL_W - 46} /></View>
+        ) : r.type === "sound" ? (
+          <Text style={[p.readerText, { fontSize: (r.pages[0]?.display?.length ?? 0) > 6 ? 20 : 36, fontWeight: 700, lineHeight: 1.3, marginTop: 8 }]}>{r.pages[0]?.display}</Text>
+        ) : null}
+        {r.type === "heart" && (
+          <Text style={[p.small, { marginTop: 6, textAlign: "center" }]}>{props.childName} + a grown-up · Level {props.level}</Text>
+        )}
+      </View>
+      <View style={{ alignItems: "center", width: "100%" }}>
+        {!teaching && <Text style={[p.small, { textAlign: "center" }]}>Read by {props.childName} · Level {props.level}</Text>}
+        {teaching && r.type !== "heart" && !r.cover && <Text style={[p.small, { textAlign: "center" }]}>{props.childName} + a grown-up · Level {props.level}</Text>}
+        {r.type === "heart" ? <HeartWordsFront words={r.pages.filter((pg) => pg.kind === "heart").map((pg) => pg.display!)} size={12} /> : <HeartWordsFront words={props.bookHeartWords} size={r.cover ? 10 : 12} />}
+      </View>
     </View>,
   );
 

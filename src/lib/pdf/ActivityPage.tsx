@@ -67,11 +67,11 @@ function WriteRow({ letter, copies, width, s }: { letter: string; copies: number
 export function LetterCover({ cover, say, s = 1, width }: { cover: BookCover; say?: string; s?: number; width: number }) {
   return (
     <View style={{ alignItems: "center", width }}>
-      <Picture brief={`Character: ${cover.pictureBrief}`} picture={cover.picture} width={width * 0.6} height={48 * s} s={s} />
-      <Text style={[reader, { fontSize: 28 * s, fontWeight: 700, lineHeight: 1.3, marginTop: 8 * s, marginBottom: 6 * s }]}>{cover.display}</Text>
+      <Picture brief={`Character: ${cover.pictureBrief}`} picture={cover.picture} width={width * 0.55} height={36 * s} s={s} />
+      <Text style={[reader, { fontSize: 26 * s, fontWeight: 700, lineHeight: 1.3, marginTop: 6 * s, marginBottom: 4 * s }]}>{cover.display}</Text>
       <Text style={[reader, { fontSize: 11 * s, fontWeight: 700, marginTop: 6 * s }]}>{cover.character}</Text>
       {say && <Text style={{ fontSize: 7.5 * s, marginTop: 5 * s }}>Say: {say}</Text>}
-      <Text style={{ fontSize: 6.5 * s, color: SOFT, textAlign: "center", lineHeight: 1.3, marginTop: 5 * s }}>{cover.action}</Text>
+      <Text style={{ fontSize: 6 * s, color: SOFT, textAlign: "center", lineHeight: 1.25, marginTop: 4 * s }}>{cover.action}</Text>
     </View>
   );
 }

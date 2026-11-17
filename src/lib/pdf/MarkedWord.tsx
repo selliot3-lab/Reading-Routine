@@ -20,21 +20,24 @@ export function MarkedWord({ word, size = 16 }: { word: string; size?: number })
   const shown = word.toLowerCase() === "i" ? "I" : word;
   const parts = markedParts(word);
   if (!parts) return <Text style={{ fontFamily: "Andika", fontSize: size }}>{shown}</Text>;
-  const dot = size * 0.22;
+  const textH = size * 1.7; // room for the letters' full line height, so nothing is clipped
+  const markH = size * 0.55; // fixed height for the marker under them
   return (
-    <View style={{ flexDirection: "row", alignItems: "flex-end" }}>
+    <View style={{ flexDirection: "row", alignItems: "flex-start" }}>
       {parts.map(([text, kind], i) => (
         <View key={i} style={{ alignItems: "center" }}>
-          <Text style={{ fontFamily: "Andika", fontSize: size, lineHeight: 1.15 }}>{text === "i" && word.toLowerCase() === "i" ? "I" : text}</Text>
-          {kind === "d" ? (
-            <Svg width={dot * 2} height={dot * 2} style={{ marginTop: 1 }}>
-              <Circle cx={dot} cy={dot} r={dot * 0.8} fill={INK} />
-            </Svg>
-          ) : (
-            <View style={{ marginTop: 1 }}>
-              <HeartIcon size={size * 0.5} />
-            </View>
-          )}
+          <View style={{ height: textH }}>
+            <Text style={{ fontFamily: "Andika", fontSize: size, lineHeight: 1.2 }}>{text === "i" && word.toLowerCase() === "i" ? "I" : text}</Text>
+          </View>
+          <View style={{ height: markH, width: size * 0.6, alignItems: "center", justifyContent: "center", marginTop: 1 }}>
+            {kind === "d" ? (
+              <Svg width={size * 0.3} height={size * 0.3} viewBox="0 0 10 10">
+                <Circle cx={5} cy={5} r={4.5} fill={INK} />
+              </Svg>
+            ) : (
+              <HeartIcon size={size * 0.42} />
+            )}
+          </View>
         </View>
       ))}
     </View>
